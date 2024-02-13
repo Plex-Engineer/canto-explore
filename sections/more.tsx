@@ -1,7 +1,7 @@
-import React from "react";
+import styles from "./style.module.scss";
 
 const MoreSection = () => {
-  return <div>MoreSection</div>;
+  return <div className={styles.more}>MoreSection</div>;
 };
 
 export default MoreSection;
