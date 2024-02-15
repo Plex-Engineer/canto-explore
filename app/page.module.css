@@ -1,8 +1,11 @@
 .main {
     display: grid;
-    /* grid-template-rows: 80px 1fr 500px 1fr 0.75fr 200px; */
-    max-width: 1400px;
-    background-color: #ffcd93;
-    margin-inline: auto;
+    grid-template-rows: 84px 1fr 500px 1fr 0.75fr 200px;
+    background-color: var(--bg-color);
     min-height: 100dvh;
+}
+
+.container {
+    max-width: 1400px;
+    margin-inline: auto;
 }

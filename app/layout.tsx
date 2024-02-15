@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rmmono = localFont({
+  src: "../fonts/rm-mono-regular.ttf",
+  variable: "--rm-mono",
+});
+
+const nuebit = localFont({
+  src: "../fonts/ppmondwest.otf",
+  variable: "--nuebit",
+});
 
 export const metadata: Metadata = {
   title: "Explore the Canto Ecosystem",
@@ -16,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${rmmono.variable} ${rmmono.className} ${nuebit.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
