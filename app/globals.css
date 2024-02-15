@@ -1,5 +1,7 @@
 :root {
     --max-width: 1100px;
+
+    --bg-color: #0c0c0c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +22,8 @@ body {
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    /* color: rgb(var(--foreground-rgb)); */
+    background: var(--bg-color);
 }
 
 a {

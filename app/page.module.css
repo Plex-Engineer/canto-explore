@@ -1,5 +1,8 @@
 .main {
     display: grid;
-    grid-template-rows: 80px 1fr 500px 1fr 0.75fr 200px;
+    /* grid-template-rows: 80px 1fr 500px 1fr 0.75fr 200px; */
+    max-width: 1400px;
+    background-color: #ffcd93;
+    margin-inline: auto;
     min-height: 100dvh;
 }
