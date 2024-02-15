@@ -12,7 +12,7 @@ export const NavBar = () => {
         height={100}
       />
 
-      <div className={styles.stats}>mic testing onw two three</div>
+      <div className={styles.stats}>block no | canto | note</div>
     </div>
   );
 };
