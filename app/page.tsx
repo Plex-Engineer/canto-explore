@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <NavBar />
       <div className={styles.container}>
-        {/* <HeroSection /> */}
+        <HeroSection />
         {/* <Spotlight /> */}
         {/* <MoreSection /> */}
       </div>

@@ -1,19 +1,59 @@
-// .navbar {
-//   background-color: red;
-// }
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  background-image: url("/hero.png");
+  background-position: 0 270px;
+  background-size: cover;
 
-// .hero {
-//   background-color: blue;
-// }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex: 1;
+  }
 
-// .spotlight {
-//   background-color: green;
-// }
+  //   .image {
+  //     height: 50vw;
+  //     width: 100vw;
+  //     position: absolute;
+  //   }
+  h1 {
+    font-family: var(--nuebit);
+    font-size: 72px;
+  }
 
-// .more {
-//   background-color: yellow;
-// }
+  h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 400;
+  }
 
-// .footer {
-//   background-color: purple;
-// }
+  .actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  button {
+    display: flex;
+    width: 240px;
+    height: 56px;
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background: #dfdfdf;
+    font-family: var(--rmmono);
+    color: black;
+    border: none;
+
+    &[data-type="outlined"] {
+      background: transparent;
+      color: #dfdfdf;
+      border: 1px solid #dfdfdf;
+    }
+  }
+}
