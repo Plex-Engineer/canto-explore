@@ -1,6 +1,9 @@
+"use client";
 import Chip from "@/components/chips";
 import styles from "./more.module.scss";
 import { CardProps } from "@/components/cards/highlightCard";
+import { useState } from "react";
+import ItemCard from "@/components/cards/itemCard";
 
 const MoreSection = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
@@ -12,21 +15,50 @@ const MoreSection = (props: { items: CardProps[] }) => {
     return acc;
   }, {});
 
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+
   return (
     <div className={styles.container}>
       <h2>Project categories</h2>
 
       <div className={styles.categories}>
-        <Chip key="All">All ({props.items.length})</Chip>
+        <Chip
+          onClick={() => {
+            setActiveCategory("All");
+          }}
+          active={activeCategory === "All"}
+          key="All"
+        >
+          All ({props.items.length})
+        </Chip>
         {Object.keys(categories).map((category) => (
-          <Chip key={category}>{`${category} (${categories[category]})`}</Chip>
+          <Chip
+            active={activeCategory === category}
+            onClick={() => {
+              setActiveCategory(category);
+            }}
+            key={category}
+          >{`${category} (${categories[category]})`}</Chip>
         ))}
 
         {/* view more */}
         {Object.keys(categories).length > 2 && (
-          <Chip key="View more">View more</Chip>
+          <Chip onClick={() => {}} key="View more">
+            View more
+          </Chip>
         )}
       </div>
+
+      <section className={styles.grid}>
+        {props.items
+          .filter(
+            (item) =>
+              activeCategory === "All" || item.category === activeCategory
+          )
+          .map((item, index) => (
+            <ItemCard key={index} {...item} />
+          ))}
+      </section>
     </div>
   );
 };

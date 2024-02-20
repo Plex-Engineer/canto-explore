@@ -12,7 +12,7 @@ const projects: CardProps[] = [
     title: "Aave",
     description:
       "Aave is an open source and non-custodial protocol to earn interest on deposits and borrow assets.",
-    image: "/images/aave.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://aave.com/",
@@ -24,7 +24,7 @@ const projects: CardProps[] = [
     title: "Uniswap",
     description:
       "Uniswap is a protocol for automated token exchange on Ethereum.",
-    image: "/images/uniswap.png",
+    image: "/hero.png",
     category: "DEX",
     links: {
       site: "https://uniswap.org/",
@@ -36,7 +36,7 @@ const projects: CardProps[] = [
     title: "Rarible",
     description:
       "Create, sell or collect digital items secured with blockchain.",
-    image: "/images/rarible.png",
+    image: "/hero.png",
     category: "NFT",
     links: {
       site: "https://rarible.com/",
@@ -48,7 +48,7 @@ const projects: CardProps[] = [
     title: "Compound",
     description:
       "Compound is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.",
-    image: "/images/compound.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://compound.finance/",
@@ -60,7 +60,7 @@ const projects: CardProps[] = [
     title: "SushiSwap",
     description:
       "SushiSwap is an automated market-making (AMM) decentralized exchange (DEX) currently on the Ethereum blockchain.",
-    image: "/images/sushiswap.png",
+    image: "/hero.png",
     category: "DEX",
     links: {
       site: "https://sushi.com/",
@@ -72,7 +72,7 @@ const projects: CardProps[] = [
     title: "OpenSea",
     description:
       "OpenSea is the first and largest marketplace for user-owned digital goods, which include collectibles, gaming items, domain names, digital art, and other assets backed by a blockchain.",
-    image: "/images/opensea.png",
+    image: "/hero.png",
     category: "NFT",
     links: {
       site: "https://opensea.io/",
@@ -83,7 +83,7 @@ const projects: CardProps[] = [
   {
     title: "Balancer",
     description: "Balancer is a n-dimensional automated portfolio manager.",
-    image: "/images/balancer.png",
+    image: "/hero.png",
     category: "DEX",
     links: {
       site: "https://balancer.finance/",
@@ -95,7 +95,7 @@ const projects: CardProps[] = [
     title: "Maker",
     description:
       "Maker is a decentralized autonomous organization on the Ethereum blockchain seeking to minimize the price volatility of its own stable token — the Dai — against the U.S. Dollar.",
-    image: "/images/maker.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://makerdao.com/",
@@ -107,7 +107,7 @@ const projects: CardProps[] = [
     title: "Axie Infinity",
     description:
       "Axie Infinity is a Pokémon-inspired universe where anyone can earn tokens through skilled gameplay and contributions to the ecosystem.",
-    image: "/images/axie.png",
+    image: "/hero.png",
     category: "NFT",
     links: {
       site: "https://axieinfinity.com/",
@@ -119,7 +119,7 @@ const projects: CardProps[] = [
     title: "Yearn Finance",
     description:
       "Yearn Finance is a suite of products in Decentralized Finance (DeFi) that provides lending aggregation, yield generation, and insurance on the Ethereum blockchain.",
-    image: "/images/yearn.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://yearn.finance/",
@@ -131,7 +131,7 @@ const projects: CardProps[] = [
     title: "Chainlink",
     description:
       "Chainlink is a decentralized oracle network that enables smart contracts to securely access off-chain data feeds, web APIs, and traditional bank payments.",
-    image: "/images/chainlink.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://chain.link/",
@@ -143,7 +143,7 @@ const projects: CardProps[] = [
     title: "Synthetix",
     description:
       "Synthetix is a decentralized synthetic asset issuance protocol built on Ethereum.",
-    image: "/images/synthetix.png",
+    image: "/hero.png",
     category: "LENDING",
     links: {
       site: "https://www.synthetix.io/",
@@ -155,7 +155,7 @@ const projects: CardProps[] = [
     title: "NFTX",
     description:
       "NFTX is a platform for making ERC-20 tokens that are backed by NFT collectibles.",
-    image: "/images/nftx.png",
+    image: "/hero.png",
     category: "NFT",
     links: {
       site: "https://nftx.io/",
@@ -167,7 +167,7 @@ const projects: CardProps[] = [
     title: "Avalanche",
     description:
       "Avalanche is an open-source platform for launching decentralized applications and enterprise blockchain deployments in one interoperable, highly scalable ecosystem.",
-    image: "/images/avalanche.png",
+    image: "/hero.png",
     category: "DEX",
     links: {
       site: "https://www.avalabs.org/",

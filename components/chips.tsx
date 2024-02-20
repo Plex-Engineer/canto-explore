@@ -1,7 +1,21 @@
+"use client";
+
 import styles from "./style.module.scss";
 
-const Chip = ({ children }: { children: React.ReactNode }) => {
-  return <div className={styles.chip}>{children}</div>;
+interface Props {
+  children: React.ReactNode;
+  onClick: () => void;
+  active?: boolean;
+}
+const Chip = ({ children, onClick, active }: Props) => {
+  return (
+    <div
+      className={`${styles.chip} ${active && styles.active}`}
+      onClick={onClick}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Chip;
