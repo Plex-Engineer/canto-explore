@@ -4,6 +4,7 @@ import HeroSection from "@/sections/hero";
 import Spotlight from "@/sections/spotlight/spotlight";
 import MoreSection from "@/sections/more";
 import Footer from "@/sections/footer";
+import HighlightCard from "@/components/cards/highlightCard";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <NavBar />
       <div className={styles.container}>
         <HeroSection />
-        {/* <Spotlight /> */}
+
+        <Spotlight />
+
         {/* <MoreSection /> */}
       </div>
       {/* <Footer /> */}

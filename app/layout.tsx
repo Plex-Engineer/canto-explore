@@ -12,6 +12,11 @@ const nuebit = localFont({
   variable: "--nuebit",
 });
 
+const videotype = localFont({
+  src: "../fonts/videotype.otf",
+  variable: "--videotype",
+});
+
 export const metadata: Metadata = {
   title: "Explore the Canto Ecosystem",
   description: "Canto is a new way to explore the web.",
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rmmono.variable} ${rmmono.className} ${nuebit.variable}`}
+        className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} ${nuebit.variable}`}
       >
         {children}
       </body>

@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 800px;
   background-image: url("/hero.png");
-  background-position: 0 270px;
+  background-position: 50% 270px;
   background-size: cover;
 
   .row {
@@ -12,14 +12,9 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    flex: 1;
+    flex: 1.2;
   }
 
-  //   .image {
-  //     height: 50vw;
-  //     width: 100vw;
-  //     position: absolute;
-  //   }
   h1 {
     font-family: var(--nuebit);
     font-size: 72px;

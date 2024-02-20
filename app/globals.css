@@ -37,3 +37,29 @@ a {
         color-scheme: dark;
     }
 }
+
+.swiper-pagination {
+    /* transform: translateY(10px) !important; */
+    /* background-color: red !important; */
+}
+
+.swiper-pagination-bullet {
+    width: 48px !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+    background: #424242 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fdfdfd !important;
+}
+
+h2 {
+    color: #fff;
+    font-family: var(--nuebit);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 28px */
+    text-transform: uppercase;
+}
