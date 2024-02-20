@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";
 
-export interface HighlightCardProps {
+export interface CardProps {
   title: string;
   description: string;
   image: string;
@@ -13,7 +13,7 @@ export interface HighlightCardProps {
     github?: string;
   };
 }
-const HighlightCard = (props: HighlightCardProps) => {
+const HighlightCard = (props: CardProps) => {
   return (
     <article className={styles.highlightCard}>
       <Image src={props.image} alt={props.title} width={600} height={400} />

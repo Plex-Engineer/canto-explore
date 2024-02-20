@@ -1,8 +1,6 @@
 "use client";
 
-import HighlightCard, {
-  HighlightCardProps,
-} from "@/components/cards/highlightCard";
+import HighlightCard, { CardProps } from "@/components/cards/highlightCard";
 import styles from "./spotlight.module.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,7 +17,7 @@ import {
 } from "swiper/modules";
 
 const Spotlight = () => {
-  const items: HighlightCardProps[] = [
+  const items: CardProps[] = [
     {
       title: "Star Wars",
       description: "A long time ago in a galaxy far, far away...",
