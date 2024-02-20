@@ -4,6 +4,7 @@ import styles from "./more.module.scss";
 import { CardProps } from "@/components/cards/highlightCard";
 import { useState } from "react";
 import ItemCard from "@/components/cards/itemCard";
+import Input from "@/components/input/input";
 
 const MoreSection = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
@@ -21,32 +22,35 @@ const MoreSection = (props: { items: CardProps[] }) => {
     <div className={styles.container}>
       <h2>Project categories</h2>
 
-      <div className={styles.categories}>
-        <Chip
-          onClick={() => {
-            setActiveCategory("All");
-          }}
-          active={activeCategory === "All"}
-          key="All"
-        >
-          All ({props.items.length})
-        </Chip>
-        {Object.keys(categories).map((category) => (
+      <div className={styles.row}>
+        <div className={styles.categories}>
           <Chip
-            active={activeCategory === category}
             onClick={() => {
-              setActiveCategory(category);
+              setActiveCategory("All");
             }}
-            key={category}
-          >{`${category} (${categories[category]})`}</Chip>
-        ))}
-
-        {/* view more */}
-        {Object.keys(categories).length > 2 && (
-          <Chip onClick={() => {}} key="View more">
-            View more
+            active={activeCategory === "All"}
+            key="All"
+          >
+            All ({props.items.length})
           </Chip>
-        )}
+          {Object.keys(categories).map((category) => (
+            <Chip
+              active={activeCategory === category}
+              onClick={() => {
+                setActiveCategory(category);
+              }}
+              key={category}
+            >{`${category} (${categories[category]})`}</Chip>
+          ))}
+
+          {/* view more */}
+          {Object.keys(categories).length > 2 && (
+            <Chip onClick={() => {}} key="View more">
+              View more
+            </Chip>
+          )}
+        </div>
+        <Input />
       </div>
 
       <section className={styles.grid}>
