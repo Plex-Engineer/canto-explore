@@ -11,7 +11,12 @@ import "swiper/scss";
 import "swiper/scss/effect-coverflow";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 
 const Spotlight = () => {
   const items: HighlightCardProps[] = [
@@ -121,40 +126,48 @@ const Spotlight = () => {
   ];
 
   return (
-    <section className={styles.container}>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={2}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        // navigation
-        pagination={{ clickable: true }}
-        className={styles.swiper}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        spaceBetween={0}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        {items.map((item, index) => (
-          <SwiperSlide
-            lazy={false}
-            style={{
-              height: "300px",
-            }}
-            key={index + item.title}
-          >
-            <HighlightCard key={index + item.title + "h"} {...item} />
-          </SwiperSlide>
-        ))}
-        <div className="swiper-pagination"></div>
-      </Swiper>
+    <section>
+      <h2 className={styles.title}>spotlight</h2>
+      <section className={styles.container}>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={2}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          autoplay={{
+            pauseOnMouseEnter: true,
+            delay: 3000,
+          }}
+          // navigation
+          pagination={{ clickable: true }}
+          className={styles.swiper}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          spaceBetween={140}
+
+          //   onSlideChange={() => console.log("slide change")}
+          //   onSwiper={(swiper) => console.log(swiper)}
+        >
+          {items.map((item, index) => (
+            <SwiperSlide
+              lazy={false}
+              style={{
+                height: "300px",
+              }}
+              key={index + item.title}
+            >
+              <HighlightCard key={index + item.title + "h"} {...item} />
+            </SwiperSlide>
+          ))}
+          <div className="swiper-pagination"></div>
+        </Swiper>
+      </section>
     </section>
   );
 };

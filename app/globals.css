@@ -44,19 +44,21 @@ a {
 }
 
 .swiper-pagination-bullet {
-    width: 48px !important;
+    width: 20px !important;
     height: 8px !important;
     border-radius: 4px !important;
     background: #424242 !important;
+    transition: all 0.3s !important;
 }
 
 .swiper-pagination-bullet-active {
+    width: 38px !important;
     background: #fdfdfd !important;
 }
 
 h2 {
     color: #fff;
-    font-family: var(--nuebit);
+    font-family: var(--videotype);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;

@@ -13,7 +13,7 @@ const nuebit = localFont({
 });
 
 const videotype = localFont({
-  src: "../fonts/videotype.otf",
+  src: "../fonts/videotype.ttf",
   variable: "--videotype",
 });
 
