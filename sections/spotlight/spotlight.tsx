@@ -140,6 +140,7 @@ const Spotlight = () => {
             stretch: 0,
             depth: 100,
             modifier: 2.5,
+            slideShadows: false,
           }}
           autoplay={{
             pauseOnMouseEnter: true,
@@ -149,7 +150,7 @@ const Spotlight = () => {
           pagination={{ clickable: true }}
           className={styles.swiper}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          spaceBetween={140}
+          spaceBetween={"10%"}
 
           //   onSlideChange={() => console.log("slide change")}
           //   onSwiper={(swiper) => console.log(swiper)}
