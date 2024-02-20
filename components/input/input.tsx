@@ -1,6 +1,9 @@
 import styles from "./input.module.scss";
 
-const Input = () => {
+interface Props {
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+const Input = (props: Props) => {
   return (
     <div className={styles.container}>
       <input
@@ -9,6 +12,7 @@ const Input = () => {
         id="search"
         autoComplete="off"
         placeholder="search for app"
+        onChange={props.onChange}
       />
     </div>
   );

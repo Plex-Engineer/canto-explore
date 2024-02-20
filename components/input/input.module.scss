@@ -29,6 +29,8 @@
     }
   }
 
+  position: relative;
+
   &::before {
     content: "";
     background: url("/search.svg") no-repeat;

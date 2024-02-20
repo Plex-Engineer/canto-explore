@@ -17,6 +17,7 @@ const MoreSection = (props: { items: CardProps[] }) => {
   }, {});
 
   const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [search, setSearch] = useState<string>("");
 
   return (
     <div className={styles.container}>
@@ -50,7 +51,11 @@ const MoreSection = (props: { items: CardProps[] }) => {
             </Chip>
           )}
         </div>
-        <Input />
+        <Input
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
       </div>
 
       <section className={styles.grid}>
@@ -58,6 +63,9 @@ const MoreSection = (props: { items: CardProps[] }) => {
           .filter(
             (item) =>
               activeCategory === "All" || item.category === activeCategory
+          )
+          .filter((item) =>
+            item.title.toLowerCase().includes(search.toLowerCase())
           )
           .map((item, index) => (
             <ItemCard key={index} {...item} />
