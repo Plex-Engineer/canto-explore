@@ -2,10 +2,11 @@ import { NavBar } from "@/sections/navbar/navbar";
 import styles from "./page.module.css";
 import HeroSection from "@/sections/hero";
 import Spotlight from "@/sections/spotlight/spotlight";
-import MoreSection from "@/sections/more/more";
+import ProjectsSections from "@/sections/projects/projects";
 import Footer from "@/sections/footer";
 import Gap from "@/components/gap";
 import { CardProps } from "@/components/cards/highlightCard";
+import MoreSection from "@/sections/more/moreSection";
 
 const projects: CardProps[] = [
   {
@@ -176,17 +177,73 @@ const projects: CardProps[] = [
     },
   },
 ];
+
+const articles: CardProps[] = [
+  {
+    title: "Canto Online Hackathon",
+    description:
+      "Assume this is a 2 liner place holder for description that....",
+    image: "/hero.png",
+    category: "EVENT ON 02 JAN,2024",
+    links: {
+      site: "https://aave.com/",
+    },
+  },
+  {
+    title: "Name of the Event",
+    description:
+      "Uniswap is a protocol for automated token exchange on Ethereum.",
+    image: "/hero.png",
+    category: "Subscribe",
+    links: {
+      site: "https://uniswap.org/",
+    },
+  },
+  {
+    title: "Rarible",
+    description:
+      "Create, sell or collect digital items secured with blockchain.",
+    image: "/hero.png",
+    category: "NFT",
+    links: {
+      site: "https://rarible.com/",
+      twitter: "https://twitter.com/rariblecom",
+      github: "",
+    },
+  },
+  {
+    title: "Compound",
+    description:
+      "Compound is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.",
+    image: "/hero.png",
+    category: "LENDING",
+    links: {
+      site: "https://compound.finance/",
+      twitter: "https://twitter.com/compoundfinance",
+      github: "",
+    },
+  },
+  {
+    title: "SushiSwap",
+    description:
+      "SushiSwap is an automated market-making (AMM) decentralized exchange (DEX) currently on the Ethereum blockchain.",
+    image: "/hero.png",
+    category: "DEX",
+    links: {
+      site: "https://sushi.com/",
+      twitter: "https://twitter.com/SushiSwap",
+      github: "",
+    },
+  },
+];
 export default function Home() {
   return (
     <main className={styles.main}>
       <NavBar />
-      <div className={styles.container}>
-        <HeroSection />
-        <Gap height={100} />
-        <Spotlight />
-
-        <MoreSection items={projects} />
-      </div>
+      <HeroSection />
+      <Spotlight />
+      <ProjectsSections items={projects} />
+      <MoreSection items={articles} />
       {/* <Footer /> */}
     </main>
   );

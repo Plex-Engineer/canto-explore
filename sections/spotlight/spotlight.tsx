@@ -15,6 +15,7 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
+import Gap from "@/components/gap";
 
 const Spotlight = () => {
   const items: CardProps[] = [
@@ -125,6 +126,7 @@ const Spotlight = () => {
 
   return (
     <section>
+      <Gap height={100} />
       <h2 className={styles.title}>spotlight</h2>
       <section className={styles.container}>
         <Swiper
@@ -140,10 +142,10 @@ const Spotlight = () => {
             modifier: 2.5,
             slideShadows: false,
           }}
-          autoplay={{
-            pauseOnMouseEnter: true,
-            delay: 3000,
-          }}
+          //   autoplay={{
+          //     pauseOnMouseEnter: true,
+          //     delay: 3000,
+          //   }}
           // navigation
           pagination={{ clickable: true }}
           className={styles.swiper}
@@ -154,14 +156,14 @@ const Spotlight = () => {
           //   onSwiper={(swiper) => console.log(swiper)}
         >
           {items.map((item, index) => (
-            <SwiperSlide
-              lazy={false}
-              style={{
-                height: "300px",
-              }}
-              key={index + item.title}
-            >
-              <HighlightCard key={index + item.title + "h"} {...item} />
+            <SwiperSlide lazy={false} key={index + item.title}>
+              <div
+                style={{
+                  height: "200px",
+                }}
+              >
+                <HighlightCard key={index + item.title + "h"} {...item} />
+              </div>
             </SwiperSlide>
           ))}
           <div className="swiper-pagination"></div>

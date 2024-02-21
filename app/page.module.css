@@ -1,12 +1,6 @@
 .main {
     display: grid;
-    grid-template-rows: 84px calc(100dvh - 84px) 500px 800px 0.75fr 200px;
+    grid-template-rows: 84px calc(100dvh - 84px) 800px 1fr 700px 200px;
     background-color: var(--bg-color);
     min-height: 100dvh;
-}
-
-.container {
-    /* max-width: 1400px; */
-    /* margin-inline: auto; */
-    width: 100%;
 }

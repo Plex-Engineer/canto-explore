@@ -1,12 +1,12 @@
 "use client";
 import Chip from "@/components/chips";
-import styles from "./more.module.scss";
+import styles from "./projects.module.scss";
 import { CardProps } from "@/components/cards/highlightCard";
 import { useState } from "react";
 import ItemCard from "@/components/cards/itemCard";
 import Input from "@/components/input/input";
 
-const MoreSection = (props: { items: CardProps[] }) => {
+const ProjectsSections = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
     if (acc[item.category]) {
       acc[item.category]++;
@@ -75,4 +75,4 @@ const MoreSection = (props: { items: CardProps[] }) => {
   );
 };
 
-export default MoreSection;
+export default ProjectsSections;
