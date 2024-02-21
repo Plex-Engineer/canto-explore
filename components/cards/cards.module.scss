@@ -83,3 +83,24 @@
     transform: scale(1.01);
   }
 }
+
+.emptyCard {
+  display: flex;
+  height: 158px;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 0 32px;
+  gap: 1rem;
+  border-radius: 8px;
+  border: 1px solid #252525;
+
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  line-height: 147%;
+  letter-spacing: -0.8px;
+  opacity: 0.75;
+
+  span {
+    opacity: 0.5;
+  }
+}

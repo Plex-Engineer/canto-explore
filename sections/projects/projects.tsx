@@ -2,9 +2,10 @@
 import Chip from "@/components/chips";
 import styles from "./projects.module.scss";
 import { CardProps } from "@/components/cards/highlightCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ItemCard from "@/components/cards/itemCard";
 import Input from "@/components/input/input";
+import { EmptyCard } from "@/components/cards/emptyCard";
 
 const ProjectsSections = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
@@ -18,6 +19,20 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
 
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
+
+  const [filteredItems, setFilteredItems] = useState<CardProps[]>(props.items);
+
+  useEffect(() => {
+    setFilteredItems(
+      props.items
+        .filter(
+          (item) => activeCategory === "All" || item.category === activeCategory
+        )
+        .filter((item) =>
+          item.title.toLowerCase().includes(search.toLowerCase())
+        )
+    );
+  }, [activeCategory, search, props.items]);
 
   return (
     <div className={styles.container}>
@@ -57,20 +72,15 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
           }}
         />
       </div>
-
-      <section className={styles.grid}>
-        {props.items
-          .filter(
-            (item) =>
-              activeCategory === "All" || item.category === activeCategory
-          )
-          .filter((item) =>
-            item.title.toLowerCase().includes(search.toLowerCase())
-          )
-          .map((item, index) => (
+      {filteredItems.length === 0 ? (
+        <EmptyCard value={search} />
+      ) : (
+        <section className={styles.grid}>
+          {filteredItems.map((item, index) => (
             <ItemCard key={index} {...item} />
           ))}
-      </section>
+        </section>
+      )}
     </div>
   );
 };
