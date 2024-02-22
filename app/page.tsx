@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import HeroSection from "@/sections/hero";
 import Spotlight from "@/sections/spotlight/spotlight";
 import ProjectsSections from "@/sections/projects/projects";
-import Footer from "@/sections/footer";
+import Footer from "@/sections/footer/footer";
 import Gap from "@/components/gap";
 import { CardProps } from "@/components/cards/highlightCard";
 import MoreSection from "@/sections/more/moreSection";
@@ -244,7 +244,7 @@ export default function Home() {
       <Spotlight />
       <ProjectsSections items={projects} />
       <MoreSection items={articles} />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

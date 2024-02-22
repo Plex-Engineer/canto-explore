@@ -104,3 +104,27 @@
     opacity: 0.5;
   }
 }
+
+.footerCard {
+  display: flex;
+  width: 100%;
+  padding: 26px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #252525;
+  transition: all 0.1s ease-in-out;
+  div {
+    display: flex;
+    font-family: var(--videotype);
+    font-size: 18px;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &:hover {
+    border-color: #9a9a9a;
+    background-color: #1b1a1a;
+    cursor: pointer;
+  }
+}

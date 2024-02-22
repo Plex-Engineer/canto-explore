@@ -20,7 +20,7 @@ const MoreSection = (articles: { items: CardProps[] }) => {
     <div className={styles.container}>
       <div>
         <div className={styles.row}>
-          <h2>More</h2>
+          <h2>More on canto</h2>
           <div
             className={styles.row}
             style={{
