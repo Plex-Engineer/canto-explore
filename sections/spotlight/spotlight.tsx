@@ -126,7 +126,7 @@ const Spotlight = () => {
 
   return (
     <section>
-      <Gap height={100} />
+      <Gap height={30} />
       <h2 className={styles.title}>spotlight</h2>
       <section className={styles.container}>
         <Swiper
@@ -142,10 +142,10 @@ const Spotlight = () => {
             modifier: 2.5,
             slideShadows: false,
           }}
-          //   autoplay={{
-          //     pauseOnMouseEnter: true,
-          //     delay: 3000,
-          //   }}
+          autoplay={{
+            pauseOnMouseEnter: true,
+            delay: 3000,
+          }}
           // navigation
           pagination={{ clickable: true }}
           className={styles.swiper}
@@ -169,6 +169,7 @@ const Spotlight = () => {
           <div className="swiper-pagination"></div>
         </Swiper>
       </section>
+      <Gap height={30} />
     </section>
   );
 };
