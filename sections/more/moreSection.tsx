@@ -13,9 +13,11 @@ import "swiper/scss/navigation";
 import { Navigation } from "swiper/modules";
 import { useRef } from "react";
 import Image from "next/image";
+import useMobile from "@/hooks/useMobile";
 
 const MoreSection = (articles: { items: CardProps[] }) => {
   const swiperRef = useRef<any>();
+  const isMobile = useMobile();
   return (
     <div className={styles.container}>
       <div>
@@ -44,18 +46,12 @@ const MoreSection = (articles: { items: CardProps[] }) => {
           </div>
         </div>
       </div>
-      <section
-        style={{
-          height: "450px",
-          marginTop: "20px",
-          width: "calc(100vw - 8rem)",
-        }}
-      >
+      <section className={styles.slider}>
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-          slidesPerView={3}
+          slidesPerView={isMobile ? 1 : 3}
           className={styles.swiper}
           spaceBetween={30}
           modules={[Navigation]}

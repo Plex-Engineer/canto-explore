@@ -18,3 +18,13 @@
 .title {
   margin: 0 80px;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 0 40px;
+  }
+
+  .swiper {
+    padding: 0 32px;
+  }
+}

@@ -24,3 +24,20 @@
   align-items: center;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+  }
+}

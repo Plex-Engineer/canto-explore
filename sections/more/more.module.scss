@@ -26,3 +26,18 @@
   justify-content: space-between;
   align-items: center;
 }
+.slider {
+  height: 450px;
+  margin-top: 20px;
+  width: calc(100vw - 8rem);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-inline: 0px;
+  }
+
+  .slider {
+    width: calc(100vw - 4rem);
+  }
+}

@@ -45,11 +45,39 @@
     font-family: var(--rmmono);
     color: black;
     border: none;
+    transition: all 0.2s ease;
 
+    &:hover {
+      background: #cecece;
+      scale: 1.02;
+    }
     &[data-type="outlined"] {
       background: transparent;
       color: #dfdfdf;
       border: 1px solid #dfdfdf;
+
+      &:hover {
+        background: #1e1e1e;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container {
+    padding: 0 32px;
+    h1 {
+      text-align: center;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 14px;
     }
   }
 }

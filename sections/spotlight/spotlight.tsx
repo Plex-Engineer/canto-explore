@@ -16,6 +16,7 @@ import {
   Autoplay,
 } from "swiper/modules";
 import Gap from "@/components/gap";
+import useMobile from "@/hooks/useMobile";
 
 const Spotlight = () => {
   const items: CardProps[] = [
@@ -124,6 +125,8 @@ const Spotlight = () => {
     },
   ];
 
+  const isMobile = useMobile();
+
   return (
     <section>
       <Gap height={30} />
@@ -134,7 +137,7 @@ const Spotlight = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={2}
+          slidesPerView={isMobile ? 1 : 2}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
