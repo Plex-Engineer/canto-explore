@@ -16,11 +16,17 @@ const HeroSection = () => {
         </h4>
 
         <div className={styles.actions}>
-          <button>
+          <a href="https://canto.io/bridge" target="_blank">
             <Image src={"/arrow-link.svg"} alt="link" width={32} height={32} />
             BRIDGE TO CANTO
-          </button>
-          <button data-type="outlined">LIST YOUR APP</button>
+          </a>
+          <a
+            data-type="outlined"
+            href="https://forms.gle/hzxaTwFBJ1CfNPnC7"
+            target="_blank"
+          >
+            LIST YOUR APP
+          </a>
         </div>
       </section>
       <section className={styles.row}>
