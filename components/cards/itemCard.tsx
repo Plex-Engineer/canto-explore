@@ -2,10 +2,25 @@ import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";
 import { CardProps } from "./highlightCard";
+import { motion } from "framer-motion";
 
 const ItemCard = (props: CardProps) => {
   return (
-    <article className={`${styles.highlightCard} ${styles.itemCard}`}>
+    <motion.article
+      initial={{
+        opacity: 0,
+        scale: 0.9,
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.5,
+      }}
+      className={`${styles.highlightCard} ${styles.itemCard}`}
+    >
       <Image src={props.image} alt={props.title} width={100} height={100} />
 
       <section className={styles.container}>
@@ -18,7 +33,7 @@ const ItemCard = (props: CardProps) => {
         <h3>{props.title}</h3>
         <h5>{props.description}</h5>
       </section>
-    </article>
+    </motion.article>
   );
 };
 

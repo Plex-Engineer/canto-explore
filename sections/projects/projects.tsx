@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import ItemCard from "@/components/cards/itemCard";
 import Input from "@/components/input/input";
 import { EmptyCard } from "@/components/cards/emptyCard";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectsSections = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
@@ -22,20 +23,41 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
 
   const [filteredItems, setFilteredItems] = useState<CardProps[]>(props.items);
 
+  //   searches closest match
+  const querySearch = (title: string, search: string) => {
+    let count = 0;
+    for (let i = 0; i < search.length; i++) {
+      if (title.includes(search[i])) {
+        count++;
+      }
+    }
+    return count;
+  };
+
   useEffect(() => {
     setFilteredItems(
       props.items
         .filter(
           (item) => activeCategory === "All" || item.category === activeCategory
         )
-        .filter((item) =>
-          item.title.toLowerCase().includes(search.toLowerCase())
+
+        .filter(
+          (item) =>
+            search.length === 0 ||
+            querySearch(item.title.toLowerCase(), search.toLowerCase()) >
+              search.length / 2
         )
+        .sort((a, b) => {
+          return (
+            querySearch(b.title.toLowerCase(), search.toLowerCase()) -
+            querySearch(a.title.toLowerCase(), search.toLowerCase())
+          );
+        })
     );
   }, [activeCategory, search, props.items]);
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2>Project categories</h2>
 
       <div className={styles.row}>
@@ -75,13 +97,15 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
       {filteredItems.length === 0 ? (
         <EmptyCard value={search} />
       ) : (
-        <section className={styles.grid}>
-          {filteredItems.map((item, index) => (
-            <ItemCard key={index} {...item} />
-          ))}
-        </section>
+        <motion.section layout className={styles.grid}>
+          <AnimatePresence>
+            {filteredItems.map((item, index) => (
+              <ItemCard key={index} {...item} />
+            ))}
+          </AnimatePresence>
+        </motion.section>
       )}
-    </div>
+    </section>
   );
 };
 
