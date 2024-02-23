@@ -38,7 +38,7 @@ const HeroSection = () => {
           className={styles.image}
         /> */}
       </section>
-      <Spline scene="https://prod.spline.design/0ku32sjtV9dDq2Bl/scene.splinecode" />
+      {/* <Spline scene="https://prod.spline.design/0ku32sjtV9dDq2Bl/scene.splinecode" /> */}
     </div>
   );
 };
