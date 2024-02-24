@@ -275,7 +275,7 @@ const Projects: CardProps[] = [
     title: "Canto Identity Protocol",
     description: "An on-chain identity protocol that aggregates identity from Subprotocols.",
     image: "/images/hero.png",
-    category: "NFT",
+    category: "Identity",
     links: {
       site: "https://www.cantoidentity.build/",
       twitter: "",
@@ -286,7 +286,7 @@ const Projects: CardProps[] = [
     title: "Canto Namespace Protocol",
     description: "Canto Namespace Protocol is a subprotocol for the Canto Identity Protocol that enables users to mint names with tiles that are contained in trays.",
     image: "/images/hero.png",
-    category: "NFT",
+    category: "Identity",
     links: {
       site: "https://www.cantoname.build/",
       twitter: "",
