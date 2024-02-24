@@ -41,13 +41,13 @@ const Spotlight = (props: { items: CardProps[] }) => {
           }}
           autoplay={{
             pauseOnMouseEnter: true,
-            delay: 3000,
+            delay: 10000,
           }}
           // navigation
           pagination={{ clickable: true }}
           className={styles.swiper}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          spaceBetween={"10%"}
+          spaceBetween={"7%"}
 
           //   onSlideChange={() => console.log("slide change")}
           //   onSwiper={(swiper) => console.log(swiper)}

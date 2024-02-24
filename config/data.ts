@@ -37,11 +37,23 @@ const Spotlights: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "Blank Rasa",
+    description:
+      "Blank Rasa is a platform for discovering and trading NFTs. It features collections such as Canto Longneck, Shnoise, and Dead Ends.",
+    image: "/images/blankrasa.png",
+    category: "NFT",
+    links: {
+      site: "",
+      twitter: "",
+      github: "",
+    },
+  },
 ];
 
 const Projects: CardProps[] = [
   // Block Explorers
-  
+
   {
     title: "Tuber",
     description:
@@ -56,8 +68,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "Mintscan",
-    description:
-      "A multi-chain native Canto chain block explorer.",
+    description: "A multi-chain native Canto chain block explorer.",
     image: "/images/hero.png",
     category: "Block Explorer",
     links: {
@@ -68,8 +79,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "OKLink",
-    description:
-      "A multi-chain EVM blockchain explorer.",
+    description: "A multi-chain EVM blockchain explorer.",
     image: "/images/hero.png",
     category: "Block Explorer",
     links: {
@@ -80,8 +90,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "DexGuru",
-    description:
-      "EVM Canto chain block explorer.",
+    description: "EVM Canto chain block explorer.",
     image: "/images/hero.png",
     category: "Block Explorer",
     links: {
@@ -92,8 +101,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "Parsec",
-    description:
-      "Customizable onchain analytics terminal and block explorer.",
+    description: "Customizable onchain analytics terminal and block explorer.",
     image: "/images/hero.png",
     category: "Block Explorer",
     links: {
@@ -103,7 +111,7 @@ const Projects: CardProps[] = [
     },
   },
 
-    // Bridges
+  // Bridges
 
   {
     title: "Synapse",
@@ -113,8 +121,8 @@ const Projects: CardProps[] = [
     links: {
       site: "https://synapseprotocol.com/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Celer",
@@ -124,8 +132,8 @@ const Projects: CardProps[] = [
     links: {
       site: "https://celer.network/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "LayerZero",
@@ -135,44 +143,47 @@ const Projects: CardProps[] = [
     links: {
       site: "https://layerzero.network/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Gravity Bridge",
-    description: "Gravity Bridge is a decentralized Cosmos blockchain whose primary purpose is to secure the operation of bridges between blockchains.",
+    description:
+      "Gravity Bridge is a decentralized Cosmos blockchain whose primary purpose is to secure the operation of bridges between blockchains.",
     image: "/images/hero.png",
     category: "Bridge",
     links: {
       site: "https://www.gravitybridge.net/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
-    // DeFi
+  // DeFi
 
   {
     title: "Beefy",
-    description: "Multichain Yield Optimizer. Autocompound your tokens and positions.",
+    description:
+      "Multichain Yield Optimizer. Autocompound your tokens and positions.",
     image: "/images/hero.png",
     category: "DeFi",
     links: {
       site: "https://beefy.finance/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Cadence",
-    description: "Next generation decentralized perpetuals. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
+    description:
+      "Next generation decentralized perpetuals. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
     image: "/images/hero.png",
     category: "DeFi",
     links: {
       site: "https://www.cadenceprotocol.io/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Slingshot",
@@ -182,55 +193,59 @@ const Projects: CardProps[] = [
     links: {
       site: "https://slingshot.finance/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Vivacity Finance",
-    description: "Lending market for onchain, institutional-grade real world assets.",
+    description:
+      "Lending market for onchain, institutional-grade real world assets.",
     image: "/images/hero.png",
     category: "DeFi",
     links: {
       site: "https://vivacity.finance/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
-    // RWA
+  // RWA
 
   {
     title: "Fortunafi",
-    description: "All-in-one liquidity solutions for stablecoin issuers, protocol treasuries, and traditional entities.",
+    description:
+      "All-in-one liquidity solutions for stablecoin issuers, protocol treasuries, and traditional entities.",
     image: "/images/hero.png",
     category: "RWA",
     links: {
       site: "https://www.fortunafi.com/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Hashnote",
-    description: "Regulated asset management with customizable digital and real world asset exposure.",
+    description:
+      "Regulated asset management with customizable digital and real world asset exposure.",
     image: "/images/hero.png",
     category: "RWA",
     links: {
       site: "https://www.hashnote.com/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Anzen",
-    description: "RWA Issuer with a focus on high-quality private credit deals with consistent returns.",
+    description:
+      "RWA Issuer with a focus on high-quality private credit deals with consistent returns.",
     image: "/images/hero.png",
     category: "RWA",
     links: {
       site: "https://anzen.finance/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "HiYield",
@@ -240,11 +255,11 @@ const Projects: CardProps[] = [
     links: {
       site: "https://www.hiyield.xyz/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
-    // NFTs
+  // NFTs
 
   {
     title: "1155.Tech",
@@ -254,47 +269,50 @@ const Projects: CardProps[] = [
     links: {
       site: "https://1155.tech/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Blank Rasa",
-    description: "Blank Rasa is the NFT marketplace that fiercely defends artist royalties. Trade collectibles and mint with support for ERC-1155, html, mp3, and mp4.",
+    description:
+      "Blank Rasa is the NFT marketplace that fiercely defends artist royalties. Trade collectibles and mint with support for ERC-1155, html, mp3, and mp4.",
     image: "/images/hero.png",
     category: "NFT",
     links: {
       site: "https://www.blankrasa.com/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
-    // Identity
+  // Identity
 
   {
     title: "Canto Identity Protocol",
-    description: "An on-chain identity protocol that aggregates identity from Subprotocols.",
+    description:
+      "An on-chain identity protocol that aggregates identity from Subprotocols.",
     image: "/images/hero.png",
     category: "Identity",
     links: {
       site: "https://www.cantoidentity.build/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Canto Namespace Protocol",
-    description: "Canto Namespace Protocol is a subprotocol for the Canto Identity Protocol that enables users to mint names with tiles that are contained in trays.",
+    description:
+      "Canto Namespace Protocol is a subprotocol for the Canto Identity Protocol that enables users to mint names with tiles that are contained in trays.",
     image: "/images/hero.png",
     category: "Identity",
     links: {
       site: "https://www.cantoname.build/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
-    // Infra & Tools
+  // Infra & Tools
 
   {
     title: "Redstone",
@@ -304,41 +322,44 @@ const Projects: CardProps[] = [
     links: {
       site: "https://redstone.finance/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Ansybl",
-    description: "Access to fast, reliable, and secure API endpoints & nodes for the Canto ecosystem.",
+    description:
+      "Access to fast, reliable, and secure API endpoints & nodes for the Canto ecosystem.",
     image: "/images/hero.png",
     category: "Infra & Tools",
     links: {
       site: "https://www.ansybl.io/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Pyth",
-    description: "Pyth delivers real-time market data from institutions to smart contracts.",
+    description:
+      "Pyth delivers real-time market data from institutions to smart contracts.",
     image: "/images/hero.png",
     category: "Infra & Tools",
     links: {
       site: "https://pyth.network/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Transpose",
-    description: "Explore and integrate real-time blockchain data into any application at scale.",
+    description:
+      "Explore and integrate real-time blockchain data into any application at scale.",
     image: "/images/hero.png",
     category: "Infra & Tools",
     links: {
       site: "https://www.transpose.io/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
 
   // Community
@@ -351,8 +372,8 @@ const Projects: CardProps[] = [
     links: {
       site: "https://www.chandrastation.com/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Four Moons",
@@ -362,8 +383,8 @@ const Projects: CardProps[] = [
     links: {
       site: "https://www.fourmoons.xyz/",
       twitter: "",
-      github: ""
-    }
+      github: "",
+    },
   },
   {
     title: "Polkachu",
@@ -373,9 +394,9 @@ const Projects: CardProps[] = [
     links: {
       site: "https://www.polkachu.com/",
       twitter: "",
-      github: ""
-    }
-  }
+      github: "",
+    },
+  },
 ];
 
 const More: CardProps[] = [
@@ -390,7 +411,7 @@ const More: CardProps[] = [
       twitter: "",
       github: "",
     },
-  }
+  },
 ];
 
 export { Spotlights, Projects, More };
