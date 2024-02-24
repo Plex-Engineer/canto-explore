@@ -7,6 +7,7 @@ import ItemCard from "@/components/cards/itemCard";
 import Input from "@/components/input/input";
 import { EmptyCard } from "@/components/cards/emptyCard";
 import { AnimatePresence, motion } from "framer-motion";
+import DropDown from "@/components/dropdown/dropdown";
 
 const ProjectsSections = (props: { items: CardProps[] }) => {
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
@@ -71,21 +72,33 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
           >
             All ({props.items.length})
           </Chip>
-          {Object.keys(categories).map((category) => (
-            <Chip
-              active={activeCategory === category}
-              onClick={() => {
-                setActiveCategory(category);
-              }}
-              key={category}
-            >{`${category} (${categories[category]})`}</Chip>
-          ))}
+          {Object.keys(categories)
+            .slice(0, 3)
+            .map((category) => (
+              <Chip
+                active={activeCategory === category}
+                onClick={() => {
+                  setActiveCategory(category);
+                }}
+                key={category}
+              >{`${category} (${categories[category]})`}</Chip>
+            ))}
 
           {/* view more */}
           {Object.keys(categories).length > 2 && (
-            <Chip onClick={() => {}} key="View more">
-              View more
-            </Chip>
+            <DropDown
+              active={activeCategory}
+              setActive={(item: string) => {
+                setActiveCategory(item);
+              }}
+              items={Object.keys(categories)
+                .slice(3, Object.keys(categories).length)
+                .map((category) => `${category} (${categories[category]})`)}
+            >
+              <Chip onClick={() => {}} key="View more">
+                View more
+              </Chip>
+            </DropDown>
           )}
         </div>
         <Input
