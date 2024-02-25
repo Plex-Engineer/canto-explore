@@ -58,7 +58,7 @@ const Projects: CardProps[] = [
     title: "Tuber",
     description:
       "Canto EVM block explorer based on Blockscout. Maintained by Neobase.",
-    image: "images/tuber.svg",
+    image: "/images/tuber.png",
     category: "Block Explorer",
     links: {
       site: "https://tuber.build/",
@@ -69,7 +69,7 @@ const Projects: CardProps[] = [
   {
     title: "Mintscan",
     description: "A multi-chain native Canto chain block explorer.",
-    image: "/images/hero.png",
+    image: "/images/mintscan.png",
     category: "Block Explorer",
     links: {
       site: "https://www.mintscan.io/canto",
@@ -80,7 +80,7 @@ const Projects: CardProps[] = [
   {
     title: "OKLink",
     description: "A multi-chain EVM blockchain explorer.",
-    image: "/images/hero.png",
+    image: "/images/oklink.png",
     category: "Block Explorer",
     links: {
       site: "https://www.oklink.com/canto",
@@ -91,7 +91,7 @@ const Projects: CardProps[] = [
   {
     title: "DexGuru",
     description: "EVM Canto chain block explorer.",
-    image: "/images/hero.png",
+    image: "/images/dexguru.png",
     category: "Block Explorer",
     links: {
       site: "https://canto.dex.guru/",
@@ -102,7 +102,7 @@ const Projects: CardProps[] = [
   {
     title: "Parsec",
     description: "Customizable onchain analytics terminal and block explorer.",
-    image: "/images/hero.png",
+    image: "/images/parsec.jpg",
     category: "Block Explorer",
     links: {
       site: "https://parsec.fi/",
@@ -116,7 +116,7 @@ const Projects: CardProps[] = [
   {
     title: "Synapse",
     description: "Cross chain bridge.",
-    image: "/images/hero.png",
+    image: "/images/synapse.webp",
     category: "Bridge",
     links: {
       site: "https://synapseprotocol.com/",
@@ -127,7 +127,7 @@ const Projects: CardProps[] = [
   {
     title: "Celer",
     description: "Cross chain bridge.",
-    image: "/images/hero.png",
+    image: "/images/celer.png",
     category: "Bridge",
     links: {
       site: "https://celer.network/",
@@ -138,7 +138,7 @@ const Projects: CardProps[] = [
   {
     title: "LayerZero",
     description: "An omnichain interoperability protocol.",
-    image: "/images/hero.png",
+    image: "/images/layerzero.png",
     category: "Bridge",
     links: {
       site: "https://layerzero.network/",
@@ -150,7 +150,7 @@ const Projects: CardProps[] = [
     title: "Gravity Bridge",
     description:
       "Gravity Bridge is a decentralized Cosmos blockchain whose primary purpose is to secure the operation of bridges between blockchains.",
-    image: "/images/hero.png",
+    image: "/images/gravitybridge.jpg",
     category: "Bridge",
     links: {
       site: "https://www.gravitybridge.net/",
@@ -165,7 +165,7 @@ const Projects: CardProps[] = [
     title: "Beefy",
     description:
       "Multichain Yield Optimizer. Autocompound your tokens and positions.",
-    image: "/images/hero.png",
+    image: "/images/beefy.png",
     category: "DeFi",
     links: {
       site: "https://beefy.finance/",
@@ -177,7 +177,7 @@ const Projects: CardProps[] = [
     title: "Cadence",
     description:
       "Next generation decentralized perpetuals. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
-    image: "/images/hero.png",
+    image: "/images/cadence.png",
     category: "DeFi",
     links: {
       site: "https://www.cadenceprotocol.io/",
@@ -188,7 +188,7 @@ const Projects: CardProps[] = [
   {
     title: "Slingshot",
     description: "Premier DEX on Canto.",
-    image: "/images/hero.png",
+    image: "/images/slingshot.png",
     category: "DeFi",
     links: {
       site: "https://slingshot.finance/",
@@ -200,7 +200,7 @@ const Projects: CardProps[] = [
     title: "Vivacity Finance",
     description:
       "Lending market for onchain, institutional-grade real world assets.",
-    image: "/images/hero.png",
+    image: "/images/vivacity_small.png",
     category: "DeFi",
     links: {
       site: "https://vivacity.finance/",
@@ -215,7 +215,7 @@ const Projects: CardProps[] = [
     title: "Fortunafi",
     description:
       "All-in-one liquidity solutions for stablecoin issuers, protocol treasuries, and traditional entities.",
-    image: "/images/hero.png",
+    image: "/images/fortunafi.png",
     category: "RWA",
     links: {
       site: "https://www.fortunafi.com/",
@@ -227,7 +227,7 @@ const Projects: CardProps[] = [
     title: "Hashnote",
     description:
       "Regulated asset management with customizable digital and real world asset exposure.",
-    image: "/images/hero.png",
+    image: "/images/hashnote.png",
     category: "RWA",
     links: {
       site: "https://www.hashnote.com/",
@@ -239,7 +239,7 @@ const Projects: CardProps[] = [
     title: "Anzen",
     description:
       "RWA Issuer with a focus on high-quality private credit deals with consistent returns.",
-    image: "/images/hero.png",
+    image: "/images/anzen.png",
     category: "RWA",
     links: {
       site: "https://anzen.finance/",
@@ -250,7 +250,7 @@ const Projects: CardProps[] = [
   {
     title: "HiYield",
     description: "Real-world assets, curated on-chain",
-    image: "/images/hero.png",
+    image: "/images/hiyield.png",
     category: "RWA",
     links: {
       site: "https://www.hiyield.xyz/",
@@ -264,7 +264,7 @@ const Projects: CardProps[] = [
   {
     title: "1155.Tech",
     description: "Collect keys, Unlock art. Now live on Canto.",
-    image: "/images/hero.png",
+    image: "/images/1155tech_small.jpg",
     category: "NFT",
     links: {
       site: "https://1155.tech/",
@@ -276,7 +276,7 @@ const Projects: CardProps[] = [
     title: "Blank Rasa",
     description:
       "Blank Rasa is the NFT marketplace that fiercely defends artist royalties. Trade collectibles and mint with support for ERC-1155, html, mp3, and mp4.",
-    image: "/images/hero.png",
+    image: "/images/blankrasa_small.png",
     category: "NFT",
     links: {
       site: "https://www.blankrasa.com/",
@@ -291,7 +291,7 @@ const Projects: CardProps[] = [
     title: "Canto Identity Protocol",
     description:
       "An on-chain identity protocol that aggregates identity from Subprotocols.",
-    image: "/images/hero.png",
+    image: "/images/cip.png",
     category: "Identity",
     links: {
       site: "https://www.cantoidentity.build/",
@@ -303,7 +303,7 @@ const Projects: CardProps[] = [
     title: "Canto Namespace Protocol",
     description:
       "Canto Namespace Protocol is a subprotocol for the Canto Identity Protocol that enables users to mint names with tiles that are contained in trays.",
-    image: "/images/hero.png",
+    image: "/images/cnp.jpg",
     category: "Identity",
     links: {
       site: "https://www.cantoname.build/",
@@ -317,7 +317,7 @@ const Projects: CardProps[] = [
   {
     title: "Redstone",
     description: "Redstone provides modular oracles.",
-    image: "/images/hero.png",
+    image: "/images/redstone.png",
     category: "Infra & Tools",
     links: {
       site: "https://redstone.finance/",
@@ -329,7 +329,7 @@ const Projects: CardProps[] = [
     title: "Ansybl",
     description:
       "Access to fast, reliable, and secure API endpoints & nodes for the Canto ecosystem.",
-    image: "/images/hero.png",
+    image: "/images/ansybl.png",
     category: "Infra & Tools",
     links: {
       site: "https://www.ansybl.io/",
@@ -341,7 +341,7 @@ const Projects: CardProps[] = [
     title: "Pyth",
     description:
       "Pyth delivers real-time market data from institutions to smart contracts.",
-    image: "/images/hero.png",
+    image: "/images/pyth.png",
     category: "Infra & Tools",
     links: {
       site: "https://pyth.network/",
@@ -353,7 +353,7 @@ const Projects: CardProps[] = [
     title: "Transpose",
     description:
       "Explore and integrate real-time blockchain data into any application at scale.",
-    image: "/images/hero.png",
+    image: "/images/transpose.jpg",
     category: "Infra & Tools",
     links: {
       site: "https://www.transpose.io/",
@@ -367,7 +367,7 @@ const Projects: CardProps[] = [
   {
     title: "Chandra Station",
     description: "Infrastructure provider and Canto validator.",
-    image: "/images/hero.png",
+    image: "/images/chandra.png",
     category: "Community",
     links: {
       site: "https://www.chandrastation.com/",
@@ -378,7 +378,7 @@ const Projects: CardProps[] = [
   {
     title: "Four Moons",
     description: "Canto validator and active community members.",
-    image: "/images/hero.png",
+    image: "/images/fourmoons.png",
     category: "Community",
     links: {
       site: "https://www.fourmoons.xyz/",
@@ -389,7 +389,7 @@ const Projects: CardProps[] = [
   {
     title: "Polkachu",
     description: "Experienced team providing validation services for Canto.",
-    image: "/images/hero.png",
+    image: "/images/polkachu.jpeg",
     category: "Community",
     links: {
       site: "https://www.polkachu.com/",
