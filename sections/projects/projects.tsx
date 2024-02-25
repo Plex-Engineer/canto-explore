@@ -94,11 +94,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
               items={Object.keys(categories)
                 .slice(3, Object.keys(categories).length)
                 .map((category) => `${category} (${categories[category]})`)}
-            >
-              <Chip onClick={() => {}} key="View more">
-                View more
-              </Chip>
-            </DropDown>
+            />
           )}
         </div>
         <Input

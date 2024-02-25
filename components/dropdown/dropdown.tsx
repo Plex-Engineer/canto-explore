@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./dropdown.module.scss";
+import Chip from "../chips";
+import Image from "next/image";
+import Gap from "../gap";
 
 interface Props {
   items: string[];
-  children: React.ReactNode;
   active: string;
   setActive: (item: string) => void;
 }
@@ -18,7 +20,24 @@ const DropDown = (props: Props) => {
           setIsOpen(!isOpen);
         }}
       >
-        {props.children}
+        <Chip onClick={() => {}} key="View more">
+          {props.items.filter((item) => props.active == item.split(" (")[0])
+            .length > 0
+            ? props.active
+            : "View more"}
+          <Gap width={2} />
+          <Image
+            src="/right.svg"
+            alt="arrow down"
+            width={16}
+            height={16}
+            style={{
+              transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
+              transition: "transform 0.1s ease-in-out",
+              opacity: isOpen ? 0.5 : 0.6,
+            }}
+          />
+        </Chip>
       </div>
       <div
         className={styles.dropdown}
