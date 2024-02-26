@@ -11,7 +11,7 @@ const Banner = (props: CardProps) => {
       target="_blank"
       rel="noreferrer"
     >
-      <Image src={props.image} alt="banner" width={400} height={500} />
+      <Image src={props.image} alt="banner" width={400} height={400} />
     </Link>
   );
 };

@@ -404,7 +404,7 @@ const More: CardProps[] = [
     title: "Hackathon ",
     description:
       "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/COH C2S1.png",
+    image: "/images/coh21.png",
     category: "Event",
     links: {
       site: "https://thecoh.build/",
