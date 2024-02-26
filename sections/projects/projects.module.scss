@@ -6,9 +6,7 @@
 
 .categories {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  align-items: center;
 }
 
 .grid {
@@ -33,11 +31,15 @@
   .row {
     flex-direction: column;
     gap: 20px;
+    align-items: flex-start;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     margin: 0 32px;
+  }
+
+  .categories {
   }
 }

@@ -8,8 +8,10 @@ import Input from "@/components/input/input";
 import { EmptyCard } from "@/components/cards/emptyCard";
 import { AnimatePresence, motion } from "framer-motion";
 import DropDown from "@/components/dropdown/dropdown";
+import useMobile from "@/hooks/useMobile";
 
 const ProjectsSections = (props: { items: CardProps[] }) => {
+  const isMobile = useMobile();
   const categories = props.items.reduce((acc: Record<string, number>, item) => {
     if (acc[item.category]) {
       acc[item.category]++;
@@ -72,17 +74,19 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
           >
             All ({props.items.length})
           </Chip>
-          {Object.keys(categories)
-            .slice(0, 3)
-            .map((category) => (
-              <Chip
-                active={activeCategory === category}
-                onClick={() => {
-                  setActiveCategory(category);
-                }}
-                key={category}
-              >{`${category} (${categories[category]})`}</Chip>
-            ))}
+
+          {!isMobile &&
+            Object.keys(categories)
+              .slice(0, 3)
+              .map((category) => (
+                <Chip
+                  active={activeCategory === category}
+                  onClick={() => {
+                    setActiveCategory(category);
+                  }}
+                  key={category}
+                >{`${category} (${categories[category]})`}</Chip>
+              ))}
 
           {/* view more */}
           {Object.keys(categories).length > 2 && (
@@ -92,7 +96,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
                 setActiveCategory(item);
               }}
               items={Object.keys(categories)
-                .slice(3, Object.keys(categories).length)
+                .slice(isMobile ? 0 : 3, Object.keys(categories).length)
                 .map((category) => `${category} (${categories[category]})`)}
             />
           )}
