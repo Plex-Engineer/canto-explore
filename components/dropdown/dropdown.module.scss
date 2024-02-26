@@ -11,6 +11,7 @@
   position: absolute;
   width: 13rem;
   top: calc(100% + 6px);
+  z-index: 10;
 }
 
 .active {

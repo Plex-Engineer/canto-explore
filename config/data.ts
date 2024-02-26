@@ -401,13 +401,13 @@ const Projects: CardProps[] = [
 
 const More: CardProps[] = [
   {
-    title: "Aave",
+    title: "Hackathon ",
     description:
-      "Aave is an open source and non-custodial protocol to earn interest on deposits and borrow assets.",
-    image: "/hero.png",
-    category: "LENDING",
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/COH C2S1.png",
+    category: "Event",
     links: {
-      site: "https://tuber.build/",
+      site: "https://thecoh.build/",
       twitter: "",
       github: "",
     },

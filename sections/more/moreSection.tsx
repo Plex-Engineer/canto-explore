@@ -14,6 +14,7 @@ import { Navigation } from "swiper/modules";
 import { useRef } from "react";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
+import Banner from "@/components/cards/banner";
 
 const MoreSection = (articles: { items: CardProps[] }) => {
   const swiperRef = useRef<any>();
@@ -23,27 +24,29 @@ const MoreSection = (articles: { items: CardProps[] }) => {
       <div>
         <div className={styles.row}>
           <h2>More on canto</h2>
-          <div
-            className={styles.row}
-            style={{
-              gap: "10px",
-            }}
-          >
-            <button
-              onClick={() => {
-                swiperRef.current.slidePrev();
+          {articles.items.length > 3 && (
+            <div
+              className={styles.row}
+              style={{
+                gap: "10px",
               }}
             >
-              <Image src="/left.svg" alt="left" width={12} height={12} />
-            </button>
-            <button
-              onClick={() => {
-                swiperRef.current.slideNext();
-              }}
-            >
-              <Image src="/right.svg" alt="right" width={12} height={12} />
-            </button>
-          </div>
+              <button
+                onClick={() => {
+                  swiperRef.current.slidePrev();
+                }}
+              >
+                <Image src="/left.svg" alt="left" width={12} height={12} />
+              </button>
+              <button
+                onClick={() => {
+                  swiperRef.current.slideNext();
+                }}
+              >
+                <Image src="/right.svg" alt="right" width={12} height={12} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
       <section className={styles.slider}>
@@ -64,7 +67,9 @@ const MoreSection = (articles: { items: CardProps[] }) => {
               }}
               key={index + item.title + "note"}
             >
-              <HighlightCard key={index + item.title + "note"} {...item} />
+              {/* <HighlightCard key={index + item.title + "note"} {...item} /> */}
+
+              <Banner key={index + item.title + "banner"} {...item} />
             </SwiperSlide>
           ))}
           <div className="swiper-pagination"></div>
