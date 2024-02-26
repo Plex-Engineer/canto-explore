@@ -3,6 +3,7 @@ import styles from "./cards.module.scss";
 import Gap from "../gap";
 import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ItemCard = (props: CardProps) => {
   return (
@@ -25,9 +26,11 @@ const ItemCard = (props: CardProps) => {
 
       <section className={styles.container}>
         <div className={styles.links}>
-          <a href={props.links.site}>{props.category}</a>
-          {props.links.twitter && <a href={props.links.twitter}>Twitter</a>}
-          {props.links.github && <a href={props.links.github}>Github</a>}
+          <Link href={props.links.site}>{props.category}</Link>
+          {props.links.twitter && (
+            <Link href={props.links.twitter}>Twitter</Link>
+          )}
+          {props.links.github && <Link href={props.links.github}>Github</Link>}
         </div>
         <Gap height={8} />
         <h3>{props.title}</h3>

@@ -4,6 +4,7 @@ import Spline from "@splinetool/react-spline";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Gap from "@/components/gap";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -16,17 +17,17 @@ const HeroSection = () => {
         </h4>
 
         <div className={styles.actions}>
-          <a href="https://canto.io/bridge" target="_blank">
+          <Link href="https://canto.io/bridge" target="_blank">
             <Image src={"/arrow-link.svg"} alt="link" width={32} height={32} />
             BRIDGE TO CANTO
-          </a>
-          <a
+          </Link>
+          <Link
             data-type="outlined"
             href="https://forms.gle/hzxaTwFBJ1CfNPnC7"
             target="_blank"
           >
             LIST YOUR APP
-          </a>
+          </Link>
         </div>
       </section>
       <section className={styles.row}>
