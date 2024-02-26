@@ -14,7 +14,6 @@ export const NavBar = () => {
           height={100}
         />
       </Link>
-
       <div className={styles.stats}></div>
     </div>
   );

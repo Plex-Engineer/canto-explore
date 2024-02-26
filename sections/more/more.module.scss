@@ -1,8 +1,8 @@
 .container {
   height: 400px;
-  padding: 2rem;
-  margin-inline: 32px;
-
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin-inline: auto;
   button {
     display: flex;
     width: 36px;

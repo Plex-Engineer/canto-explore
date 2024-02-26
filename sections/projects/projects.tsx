@@ -9,6 +9,7 @@ import { EmptyCard } from "@/components/cards/emptyCard";
 import { AnimatePresence, motion } from "framer-motion";
 import DropDown from "@/components/dropdown/dropdown";
 import useMobile from "@/hooks/useMobile";
+import Gap from "@/components/gap";
 
 const ProjectsSections = (props: { items: CardProps[] }) => {
   const isMobile = useMobile();
@@ -62,7 +63,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
   return (
     <section className={styles.container}>
       <h2>Project categories</h2>
-
+      <Gap height={20} />
       <div className={styles.row}>
         <div className={styles.categories}>
           <Chip
@@ -107,6 +108,8 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
           }}
         />
       </div>
+      <Gap height={20} />
+
       {filteredItems.length === 0 ? (
         <EmptyCard value={search} />
       ) : (
