@@ -4,14 +4,15 @@ import { CardProps } from "./highlightCard";
 
 const Banner = (props: CardProps) => {
   return (
-    <a
+    <section
       className={styles.banner}
-      href={props.links.site}
-      target="_blank"
+      onClick={() => {
+        window.open(props.links.site, "_blank");
+      }}
       rel="noreferrer"
     >
       <Image src={props.image} alt="banner" width={400} height={500} />
-    </a>
+    </section>
   );
 };
 
