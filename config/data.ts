@@ -29,7 +29,7 @@ const Spotlights: CardProps[] = [
   title: "Cadence Protocol",
   description:
     "Intent-centric perpetuals aggregator with the most capital-efficient use of liquidity through the integration of RWAs, CSR, and LSDs. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
-  image: "/images/cadencebanner.png",
+  image: "/images/cadencebanner.jpeg",
   category: "DeFi",
   links: {
     site: "https://www.cadenceprotocol.io/",
