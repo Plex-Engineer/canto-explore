@@ -4,7 +4,7 @@ const Spotlights: CardProps[] = [
   {
     title: "1155.TECH",
     description:
-      "1155.tech offers a marketplace for digital art with a unique feature - users can earn yield each time a key they own is involved in a transaction, whether it’s bought, sold, or burnt. The platform is developed by Atrium, a top team in the crypto industry, and is backed by Electric Capital. They are also currently producing the NounsDAO movie.",
+      "1155.tech offers a marketplace for digital art with a unique feature - users can earn yield each time a key they own is involved in a transaction, whether it’s bought, sold, or burnt. The platform is developed by Atrium (producers of the NounsDAO movie) and is backed by Electric Capital.",
     image: "/images/1155tech.png",
     category: "NFT",
     links: {
@@ -26,17 +26,17 @@ const Spotlights: CardProps[] = [
     },
   },
   {
-    title: "Blank Rasa",
-    description:
-      "Blank Rasa is a platform for discovering and trading NFTs. It features collections such as Canto Longneck, Shnoise, and Dead Ends.",
-    image: "/images/blankrasa.png",
-    category: "NFT",
-    links: {
-      site: "",
-      twitter: "",
-      github: "",
-    },
+  title: "Cadence Protocol",
+  description:
+    "Intent-centric perpetuals aggregator with the most capital-efficient use of liquidity through the integration of RWAs, CSR, and LSDs. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
+  image: "/images/cadencebanner.jpeg",
+  category: "DeFi",
+  links: {
+    site: "https://www.cadenceprotocol.io/",
+    twitter: "",
+    github: "",
   },
+},
   {
     title: "Blank Rasa",
     description:
