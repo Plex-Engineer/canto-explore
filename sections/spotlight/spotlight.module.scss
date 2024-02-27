@@ -1,5 +1,4 @@
 .container {
-  height: 100%;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -15,8 +14,20 @@
   height: 100%;
 }
 
+.ray {
+  position: absolute;
+  top: -180px;
+  left: -180px;
+  width: 1000px;
+  object-fit: contain;
+  //   height: 100%;
+}
+
 .title {
   margin: 0 80px;
+  margin-inline: auto;
+  max-width: 1200px;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
