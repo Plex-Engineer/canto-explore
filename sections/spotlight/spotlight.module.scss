@@ -9,6 +9,28 @@
 
 .swiper {
   height: 450px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(270deg, #0c0c0c00 10%, var(--bg-color) 100%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, #0c0c0c00 10%, var(--bg-color) 100%);
+  }
 }
 .btn {
   display: block;
@@ -22,6 +44,7 @@
   left: -180px;
   width: 1000px;
   object-fit: contain;
+  z-index: 4;
   //   height: 100%;
 }
 
