@@ -44,7 +44,7 @@ const Spotlights: CardProps[] = [
     image: "/images/blankrasa.png",
     category: "NFT",
     links: {
-      site: "",
+      site: "https://www.blankrasa.com/",
       twitter: "",
       github: "",
     },
