@@ -54,9 +54,12 @@ a {
 
 .swiper-button-next {
   min-height: 100%;
-  //   width: 290px !important;
+  width: 25% !important;
+
   transform: translateY(-50%) !important;
   z-index: 10;
+  //   background-color: rgba(255, 0, 0, 0.244);
+
   &::after {
     color: white;
   }
@@ -64,11 +67,13 @@ a {
 .swiper-button-prev {
   min-height: 100%;
   transform: translateY(-50%) !important;
-  //   width: 10px !important;
+  width: 25% !important;
   z-index: 20;
 
   &::after {
     color: white;
+    display: flex;
+    // align-items: end;
   }
 }
 
@@ -85,5 +90,18 @@ h2 {
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 18px;
+  }
+
+  .swiper-button-next {
+    width: 24px !important;
+    &::after {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    width: 24px !important;
+    &::after {
+      display: none;
+    }
   }
 }
