@@ -98,12 +98,12 @@ const Spotlight = (props: { items: CardProps[] }) => {
             pauseOnMouseEnter: true,
             delay: 10000,
           }}
-          // navigation
+          navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           className={styles.swiper}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          //   spaceBetween={"7%"}
+          spaceBetween={"7%"}
         >
           {props.items.map((item, index) => (
             <SwiperSlide lazy={false} key={index + item.title}>
@@ -114,7 +114,11 @@ const Spotlight = (props: { items: CardProps[] }) => {
                     transition: "opacity 0.5s",
                   }}
                 >
-                  <HighlightCard key={index + item.title + "h"} {...item} />
+                  <HighlightCard
+                    active={isActive}
+                    key={index + item.title + "h"}
+                    {...item}
+                  />
                 </div>
               )}
             </SwiperSlide>

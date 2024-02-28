@@ -13,15 +13,19 @@ export interface CardProps {
     twitter?: string;
     github?: string;
   };
+  active?: boolean;
+  style?: React.CSSProperties;
 }
 const HighlightCard = (props: CardProps) => {
   return (
-    <article className={styles.highlightCard}>
-      <Link
-        href={props.links.site}
-        className={styles["fill-link"]}
-        target="_blank"
-      />
+    <article className={styles.highlightCard} style={props.style}>
+      {props.active && (
+        <Link
+          href={props.links.site}
+          className={styles["fill-link"]}
+          target="_blank"
+        />
+      )}
       <Image src={props.image} alt={props.title} width={600} height={400} />
 
       <section className={styles.container}>

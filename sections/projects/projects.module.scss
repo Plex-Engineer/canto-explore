@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 64px;
-  max-width: 1200px;
+  max-width: var(--max-width, 1200px);
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -40,8 +41,5 @@
     display: flex;
     flex-direction: column;
     margin: 0 32px;
-  }
-
-  .categories {
   }
 }

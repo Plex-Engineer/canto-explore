@@ -52,6 +52,26 @@ a {
   background: #fdfdfd !important;
 }
 
+.swiper-button-next {
+  min-height: 100%;
+  //   width: 290px !important;
+  transform: translateY(-50%) !important;
+  z-index: 10;
+  &::after {
+    color: white;
+  }
+}
+.swiper-button-prev {
+  min-height: 100%;
+  transform: translateY(-50%) !important;
+  //   width: 10px !important;
+  z-index: 20;
+
+  &::after {
+    color: white;
+  }
+}
+
 h2 {
   color: #fff;
   font-family: var(--videotype);
