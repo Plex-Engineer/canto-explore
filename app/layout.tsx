@@ -7,11 +7,6 @@ const rmmono = localFont({
   variable: "--rm-mono",
 });
 
-const nuebit = localFont({
-  src: "../fonts/ppmondwest.otf",
-  variable: "--nuebit",
-});
-
 const videotype = localFont({
   src: "../fonts/videotype.ttf",
   variable: "--videotype",
@@ -30,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} ${nuebit.variable}`}
+        className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} `}
       >
         {children}
       </body>

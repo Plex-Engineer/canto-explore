@@ -1,6 +1,5 @@
 "use client";
 
-import Spline from "@splinetool/react-spline";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Gap from "@/components/gap";
