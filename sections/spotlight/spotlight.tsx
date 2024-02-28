@@ -84,7 +84,6 @@ const Spotlight = (props: { items: CardProps[] }) => {
       <section className={styles.container}>
         <Swiper
           effect={"coverflow"}
-          grabCursor={true}
           centeredSlides={true}
           loop={true}
           slidesPerView={isMobile ? 1 : 2}
@@ -101,22 +100,23 @@ const Spotlight = (props: { items: CardProps[] }) => {
           }}
           // navigation
           pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
           className={styles.swiper}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          spaceBetween={"7%"}
-
-          //   onSlideChange={() => console.log("slide change")}
-          //   onSwiper={(swiper) => console.log(swiper)}
+          //   spaceBetween={"7%"}
         >
           {props.items.map((item, index) => (
             <SwiperSlide lazy={false} key={index + item.title}>
-              <div
-                style={{
-                  height: "200px",
-                }}
-              >
-                <HighlightCard key={index + item.title + "h"} {...item} />
-              </div>
+              {({ isActive, isPrev, isNext }) => (
+                <div
+                  style={{
+                    opacity: isActive ? 1 : 0.5,
+                    transition: "opacity 0.5s",
+                  }}
+                >
+                  <HighlightCard key={index + item.title + "h"} {...item} />
+                </div>
+              )}
             </SwiperSlide>
           ))}
           <div className="swiper-pagination"></div>
