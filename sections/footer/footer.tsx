@@ -1,3 +1,5 @@
+"use client";
+
 import FooterCard from "@/components/cards/footerCard";
 import styles from "./footer.module.scss";
 

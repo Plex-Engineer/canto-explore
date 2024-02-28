@@ -22,6 +22,11 @@ const ItemCard = (props: CardProps) => {
       }}
       className={`${styles.highlightCard} ${styles.itemCard}`}
     >
+      <Link
+        href={props.links.site}
+        className={styles["fill-link"]}
+        target="_blank"
+      />
       <Image src={props.image} alt={props.title} width={100} height={100} />
 
       <section className={styles.container}>

@@ -16,11 +16,12 @@ export interface CardProps {
 }
 const HighlightCard = (props: CardProps) => {
   return (
-    <Link
-      href={props.links.site}
-      className={styles.highlightCard}
-      target="_blank"
-    >
+    <article className={styles.highlightCard}>
+      <Link
+        href={props.links.site}
+        className={styles["fill-link"]}
+        target="_blank"
+      />
       <Image src={props.image} alt={props.title} width={600} height={400} />
 
       <section className={styles.container}>
@@ -35,7 +36,7 @@ const HighlightCard = (props: CardProps) => {
         <h3>{props.title}</h3>
         <h5>{props.description}</h5>
       </section>
-    </Link>
+    </article>
   );
 };
 
