@@ -6,6 +6,7 @@ const Spotlights: CardProps[] = [
     description:
       "1155.tech offers a marketplace for digital art with a unique feature - users can earn yield each time a key they own is involved in a transaction, whether it’s bought, sold, or burnt. The platform is developed by Atrium (producers of the NounsDAO movie) and is backed by Electric Capital.",
     image: "/images/1155tech.png",
+    BGColor: "#000",
     category: "NFT",
     links: {
       site: "https://1155.tech/?rfc=378bde47-1571",
@@ -18,6 +19,7 @@ const Spotlights: CardProps[] = [
     description:
       "Vivacity Finance offers an onchain, institutional grade lending market for real world assets on Canto. Users can lend their NOTE to borrowers to earn additional yield.",
     image: "/images/vivacity.png",
+    BGColor: "#3422FC",
     category: "DeFi",
     links: {
       site: "https://vivacity.finance/",
@@ -26,22 +28,26 @@ const Spotlights: CardProps[] = [
     },
   },
   {
-  title: "Cadence Protocol",
-  description:
-    "Intent-centric perpetuals aggregator with the most capital-efficient use of liquidity through the integration of RWAs, CSR, and LSDs. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
-  image: "/images/cadencebanner.jpeg",
-  category: "DeFi",
-  links: {
-    site: "https://www.cadenceprotocol.io/",
-    twitter: "",
-    github: "",
+    title: "Cadence Protocol",
+    description:
+      "Intent-centric perpetuals aggregator with the most capital-efficient use of liquidity through the integration of RWAs, CSR, and LSDs. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
+    image: "/images/cadencebanner.jpeg",
+    BGColor: "#000",
+
+    category: "DeFi",
+    links: {
+      site: "https://www.cadenceprotocol.io/",
+      twitter: "",
+      github: "",
+    },
   },
-},
   {
     title: "Blank Rasa",
     description:
       "Blank Rasa is a platform for discovering and trading NFTs. It features collections such as Canto Longneck, Shnoise, and Dead Ends.",
     image: "/images/blankrasa.png",
+    BGColor: "#000",
+
     category: "NFT",
     links: {
       site: "",
@@ -400,6 +406,66 @@ const Projects: CardProps[] = [
 ];
 
 const More: CardProps[] = [
+  {
+    title: "Hackathon ",
+    description:
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/coh21.png",
+    category: "Event",
+    links: {
+      site: "https://thecoh.build/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Hackathon ",
+    description:
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/coh21.png",
+    category: "Event",
+    links: {
+      site: "https://thecoh.build/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Hackathon ",
+    description:
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/coh21.png",
+    category: "Event",
+    links: {
+      site: "https://thecoh.build/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Hackathon ",
+    description:
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/coh21.png",
+    category: "Event",
+    links: {
+      site: "https://thecoh.build/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Hackathon ",
+    description:
+      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
+    image: "/images/coh21.png",
+    category: "Event",
+    links: {
+      site: "https://thecoh.build/",
+      twitter: "",
+      github: "",
+    },
+  },
   {
     title: "Hackathon ",
     description:

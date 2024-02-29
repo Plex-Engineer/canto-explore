@@ -7,6 +7,7 @@ export interface CardProps {
   title: string;
   description: string;
   image: string;
+  BGColor?: string;
   category: string;
   links: {
     site: string;
@@ -26,7 +27,15 @@ const HighlightCard = (props: CardProps) => {
           target="_blank"
         />
       )}
-      <Image src={props.image} alt={props.title} width={600} height={400} />
+      <Image
+        src={props.image}
+        alt={props.title}
+        style={{
+          backgroundColor: props.BGColor,
+        }}
+        width={600}
+        height={400}
+      />
 
       <section className={styles.container}>
         <div className={styles.links}>

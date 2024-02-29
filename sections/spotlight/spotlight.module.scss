@@ -64,5 +64,10 @@
 
   .swiper {
     padding: 0 32px;
+
+    &::before,
+    &::after {
+      width: 32px;
+    }
   }
 }
