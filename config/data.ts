@@ -410,70 +410,10 @@ const More: CardProps[] = [
     title: "Hackathon ",
     description:
       "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
+    image: "/images/coh21.jpg",
     category: "Event",
     links: {
-      site: "https://thecoh.build/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Hackathon ",
-    description:
-      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
-    category: "Event",
-    links: {
-      site: "https://thecoh.build/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Hackathon ",
-    description:
-      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
-    category: "Event",
-    links: {
-      site: "https://thecoh.build/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Hackathon ",
-    description:
-      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
-    category: "Event",
-    links: {
-      site: "https://thecoh.build/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Hackathon ",
-    description:
-      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
-    category: "Event",
-    links: {
-      site: "https://thecoh.build/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Hackathon ",
-    description:
-      "Canto Hackathon is a global event that brings together the best and brightest developers, designers, and entrepreneurs from around the world to create a new generation of blockchain applications.",
-    image: "/images/coh21.png",
-    category: "Event",
-    links: {
-      site: "https://thecoh.build/",
+      site: "https://canto.mirror.xyz/R61YoLOqHTItQv1mFRR_PZM1qqmbIg2I9jLAQmZz94Y",
       twitter: "",
       github: "",
     },
