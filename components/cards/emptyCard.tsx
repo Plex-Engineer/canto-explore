@@ -21,7 +21,11 @@ export const EmptyCard = ({ value }: { value: string }) => {
     >
       <Image src="/empty.svg" alt="Empty" width={100} height={100} />
       <p>
-        <span>No results found for </span>“{value}”
+        <span>No results found for </span>“
+        {value.length > 8
+          ? value.slice(0, 2) + "..." + value.slice(-3, value.length)
+          : value.slice(0, 8)}
+        ”
       </p>
     </motion.div>
   );

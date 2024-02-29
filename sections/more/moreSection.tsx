@@ -63,7 +63,7 @@ const MoreSection = (articles: { items: CardProps[] }) => {
             <SwiperSlide
               lazy={false}
               style={{
-                height: "100%",
+                aspectRatio: "16/8",
               }}
               key={index + item.title + "note"}
             >
