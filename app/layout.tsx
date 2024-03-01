@@ -13,8 +13,10 @@ const videotype = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Explore the Canto Ecosystem",
-  description: "Canto is a new way to explore the web.",
+  title: "Explore Canto’s Ecosystem",
+
+  description:
+    "Explore web+! Check out projects and integrations, discover upcoming community events, and stay updated with new developments in Canto’s ecosystem.",
 };
 
 export default function RootLayout({
