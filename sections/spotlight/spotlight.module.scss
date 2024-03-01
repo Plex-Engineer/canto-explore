@@ -64,10 +64,15 @@
 
   .swiper {
     padding: 0 32px;
-
+    height: fit-content;
     &::before,
     &::after {
       width: 32px;
     }
+  }
+
+  .pagination {
+    transform: translateY(50px);
+    background-color: red;
   }
 }

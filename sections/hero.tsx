@@ -4,6 +4,7 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import Gap from "@/components/gap";
 import Link from "next/link";
+import Spline from "@splinetool/react-spline";
 
 const HeroSection = () => {
   return (
@@ -39,7 +40,7 @@ const HeroSection = () => {
           className={styles.image}
         /> */}
       </section>
-      {/* <Spline scene="https://prod.spline.design/0ku32sjtV9dDq2Bl/scene.splinecode" /> */}
+      {/* <Spline scene="https://prod.spline.design/ZNUiYolkKfuyKgGh/scene.splinecode" /> */}
     </div>
   );
 };

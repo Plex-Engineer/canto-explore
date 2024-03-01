@@ -17,7 +17,6 @@ import {
 } from "swiper/modules";
 import Gap from "@/components/gap";
 import useMobile from "@/hooks/useMobile";
-import Image from "next/image";
 
 const Spotlight = (props: { items: CardProps[] }) => {
   const isMobile = useMobile();
@@ -106,7 +105,11 @@ const Spotlight = (props: { items: CardProps[] }) => {
           spaceBetween={"7%"}
         >
           {props.items.map((item, index) => (
-            <SwiperSlide lazy={false} key={index + item.title}>
+            <SwiperSlide
+              lazy={false}
+              className={styles.slides}
+              key={index + item.title}
+            >
               {({ isActive, isPrev, isNext }) => (
                 <div
                   style={{
@@ -115,6 +118,9 @@ const Spotlight = (props: { items: CardProps[] }) => {
                   }}
                 >
                   <HighlightCard
+                    style={{
+                      height: isMobile ? "530px" : "",
+                    }}
                     active={isActive}
                     key={index + item.title + "h"}
                     {...item}
@@ -123,7 +129,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
               )}
             </SwiperSlide>
           ))}
-          <div className="swiper-pagination"></div>
+          <div className={`swiper-pagination ${styles.pagination}`}></div>
         </Swiper>
       </section>
       <Gap height={30} />
