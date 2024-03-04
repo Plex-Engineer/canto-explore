@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";
 import Link from "next/link";
+import Analytics from "@/provider/analytics";
 
 export interface CardProps {
   title: string;
@@ -25,6 +26,9 @@ const HighlightCard = (props: CardProps) => {
           href={props.links.site}
           className={styles["fill-link"]}
           target="_blank"
+          onClick={() =>
+            Analytics.actions.events.externalLinkClicked({ Website: props.title })
+          }
         />
       )}
       <Image

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Gap from "@/components/gap";
 import Link from "next/link";
 import Spline from "@splinetool/react-spline";
+import Analytics from "@/provider/analytics";
 
 const HeroSection = () => {
   return (
@@ -18,7 +19,13 @@ const HeroSection = () => {
         <Gap height={48} />
 
         <div className={styles.actions}>
-          <Link href="https://canto.io/bridge" target="_blank">
+          <Link
+            href="https://canto.io/bridge"
+            target="_blank"
+            onClick={() =>
+              Analytics.actions.events.externalLinkClicked({ Website: "Bridge" })
+            }
+          >
             <Image src={"/arrow-link.svg"} alt="link" width={32} height={32} />
             BRIDGE TO CANTO
           </Link>
@@ -26,6 +33,9 @@ const HeroSection = () => {
             data-type="outlined"
             href="https://forms.gle/hzxaTwFBJ1CfNPnC7"
             target="_blank"
+            onClick={() =>
+              Analytics.actions.events.externalLinkClicked({ Website: "List App" })
+            }
           >
             LIST YOUR APP
           </Link>

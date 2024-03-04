@@ -1,11 +1,23 @@
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import Analytics from "@/provider/analytics";
+import { useEffect } from "react";
 
 export const NavBar = () => {
+
+  useEffect(() => {
+    Analytics.actions.events.pageOpened("home");
+  }, []);
+
   return (
     <div className={styles.container}>
-      <Link href={"https://canto.io"}>
+      <Link
+        href={"https://canto.io"}
+        onClick={() =>
+          Analytics.actions.events.externalLinkClicked({ Website: "Canto" })
+        }
+      >
         <Image
           className={styles.logo}
           src="/logo.svg"

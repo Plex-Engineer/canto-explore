@@ -4,6 +4,7 @@ import Gap from "../gap";
 import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Analytics from "@/provider/analytics";
 
 const ItemCard = (props: CardProps) => {
   return (
@@ -26,6 +27,9 @@ const ItemCard = (props: CardProps) => {
         href={props.links.site}
         className={styles["fill-link"]}
         target="_blank"
+        onClick={() =>
+          Analytics.actions.events.externalLinkClicked({ Website: props.title })
+        }
       />
       <Image src={props.image} alt={props.title} width={100} height={100} />
 
