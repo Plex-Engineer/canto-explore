@@ -14,9 +14,15 @@ const videotype = localFont({
 
 export const metadata: Metadata = {
   title: "Explore Canto’s Ecosystem",
-
   description:
     "Explore web+! Check out projects and integrations, discover upcoming community events, and stay updated with new developments in Canto’s ecosystem.",
+  openGraph: {
+    title: "Explore Canto’s Ecosystem",
+    description:
+      "Explore web+! Check out projects and integrations, discover upcoming community events, and stay updated with new developments in Canto’s ecosystem.",
+    type: "website",
+    images: ["/social.jpg"],
+  },
 };
 
 export default function RootLayout({
