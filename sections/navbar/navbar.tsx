@@ -3,9 +3,10 @@
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
-import Analytics from "@/provider/analytics";
+import { usePostHog } from 'posthog-js/react';
 
 export const NavBar = () => {
+  const posthog = usePostHog();
   return (
     <div className={styles.container}>
       <Link href={"https://canto.io"}>
@@ -16,7 +17,7 @@ export const NavBar = () => {
           width={100}
           height={100}
           onClick={() =>
-            Analytics.actions.events.externalLinkClicked({ Website: "Canto" })
+            posthog.capture("External Link Clicked", { Website: "Canto" })
           }
         />
       </Link>
