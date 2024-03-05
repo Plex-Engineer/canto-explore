@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./cards.module.scss";
 import Link from "next/link";
-import Analytics from "@/provider/analytics";
+import { usePostHog } from 'posthog-js/react';
 
 interface Props {
   text: string;
@@ -13,6 +13,7 @@ interface Props {
 }
 
 const FooterCard = (props: Props) => {
+  const posthog = usePostHog();
   return (
     // new tab
     <Link
@@ -20,7 +21,7 @@ const FooterCard = (props: Props) => {
       href={props.link}
       target="_blank"
       onClick={() =>
-        Analytics.actions.events.externalLinkClicked({ Website: props.title })
+        posthog.capture("External Link Clicked", { Website: props.title })
       }
     >
       <div>

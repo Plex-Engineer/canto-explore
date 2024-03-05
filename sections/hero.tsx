@@ -5,9 +5,10 @@ import Image from "next/image";
 import Gap from "@/components/gap";
 import Link from "next/link";
 import Spline from "@splinetool/react-spline";
-import Analytics from "@/provider/analytics";
+import { usePostHog } from 'posthog-js/react';
 
 const HeroSection = () => {
+  const posthog = usePostHog();
   return (
     <div className={styles.container}>
       <section className={styles.row}>
@@ -23,7 +24,7 @@ const HeroSection = () => {
             href="https://canto.io/bridge"
             target="_blank"
             onClick={() =>
-              Analytics.actions.events.externalLinkClicked({ Website: "Bridge" })
+              posthog.capture("External Link Clicked", { Website: "Bridge" })
             }
           >
             <Image src={"/arrow-link.svg"} alt="link" width={32} height={32} />
@@ -34,7 +35,7 @@ const HeroSection = () => {
             href="https://forms.gle/hzxaTwFBJ1CfNPnC7"
             target="_blank"
             onClick={() =>
-              Analytics.actions.events.externalLinkClicked({ Website: "List App" })
+              posthog.capture("External Link Clicked", { Website: "List App" })
             }
           >
             LIST YOUR APP

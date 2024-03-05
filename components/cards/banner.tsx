@@ -4,9 +4,10 @@ import Image from "next/image";
 import styles from "./cards.module.scss";
 import { CardProps } from "./highlightCard";
 import Link from "next/link";
-import Analytics from "@/provider/analytics";
+import { usePostHog } from 'posthog-js/react';
 
 const Banner = (props: CardProps) => {
+  const posthog = usePostHog();
   return (
     <Link
       className={styles.banner}
@@ -14,7 +15,7 @@ const Banner = (props: CardProps) => {
       target="_blank"
       rel="noreferrer"
       onClick={() =>
-        Analytics.actions.events.externalLinkClicked({ Website: props.title })
+        posthog.capture("External Link Clicked", { Website: props.title })
       }
     >
       <Image src={props.image} alt="banner" width={400} height={400} />

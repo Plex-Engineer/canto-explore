@@ -3,21 +3,16 @@
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
-import Analytics from "@/provider/analytics";
-import { useEffect } from "react";
+import { usePostHog } from 'posthog-js/react';
 
 export const NavBar = () => {
-
-  useEffect(() => {
-    Analytics.actions.events.pageOpened("home");
-  }, []);
-
+  const posthog = usePostHog();
   return (
     <div className={styles.container}>
       <Link
         href={"https://canto.io"}
         onClick={() =>
-          Analytics.actions.events.externalLinkClicked({ Website: "Canto" })
+          posthog.capture("External Link Clicked", { Website: "Canto" })
         }
       >
         <Image

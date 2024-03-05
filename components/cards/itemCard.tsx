@@ -6,9 +6,10 @@ import Gap from "../gap";
 import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Analytics from "@/provider/analytics";
+import { usePostHog } from 'posthog-js/react';
 
 const ItemCard = (props: CardProps) => {
+  const posthog = usePostHog();
   return (
     <motion.article
       initial={{
@@ -30,7 +31,7 @@ const ItemCard = (props: CardProps) => {
         className={styles["fill-link"]}
         target="_blank"
         onClick={() =>
-          Analytics.actions.events.externalLinkClicked({ Website: props.title })
+          posthog.capture("External Link Clicked", { Website: props.title })
         }
       />
       <Image src={props.image} alt={props.title} width={100} height={100} />
