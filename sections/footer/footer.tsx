@@ -11,7 +11,7 @@ const Footer = () => {
           text="Visit Blog"
           title="Blog"
           image="/blog.svg"
-          link="https://docs.canto.io/"
+          link="https://canto.mirror.xyz/"
         />
         <FooterCard
           text="Read Documentation"
