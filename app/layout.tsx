@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description:
     "Explore web+! Check out projects and integrations, discover upcoming community events, and stay updated with new developments in Canto’s ecosystem.",
   keywords: ["Canto", "web+", "blockchain", "ecosystem"],
+  icons: "/favicon.ico",
+
   openGraph: {
     title: "Explore Canto’s Ecosystem",
     description:
