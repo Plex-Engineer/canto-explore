@@ -16,9 +16,11 @@ export const NavBar = () => {
           alt="logo"
           width={100}
           height={100}
-          onClick={() =>
-            posthog.capture("External Link Clicked", { Website: "Canto" })
-          }
+          onClick={() => {
+            if (posthog) {
+              posthog.capture("External Link Clicked", { Website: "Canto" })
+            }
+          }}
         />
       </Link>
       <div className={styles.stats}></div>
