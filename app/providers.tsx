@@ -2,7 +2,6 @@
 
 import posthog from "posthog-js"
 import { PostHogProvider } from "posthog-js/react"
-import { usePathname, useSearchParams } from "next/navigation"
 import { useEffect } from "react"
 
 if (typeof window !== 'undefined') {
@@ -16,19 +15,9 @@ if (typeof window !== 'undefined') {
 }
 
 export default function PHProvider({ children }: { children: React.ReactNode }) {
-    const pathname = usePathname()
-    const searchparams = useSearchParams()
-
-
     useEffect(() => {
-        if (pathname) {
-            let url = window.origin + pathname
-            if (searchparams.toString()) {
-                url = url + '?' + searchparams.toString()
-            }
-            posthog.capture('$pageview', { '$current_url': url, pageName: "home" })
-        }
-    }, [pathname, searchparams])
+        posthog.capture('$pageview', { pageName: "home" })
+    }, [])
     return (
         <PostHogProvider client={posthog}>
             {children}
