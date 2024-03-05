@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";
 import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePostHog } from 'posthog-js/react';
 
 const ItemCard = (props: CardProps) => {
+  const posthog = usePostHog();
   return (
     <motion.article
       initial={{
@@ -26,6 +30,9 @@ const ItemCard = (props: CardProps) => {
         href={props.links.site}
         className={styles["fill-link"]}
         target="_blank"
+        onClick={() =>
+          posthog.capture("External Link Clicked", { Website: props.title })
+        }
       />
       <Image src={props.image} alt={props.title} width={100} height={100} />
 

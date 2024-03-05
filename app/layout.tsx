@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
+import Providers from './providers'
 
 const rmmono = localFont({
   src: "../fonts/rm-mono-regular.ttf",
@@ -40,11 +41,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} `}
-      >
-        {children}
-      </body>
+      <Providers>
+        <body
+          className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} `}
+        >
+          {children}
+        </body>
+      </Providers>
     </html>
   );
 }
