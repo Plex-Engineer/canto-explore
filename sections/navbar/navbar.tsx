@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import Analytics from "@/provider/analytics";
 
 export const NavBar = () => {
   return (
@@ -12,6 +15,9 @@ export const NavBar = () => {
           alt="logo"
           width={100}
           height={100}
+          onClick={() =>
+            Analytics.actions.events.externalLinkClicked({ Website: "Canto" })
+          }
         />
       </Link>
       <div className={styles.stats}></div>
