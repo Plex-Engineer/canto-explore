@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";

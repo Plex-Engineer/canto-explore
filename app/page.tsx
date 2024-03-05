@@ -1,5 +1,3 @@
-"use client";
-
 import { NavBar } from "@/sections/navbar/navbar";
 import styles from "./page.module.css";
 import HeroSection from "@/sections/hero";
