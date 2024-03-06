@@ -384,7 +384,7 @@ const Projects: CardProps[] = [
   {
     title: "Four Moons",
     description: "Canto validator and active community members.",
-    image: "/images/fourmoons.png",
+    image: "/images/fourmoons.jpg",
     category: "Community",
     links: {
       site: "https://www.fourmoons.xyz/",
