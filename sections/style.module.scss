@@ -1,9 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 670px;
-  background-image: url("/hero.png");
-  background-position: 50% 130px;
+  min-height: calc(100dvh - 300px);
+  max-width: var(--max-width);
+  width: 100%;
+  margin-inline: auto;
+
+  background-image: url("/hero.jpg");
+  background-position: 50% 200px;
   background-size: cover;
   .row {
     display: flex;
