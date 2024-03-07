@@ -75,12 +75,11 @@
 
   .container {
     padding: 0 32px;
-    background-position: calc(50% + 40px) 240px;
+    background-position: calc(50% + 40px) clamp(50px, 100dvh - 300px, 200px);
 
-    // background-position: 50% 200px;
     background-size: cover;
     background-repeat: no-repeat;
-
+    height: 100%;
     h1 {
       text-align: center;
     }
