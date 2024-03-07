@@ -16,7 +16,6 @@ export default function Home() {
       <HeroSection />
       <Spotlight items={Spotlights} />
       <ProjectsSections items={Projects} />
-      <div></div>
       <MoreSection items={More} />
       <Footer />
     </main>
