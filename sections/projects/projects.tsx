@@ -76,7 +76,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
             All ({props.items.length})
           </Chip>
 
-          {true &&
+          {!isMobile &&
             Object.keys(categories)
               .slice(0, 3)
               .map((category) => (
@@ -89,8 +89,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
                 >{`${category} (${categories[category]})`}</Chip>
               ))}
 
-          {/* view more */}
-          {Object.keys(categories).length > 2 && (
+          {!isMobile && Object.keys(categories).length > 2 && (
             <DropDown
               active={activeCategory}
               setActive={(item: string) => {
@@ -101,6 +100,17 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
                 .map((category) => `${category} (${categories[category]})`)}
             />
           )}
+
+          {isMobile &&
+            Object.keys(categories).map((category) => (
+              <Chip
+                active={activeCategory === category}
+                onClick={() => {
+                  setActiveCategory(category);
+                }}
+                key={category}
+              >{`${category} (${categories[category]})`}</Chip>
+            ))}
         </div>
         <Input
           onChange={(e) => {
