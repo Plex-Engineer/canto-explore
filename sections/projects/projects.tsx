@@ -76,7 +76,7 @@ const ProjectsSections = (props: { items: CardProps[] }) => {
             All ({props.items.length})
           </Chip>
 
-          {!isMobile &&
+          {true &&
             Object.keys(categories)
               .slice(0, 3)
               .map((category) => (

@@ -22,7 +22,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
   const isMobile = useMobile();
 
   return (
-    <section>
+    <section className={styles.spotlight}>
       <Gap height={100} />
       <h2 className={styles.title}>
         spotlight

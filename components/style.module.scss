@@ -15,6 +15,8 @@
   transition: all 0.1s ease-in-out;
   text-transform: uppercase;
   height: 56px;
+  //   single line
+  white-space: nowrap;
 
   &:hover {
     border-color: #fff;
@@ -26,4 +28,12 @@
 .active {
   border-color: #fff;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .chip {
+    padding: 14px 16px;
+    font-size: 12px;
+    height: 44px;
+  }
 }
