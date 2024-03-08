@@ -9,7 +9,18 @@
 
 .categories {
   display: flex;
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 100%;
+  max-width: 100dvw;
   gap: 20px;
+
+  //   hide scrollbar
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .grid {
@@ -28,7 +39,7 @@
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .row {
@@ -38,9 +49,11 @@
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 32px;
-    width: fit-content;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 100dvw;
+  }
+  .container {
+    width: 100%;
   }
 }

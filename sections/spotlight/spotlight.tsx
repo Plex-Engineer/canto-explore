@@ -22,7 +22,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
   const isMobile = useMobile();
 
   return (
-    <section>
+    <section className={styles.spotlight}>
       <Gap height={100} />
       <h2 className={styles.title}>
         spotlight
@@ -110,7 +110,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
               className={styles.slides}
               key={index + item.title}
             >
-              {({ isActive, isPrev, isNext }) => (
+              {({ isActive }) => (
                 <div
                   style={{
                     opacity: isActive ? 1 : 0.5,

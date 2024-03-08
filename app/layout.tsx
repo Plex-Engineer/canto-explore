@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
-import Providers from './providers'
+import Providers from "./providers";
 
 const rmmono = localFont({
   src: "../fonts/rm-mono-regular.ttf",

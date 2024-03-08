@@ -67,11 +67,9 @@
 
 .itemCard {
   height: 100%;
-
   border-radius: 8px;
   border: 1px solid #252525;
   background: #121212;
-
   transition: all 0.1s ease-in-out;
 
   img {
@@ -154,5 +152,41 @@
     height: 100%;
     object-fit: cover;
     border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .itemCard {
+    height: 100%;
+
+    img {
+      width: 48px;
+      height: 48px;
+      font-size: 14px;
+      margin: 12px;
+    }
+
+    &:hover {
+      border-color: #9a9a9a;
+      background-color: #1b1a1a;
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+    a {
+      font-size: 10px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+
+    h5 {
+      font-size: 10px;
+    }
+
+    .container {
+      height: min-content;
+      padding: 12px;
+      padding-top: 0px;
+    }
   }
 }

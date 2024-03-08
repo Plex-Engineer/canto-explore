@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./cards.module.scss";
 import Gap from "../gap";
 import Link from "next/link";
-import { usePostHog } from 'posthog-js/react';
+import { usePostHog } from "posthog-js/react";
 
 export interface CardProps {
   title: string;
@@ -23,17 +23,14 @@ export interface CardProps {
 const HighlightCard = (props: CardProps) => {
   const posthog = usePostHog();
   return (
-    <article className={styles.highlightCard} style={props.style}>
-      {props.active && (
-        <Link
-          href={props.links.site}
-          className={styles["fill-link"]}
-          target="_blank"
-          onClick={() =>
-            posthog.capture("External Link Clicked", { Website: props.title })
-          }
-        />
-      )}
+    <article
+      className={styles.highlightCard}
+      style={props.style}
+      onClick={() => {
+        window.open(props.links.site, "_blank");
+        posthog.capture("External Link Clicked", { Website: props.title });
+      }}
+    >
       <Image
         src={props.image}
         alt={props.title}
