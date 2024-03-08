@@ -110,7 +110,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
               className={styles.slides}
               key={index + item.title}
             >
-              {({ isActive, isPrev, isNext }) => (
+              {({ isActive }) => (
                 <div
                   style={{
                     opacity: isActive ? 1 : 0.5,
