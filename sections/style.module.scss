@@ -69,8 +69,15 @@
 
 @media (max-width: 768px) {
   .actions {
-    flex-direction: column;
+    // flex-direction: column;
+    width: 100%;
     gap: 16px;
+    a {
+      font-size: 12px;
+      height: 48px;
+      width: 100% !important;
+      flex: 1;
+    }
   }
 
   .container {
