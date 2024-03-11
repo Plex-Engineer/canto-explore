@@ -97,6 +97,7 @@ const Spotlight = (props: { items: CardProps[] }) => {
             pauseOnMouseEnter: true,
             delay: 10000,
           }}
+          initialSlide={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
