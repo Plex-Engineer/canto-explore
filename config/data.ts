@@ -2,6 +2,20 @@ import { CardProps } from "@/components/cards/highlightCard";
 
 const Spotlights: CardProps[] = [
   {
+    title: "Blank Rasa",
+    description:
+      "Blank Rasa is a platform for discovering and trading NFTs. It features collections such as Canto Longneck, Shnoise, and Dead Ends.",
+    image: "/images/blankrasa.png",
+    BGColor: "#000",
+
+    category: "NFT",
+    links: {
+      site: "",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
     title: "1155.TECH",
     description:
       "1155.tech offers a marketplace for digital art with a unique feature - users can earn yield each time a key they own is involved in a transaction, whether it’s bought, sold, or burnt. The platform is developed by Atrium (producers of the NounsDAO movie) and is backed by Electric Capital.",
@@ -32,25 +46,11 @@ const Spotlights: CardProps[] = [
     description:
       "Intent-centric perpetuals aggregator with the most capital-efficient use of liquidity through the integration of RWAs, CSR, and LSDs. Built on Canto by ex-ConsenSys, Kraken & Amazon devs.",
     image: "/images/cadencebanner.jpeg",
-    BGColor: "#000",
+    BGColor: "#080808",
 
     category: "DeFi",
     links: {
       site: "https://www.cadenceprotocol.io/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
-    title: "Blank Rasa",
-    description:
-      "Blank Rasa is a platform for discovering and trading NFTs. It features collections such as Canto Longneck, Shnoise, and Dead Ends.",
-    image: "/images/blankrasa.png",
-    BGColor: "#000",
-
-    category: "NFT",
-    links: {
-      site: "",
       twitter: "",
       github: "",
     },

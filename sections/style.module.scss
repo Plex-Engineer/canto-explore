@@ -69,19 +69,28 @@
 
 @media (max-width: 768px) {
   .actions {
-    flex-direction: column;
+    // flex-direction: column;
+    width: 100%;
     gap: 16px;
+    a {
+      font-size: 12px;
+      height: 48px;
+      width: 100% !important;
+      flex: 1;
+    }
   }
 
   .container {
     padding: 0 32px;
-    background-position: calc(50% + 40px) clamp(50px, 100dvh - 300px, 200px);
+    // background-position: calc(50% + 40px) clamp(50px, 100dvh - 300px, 200px);
 
-    background-size: cover;
+    background-size: 250%;
     background-repeat: no-repeat;
+    background-position: 45% 120%;
     height: 100%;
     h1 {
       text-align: center;
+      font-size: 28px;
     }
 
     h4 {

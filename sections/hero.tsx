@@ -5,7 +5,7 @@ import Image from "next/image";
 import Gap from "@/components/gap";
 import Link from "next/link";
 import Spline from "@splinetool/react-spline";
-import { usePostHog } from 'posthog-js/react';
+import { usePostHog } from "posthog-js/react";
 
 const HeroSection = () => {
   const posthog = usePostHog();
@@ -13,11 +13,11 @@ const HeroSection = () => {
     <div className={styles.container}>
       <section className={styles.row}>
         <h1>Canto Ecosystem</h1>
-        <Gap height={24} />
+        <Gap height={16} />
         <h4>
           Explore events, applications and integrations in the Canto ecosystem.
         </h4>
-        <Gap height={48} />
+        <Gap height={36} />
 
         <div className={styles.actions}>
           <Link
