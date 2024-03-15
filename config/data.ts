@@ -403,7 +403,31 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-];
+  // Custody
+
+  {
+    title: "Fireblocks",
+    description: "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
+    image: "/images/fireblocks.jpeg",
+    category: "Custody",
+    links: {
+      site: "https://www.fireblocks.com/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Fordefi",
+    description: "An institutional MPC wallet and security platform built for DeFi.",
+    image: "/images/fordefi.jpeg",
+    category: "Custody",
+    links: {
+      site: "https://fordefi.com/",
+      twitter: "",
+      github: "",
+    },
+  },
+  ];
 
 const More: CardProps[] = [
   {
