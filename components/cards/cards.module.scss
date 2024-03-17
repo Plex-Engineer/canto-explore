@@ -70,7 +70,7 @@
   border-radius: 8px;
   border: 1px solid #252525;
   background: #121212;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   img {
     display: flex;

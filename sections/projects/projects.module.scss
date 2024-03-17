@@ -9,7 +9,7 @@
 
 .categories {
   display: flex;
-  overflow-x: scroll;
+
   overflow-y: visible;
   width: 100%;
   max-width: 100dvw;
@@ -55,5 +55,9 @@
   }
   .container {
     width: 100%;
+  }
+
+  .categories {
+    overflow-x: scroll;
   }
 }
