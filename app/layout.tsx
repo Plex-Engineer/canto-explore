@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import Providers from "./providers";
+import { NavBar } from "@/sections/navbar/navbar";
+import Footer from "@/sections/footer/footer";
 
 const rmmono = localFont({
   src: "../fonts/rm-mono-regular.ttf",
@@ -45,7 +47,9 @@ export default function RootLayout({
         <body
           className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} `}
         >
+          <NavBar />
           {children}
+          <Footer />
         </body>
       </Providers>
     </html>
