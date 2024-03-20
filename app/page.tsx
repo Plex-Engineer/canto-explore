@@ -11,7 +11,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <div className={styles.pretext}></div>
+        {/* <div className={styles.glow}></div> */}
+        <div className={styles.pretext}>
+          <Image src={"/logo.svg"} alt="canto" width={20} height={20} />
+          <Text family="primary" color="accent" size="large">
+            CANTO
+          </Text>
+        </div>
         <div
           className={styles.titleFeature}
           data-content="Create without constraints"
