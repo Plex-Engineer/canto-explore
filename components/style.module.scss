@@ -30,6 +30,13 @@
   color: #fff;
 }
 
+.card {
+  border: 1px solid #2e2e2e;
+  padding: 24px;
+  gap: 24px;
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
   .chip {
     padding: 14px 16px;
