@@ -10,7 +10,10 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.pretext}></div>
-        <div className={styles.title} data-content="Create without constraints">
+        <div
+          className={styles.titleFeature}
+          data-content="Create without constraints"
+        >
           Create without constraints
         </div>
 
