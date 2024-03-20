@@ -1,6 +1,8 @@
 "use client";
 
-import HighlightCard, { CardProps } from "@/components/cards/highlightCard";
+import HighlightCard, {
+  CardProps,
+} from "@/app/eco/components/cards/highlightCard";
 import styles from "./spotlight.module.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";

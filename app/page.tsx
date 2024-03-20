@@ -27,6 +27,10 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="highlight">
+        <h2 className={styles.featureTitle}>Build on the best tech</h2>
+      </section>
     </main>
   );
 }

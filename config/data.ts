@@ -1,4 +1,4 @@
-import { CardProps } from "@/components/cards/highlightCard";
+import { CardProps } from "@/app/eco/components/cards/highlightCard";
 
 const Spotlights: CardProps[] = [
   {
@@ -407,7 +407,8 @@ const Projects: CardProps[] = [
 
   {
     title: "Fireblocks",
-    description: "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
+    description:
+      "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
     image: "/images/fireblocks.jpeg",
     category: "Custody",
     links: {
@@ -418,7 +419,8 @@ const Projects: CardProps[] = [
   },
   {
     title: "Fordefi",
-    description: "An institutional MPC wallet and security platform built for DeFi.",
+    description:
+      "An institutional MPC wallet and security platform built for DeFi.",
     image: "/images/fordefi.jpeg",
     category: "Custody",
     links: {
@@ -427,7 +429,7 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-  ];
+];
 
 const More: CardProps[] = [
   {

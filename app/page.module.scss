@@ -1,9 +1,10 @@
 .main {
   display: flex;
+  flex-direction: column;
   background-color: var(--bg-color);
   min-height: 100dvh;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 .hero {
@@ -79,4 +80,14 @@
 @media screen and (max-width: 768px) {
   .main {
   }
+}
+
+.featureTitle {
+  color: #fdfdfd;
+  font-family: var(--vcr);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }

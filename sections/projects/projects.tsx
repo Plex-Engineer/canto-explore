@@ -1,11 +1,11 @@
 "use client";
 import Chip from "@/components/chips";
 import styles from "./projects.module.scss";
-import { CardProps } from "@/components/cards/highlightCard";
+import { CardProps } from "@/app/eco/components/cards/highlightCard";
 import { useEffect, useState } from "react";
-import ItemCard from "@/components/cards/itemCard";
+import ItemCard from "@/app/eco/components/cards/itemCard";
 import Input from "@/components/input/input";
-import { EmptyCard } from "@/components/cards/emptyCard";
+import { EmptyCard } from "@/app/eco/components/cards/emptyCard";
 import { AnimatePresence, motion } from "framer-motion";
 import DropDown from "@/components/dropdown/dropdown";
 import useMobile from "@/hooks/useMobile";

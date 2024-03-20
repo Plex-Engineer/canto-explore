@@ -1,6 +1,6 @@
 "use client";
 
-import FooterCard from "@/components/cards/footerCard";
+import FooterCard from "@/app/eco/components/cards/footerCard";
 import styles from "./footer.module.scss";
 
 const Footer = () => {

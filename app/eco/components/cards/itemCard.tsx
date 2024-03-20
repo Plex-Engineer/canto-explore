@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import styles from "./cards.module.scss";
-import Gap from "../gap";
+import Gap from "../../../../components/gap";
 import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { usePostHog } from 'posthog-js/react';
+import { usePostHog } from "posthog-js/react";
 
 const ItemCard = (props: CardProps) => {
   const posthog = usePostHog();

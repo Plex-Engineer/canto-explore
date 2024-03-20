@@ -1,6 +1,8 @@
 "use client";
 
-import HighlightCard, { CardProps } from "@/components/cards/highlightCard";
+import HighlightCard, {
+  CardProps,
+} from "@/app/eco/components/cards/highlightCard";
 import styles from "./more.module.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
@@ -14,7 +16,7 @@ import { Navigation } from "swiper/modules";
 import { useRef } from "react";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
-import Banner from "@/components/cards/banner";
+import Banner from "@/app/eco/components/cards/banner";
 
 const MoreSection = (articles: { items: CardProps[] }) => {
   const swiperRef = useRef<any>();

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./cards.module.scss";
-import Gap from "../gap";
+import Gap from "../../../../components/gap";
 import Link from "next/link";
 import { usePostHog } from "posthog-js/react";
 
