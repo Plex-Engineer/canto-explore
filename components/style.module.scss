@@ -35,6 +35,14 @@
   padding: 24px;
   gap: 24px;
   display: flex;
+  .title {
+    &::before {
+      content: ">";
+      color: #06fc99;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
