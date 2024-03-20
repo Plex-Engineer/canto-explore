@@ -5,6 +5,7 @@ import Card from "@/components/card";
 import Text from "@/components/text";
 import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
+import Container from "@/components/container";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
       </section>
       <Gap height={40} />
-      <section className={styles.highlight}>
+      <section className={styles.container}>
         <Text family="primary" color="secondary" size="large">
           <span>Build</span> on the best tech
         </Text>
@@ -62,17 +63,12 @@ export default function Home() {
         />
       </section>
       <Gap height={48} />
-      <section className={styles.highlight}>
+      <section className={styles.container}>
         <Text family="primary" color="secondary" size="large">
           LEVERAGE <span>innovative</span> financial primitives
         </Text>
         <Gap height={32} />
-        <div
-          style={{
-            display: "flex",
-            gap: "24px",
-          }}
-        >
+        <Container direction="row" gap="24px">
           <CardOutlined
             title="NEOFINANCE"
             content=" A new era of financial efficiencies, unlocked at scale, by
@@ -86,20 +82,15 @@ export default function Home() {
             composable manner."
             direction="column"
           />
-        </div>
+        </Container>
       </section>
       <Gap height={48} />
-      <section className={styles.highlight}>
+      <section className={styles.container}>
         <Text family="primary" color="secondary" size="large">
           FREE <span>PUBLIC</span> INFRASTRUCTURE
         </Text>
         <Gap height={24} />
-        <div
-          style={{
-            display: "flex",
-            gap: "24px",
-          }}
-        >
+        <Container direction="row" gap="24px">
           <CardOutlined
             title="Canto Dex"
             content="A zero-fee DEX, fueled by L1 incentives"
@@ -118,7 +109,7 @@ export default function Home() {
             direction="column"
             imgHeight="220px"
           />
-        </div>
+        </Container>
       </section>
     </main>
   );
