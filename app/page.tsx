@@ -105,7 +105,7 @@ export default function Home() {
         <div
           style={{
             display: "flex",
-            gap: "48px",
+            gap: "24px",
           }}
         >
           <Card
@@ -190,6 +190,143 @@ export default function Home() {
                 A distinct mechanism that enables novel methods of funding. 20%
                 of gas spent on an application is awarded to developers in a
                 composable manner.
+              </Text>
+            </div>
+          </Card>
+        </div>
+      </section>
+      <Gap height={48} />
+      <section className={styles.highlight}>
+        <Text family="primary" color="secondary" size="large">
+          FREE <span>PUBLIC</span> INFRASTRUCTURE
+        </Text>
+        <Gap height={24} />
+        <div
+          style={{
+            display: "flex",
+            gap: "24px",
+          }}
+        >
+          <Card
+            style={{
+              gap: "24px",
+              flexDirection: "column",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "220px",
+                flex: 1,
+              }}
+            >
+              <Image
+                src={"/cyclone.png"}
+                alt="Canto Bridge"
+                width={350}
+                height={220}
+                style={{
+                  width: "100%",
+                  opacity: 0.7,
+                }}
+              />
+            </div>
+            <div
+              className="content"
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "16px",
+              }}
+            >
+              <Text family="primary" size="medium" className={styles.title}>
+                CANTo DEX
+              </Text>
+              <Text color="secondary" size="small" weight="regular">
+                A zero-fee DEX, fueled by L1 incentives
+              </Text>
+            </div>
+          </Card>
+          <Card
+            style={{
+              gap: "24px",
+              flexDirection: "column",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "220px",
+                flex: 1,
+              }}
+            >
+              <Image
+                src={"/cyclone.png"}
+                alt="Canto Bridge"
+                width={350}
+                height={220}
+                style={{
+                  width: "100%",
+                  opacity: 0.7,
+                }}
+              />
+            </div>
+            <div
+              className="content"
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "16px",
+              }}
+            >
+              <Text family="primary" size="medium" className={styles.title}>
+                CANTo Lending market
+              </Text>
+              <Text color="secondary" size="small" weight="regular">
+                A lending market focused on NOTE & RWAs emphasizing security.
+              </Text>
+            </div>
+          </Card>
+          <Card
+            style={{
+              gap: "24px",
+              flexDirection: "column",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "220px",
+                flex: 1,
+              }}
+            >
+              <Image
+                src={"/cyclone.png"}
+                alt="Canto Bridge"
+                width={350}
+                height={220}
+                style={{
+                  width: "100%",
+                  opacity: 0.7,
+                }}
+              />
+            </div>
+            <div
+              className="content"
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "16px",
+              }}
+            >
+              <Text family="primary" size="medium" className={styles.title}>
+                NOte
+              </Text>
+              <Text color="secondary" size="small" weight="regular">
+                Canto’s native unit of account backed by RWAs.
               </Text>
             </div>
           </Card>
