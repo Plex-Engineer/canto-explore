@@ -96,6 +96,105 @@ export default function Home() {
           </div>
         </Card>
       </section>
+      <Gap height={48} />
+      <section className={styles.highlight}>
+        <Text family="primary" color="secondary" size="large">
+          LEVERAGE <span>innovative</span> financial primitives
+        </Text>
+        <Gap height={32} />
+        <div
+          style={{
+            display: "flex",
+            gap: "48px",
+          }}
+        >
+          <Card
+            style={{
+              gap: "24px",
+              flexDirection: "column",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "350px",
+                flex: 1,
+              }}
+            >
+              <Image
+                src={"/cyclone.png"}
+                alt="Canto Bridge"
+                width={350}
+                height={350}
+                style={{
+                  width: "100%",
+                  opacity: 0.7,
+                }}
+              />
+            </div>
+            <div
+              className="content"
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "16px",
+              }}
+            >
+              <Text family="primary" size="medium" className={styles.title}>
+                NEOFINANCE
+              </Text>
+              <Text color="secondary" size="small" weight="regular">
+                A new era of financial efficiencies, unlocked at scale, by
+                deploying off chain assets on protocol rails.
+              </Text>
+            </div>
+          </Card>
+          <Card
+            style={{
+              gap: "24px",
+              flexDirection: "column",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "350px",
+                flex: 1,
+              }}
+            >
+              <Image
+                src={"/cyclone.png"}
+                alt="Canto Bridge"
+                width={350}
+                height={350}
+                style={{
+                  width: "100%",
+                  opacity: 0.7,
+                }}
+              />
+            </div>
+            <div
+              className="content"
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "16px",
+              }}
+            >
+              <Text family="primary" size="medium" className={styles.title}>
+                Contract secured revenue
+              </Text>
+              <Text color="secondary" size="small" weight="regular">
+                A distinct mechanism that enables novel methods of funding. 20%
+                of gas spent on an application is awarded to developers in a
+                composable manner.
+              </Text>
+            </div>
+          </Card>
+        </div>
+      </section>
     </main>
   );
 }
