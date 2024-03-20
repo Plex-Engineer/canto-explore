@@ -104,3 +104,23 @@
     margin-right: 10px;
   }
 }
+
+.link {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #757575;
+  background: rgba(12, 12, 12, 0.5);
+  color: #fdfdfd;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: var(--vcr);
+  letter-spacing: 1px;
+}

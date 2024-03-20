@@ -1,11 +1,11 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
 import Image from "next/image";
-import Card from "@/components/card";
 import Text from "@/components/text";
 import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
+import EcoSystem from "./components/ecoSystem";
 
 export default function Home() {
   return (
@@ -111,6 +111,34 @@ export default function Home() {
           />
         </Container>
       </section>
+      <Gap height={80} />
+      <section className={styles.container}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Text family="primary" color="secondary" size="large">
+            DISCOVER <span>PROJECTS</span> ON THE CANTO CHAIN
+          </Text>
+          <Link
+            className={styles.link}
+            href={"/eco"}
+            //   onClick={() =>
+            //     posthog.capture("Navlink", {
+            //       Website: "Launch Homepage",
+            //     })
+            //   }
+          >
+            Explore Ecosystem
+          </Link>
+        </div>
+        <Gap height={24} />
+        <EcoSystem />
+      </section>
+      <Gap height={48} />
     </main>
   );
 }

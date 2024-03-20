@@ -5,7 +5,12 @@ import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        borderTop: "1px solid #2D2D2D",
+      }}
+    >
       <div className={styles["inner_container"]}>
         <FooterCard
           text="Visit Blog"
