@@ -15,6 +15,11 @@ const videotype = localFont({
   variable: "--videotype",
 });
 
+const vcr = localFont({
+  src: "../fonts/vcr.ttf",
+  variable: "--vcr",
+});
+
 export const metadata: Metadata = {
   title: "Explore Canto’s Ecosystem",
   description:
@@ -45,7 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <Providers>
         <body
-          className={`${rmmono.variable} ${videotype.variable} ${rmmono.className} `}
+          className={`${rmmono.variable} ${videotype.variable} ${vcr.variable} ${rmmono.className} `}
         >
           <NavBar />
           {children}
