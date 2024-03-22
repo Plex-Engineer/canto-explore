@@ -367,6 +367,30 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "CantoSafe",
+    description:
+      "Multi-sig Wallet Infrastructure on Canto.",
+    image: "/images/canto-safe.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://safe.neobase.one/welcome",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "CantoSplits",
+    description:
+      "A set of contracts for efficient onchain payments. Create splits, waterfall distributions, or even CSR NFT distributions all in a trust-less, decentralized manner.",
+    image: "/images/splits.svg",
+    category: "Infra & Tools",
+    links: {
+      site: "https://splits.neobase.one/",
+      twitter: "",
+      github: "",
+    },
+  },
 
   // Community
 
