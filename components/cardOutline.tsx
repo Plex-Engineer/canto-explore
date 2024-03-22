@@ -10,6 +10,7 @@ interface Props {
   direction?: "row" | "column";
   extra?: React.ReactNode;
   imgHeight?: string;
+  className?: string;
 }
 export const CardOutlined = ({
   title,
@@ -17,10 +18,11 @@ export const CardOutlined = ({
   direction,
   extra,
   imgHeight,
+  className,
 }: Props) => {
   return (
     <Card
-      className={styles.cardOutlined}
+      className={`${styles.cardOutlined} ${className}`}
       style={{
         flexDirection: direction,
         gap: "24px",

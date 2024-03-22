@@ -49,6 +49,7 @@ export default function Home() {
         <Gap height={32} />
 
         <CardOutlined
+          className={styles["primary-container"]}
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
               Execution Cyclone EVM. It combines speed with scalability to give
@@ -74,7 +75,11 @@ export default function Home() {
           LEVERAGE <span>innovative</span> financial primitives
         </Text>
         <Gap height={32} />
-        <Container direction="row" gap="24px">
+        <Container
+          direction="row"
+          gap="24px"
+          className={styles["secondary-container"]}
+        >
           <CardOutlined
             title="NEOFINANCE"
             content=" A new era of financial efficiencies, unlocked at scale, by
@@ -96,7 +101,11 @@ export default function Home() {
           FREE <span>PUBLIC</span> INFRASTRUCTURE
         </Text>
         <Gap height={24} />
-        <Container direction="row" gap="24px">
+        <Container
+          direction="row"
+          gap="24px"
+          className={styles["component-container"]}
+        >
           <CardOutlined
             title="Canto Dex"
             content="A zero-fee DEX, fueled by L1 incentives"
@@ -124,6 +133,7 @@ export default function Home() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            width: "100%",
           }}
         >
           <Text family="primary" color="secondary" size="large">

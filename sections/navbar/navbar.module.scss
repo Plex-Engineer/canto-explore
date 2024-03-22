@@ -70,3 +70,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  .links {
+    display: none;
+  }
+  .buttons {
+    a {
+      padding: 8px 16px;
+    }
+  }
+}
