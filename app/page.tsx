@@ -50,6 +50,7 @@ export default function Home() {
 
         <CardOutlined
           className={styles["primary-container"]}
+          direction="row-reverse"
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
               Execution Cyclone EVM. It combines speed with scalability to give
@@ -76,22 +77,45 @@ export default function Home() {
         </Text>
         <Gap height={32} />
         <Container
-          direction="row"
+          direction="column"
           gap="24px"
           className={styles["secondary-container"]}
         >
           <CardOutlined
             title="NEOFINANCE"
-            content=" A new era of financial efficiencies, unlocked at scale, by
-            deploying off chain assets on protocol rails."
-            direction="column"
+            content="A new era of financial efficiencies, unlocked at scale, by deploying off chain assets on protocol rails."
+            extra={
+              <Link href="https://neo.canto.io">
+                <Text
+                  family="primary"
+                  size="small"
+                  color="primary"
+                  style={{
+                    textDecoration: "underline",
+                  }}
+                >
+                  Learn More
+                </Text>
+              </Link>
+            }
           />
           <CardOutlined
             title="Contract secured revenue"
-            content="A distinct mechanism that enables novel methods of funding. 20%
-            of gas spent on an application is awarded to developers in a
-            composable manner."
-            direction="column"
+            direction="row-reverse"
+            content="A distinct mechanism that enables novel methods of funding. 20% of gas spent on an application is awarded to developers in a composable manner."
+            extra={
+              <Link href="https://csr.canto.io">
+                <Text
+                  size="small"
+                  color="primary"
+                  style={{
+                    textDecoration: "underline",
+                  }}
+                >
+                  LEARN MORE
+                </Text>
+              </Link>
+            }
           />
         </Container>
       </section>

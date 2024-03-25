@@ -7,7 +7,7 @@ import styles from "./style.module.scss";
 interface Props {
   title: string;
   content: string;
-  direction?: "row" | "column";
+  direction?: "row" | "column" | "row-reverse";
   extra?: React.ReactNode;
   imgHeight?: string;
   className?: string;

@@ -36,6 +36,12 @@
   gap: 24px;
   display: flex;
   perspective: 100px;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover {
+    // transform: scale(1.02);
+    box-shadow: 0 0 10px 0 #2e2e2e;
+    border-color: #5f5f5f;
+  }
   .title {
     &::before {
       content: ">";
@@ -44,8 +50,8 @@
       margin-right: 10px;
     }
   }
-
-  @container {
+  img {
+    outline: #2e2e2e 1px solid;
   }
 }
 
@@ -54,5 +60,16 @@
     padding: 14px 16px;
     font-size: 12px;
     height: 44px;
+  }
+
+  .card {
+    flex-direction: column !important;
+    img {
+      aspect-ratio: 16/9 !important;
+    }
+
+    div > img {
+      height: 100%;
+    }
   }
 }

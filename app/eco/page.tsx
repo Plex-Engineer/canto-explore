@@ -14,7 +14,6 @@ export default function Home() {
       <Spotlight items={Spotlights} />
       <ProjectsSections items={Projects} />
       <MoreSection items={More} />
-      <Footer />
     </main>
   );
 }
