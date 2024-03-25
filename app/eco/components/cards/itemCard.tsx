@@ -7,7 +7,7 @@ import { CardProps } from "./highlightCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePostHog } from "posthog-js/react";
-
+ 
 const ItemCard = (props: CardProps) => {
   const posthog = usePostHog();
   return (
@@ -46,7 +46,7 @@ const ItemCard = (props: CardProps) => {
         </div>
         <Gap height={8} />
         <h3>{props.title}</h3>
-        <h5>{props.description}</h5>
+        <h5 className={`${styles.textDesc}`}>{props.description}</h5>
       </section>
     </motion.article>
   );

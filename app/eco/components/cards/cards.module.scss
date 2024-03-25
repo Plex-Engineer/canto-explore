@@ -71,7 +71,9 @@
   border: 1px solid #252525;
   background: #121212;
   transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-
+  .container{
+    height: auto;
+  }
   img {
     display: flex;
     object-fit: cover;
@@ -90,7 +92,13 @@
     transform: scale(1.01);
   }
 }
-
+.textDesc{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .emptyCard {
   display: flex;
   height: 158px;
