@@ -46,26 +46,21 @@
   position: relative;
   overflow: hidden;
 
-  // repeating linear gradient
-  //   background: repeating-linear-gradient(
-  //     0deg,
-  //     #018f5612,
-  //     #018f5612 10px,
-  //     #046d430a 20px,
-  //     #046d430a 60px
-  //   );
-
   background-image: url("/effect.svg");
   background-size: contain;
   background-repeat: no-repeat;
 
   .titleFeature {
-    color: #06fc99;
     font-family: var(--vcr);
     font-size: 56px;
     line-height: 140%; /* 78.4px */
     text-transform: uppercase;
     position: relative;
+    // apply gradient to text
+    background: linear-gradient(90deg, #06fc99 0%, #06fc99 30%, #06fc9a00 100%);
+    // move gradient
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     // &::after {
     //   content: attr(data-content);
@@ -78,6 +73,24 @@
     //   -webkit-text-stroke-width: 1;
     //   -webkit-text-stroke-color: #3a3a3a;
     // }
+    // background-size: 10%;
+    background-repeat: no-repeat;
+
+    animation: reveal 4s forwards;
+    @keyframes reveal {
+      0% {
+        background-size: 0% 100%;
+        scale: 0.98;
+        translate: -14px 0px;
+      }
+      30% {
+        scale: 1;
+        translate: 0px 0px;
+      }
+      100% {
+        background-size: 300% 100%;
+      }
+    }
   }
 
   .secondary {

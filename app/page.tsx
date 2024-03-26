@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./page.module.scss";
 import Image from "next/image";
@@ -6,6 +8,7 @@ import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
 import EcoSystem from "./components/ecoSystem";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -18,12 +21,12 @@ export default function Home() {
             CANTO
           </Text>
         </div>
-        <div
+        <motion.div
           className={styles.titleFeature}
           data-content="Create without constraints"
         >
           Create without constraints
-        </div>
+        </motion.div>
 
         <div className={styles.secondary}>
           {">"} Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi

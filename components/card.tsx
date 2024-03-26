@@ -10,8 +10,8 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <motion.div
-      initial={{ rotateX: 70, opacity: 0 }}
-      whileInView={{ rotateX: 0, opacity: 1 }}
+      initial={{ filter: "blur(20px)", y: 100, opacity: 0 }}
+      whileInView={{ filter: "blur(0px)", y: 0, rotateX: 0, opacity: 1 }}
       transition={{ duration: 0.5, bounce: 0.2 }}
       viewport={{
         once: true,
