@@ -22,7 +22,7 @@
   a {
     display: flex;
     align-items: center;
-    color: #ececec;
+    color: #444444;
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
@@ -39,6 +39,7 @@
   }
   .active {
     border-bottom: 2px solid white;
+    color: #ececec;
   }
 }
 
