@@ -42,7 +42,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </section>
-      <section className={styles.row}>
+      <section className={styles.img}>
         {/* <Image
           src={"/hero.png"}
           alt="canto ecosystem"
