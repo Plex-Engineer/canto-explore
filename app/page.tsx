@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./page.module.scss";
 import Image from "next/image";
@@ -6,6 +8,7 @@ import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
 import EcoSystem from "./components/ecoSystem";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -18,12 +21,12 @@ export default function Home() {
             CANTO
           </Text>
         </div>
-        <div
+        <motion.div
           className={styles.titleFeature}
           data-content="Create without constraints"
         >
           Create without constraints
-        </div>
+        </motion.div>
 
         <div className={styles.secondary}>
           {">"} Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi
@@ -50,6 +53,7 @@ export default function Home() {
 
         <CardOutlined
           className={styles["primary-container"]}
+          direction="row-reverse"
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
               Execution Cyclone EVM. It combines speed with scalability to give
@@ -76,22 +80,45 @@ export default function Home() {
         </Text>
         <Gap height={32} />
         <Container
-          direction="row"
+          direction="column"
           gap="24px"
           className={styles["secondary-container"]}
         >
           <CardOutlined
             title="NEOFINANCE"
-            content=" A new era of financial efficiencies, unlocked at scale, by
-            deploying off chain assets on protocol rails."
-            direction="column"
+            content="A new era of financial efficiencies, unlocked at scale, by deploying off chain assets on protocol rails."
+            extra={
+              <Link href="https://neo.canto.io">
+                <Text
+                  family="primary"
+                  size="small"
+                  color="primary"
+                  style={{
+                    textDecoration: "underline",
+                  }}
+                >
+                  Learn More
+                </Text>
+              </Link>
+            }
           />
           <CardOutlined
             title="Contract secured revenue"
-            content="A distinct mechanism that enables novel methods of funding. 20%
-            of gas spent on an application is awarded to developers in a
-            composable manner."
-            direction="column"
+            direction="row-reverse"
+            content="A distinct mechanism that enables novel methods of funding. 20% of gas spent on an application is awarded to developers in a composable manner."
+            extra={
+              <Link href="https://csr.canto.io">
+                <Text
+                  size="small"
+                  color="primary"
+                  style={{
+                    textDecoration: "underline",
+                  }}
+                >
+                  LEARN MORE
+                </Text>
+              </Link>
+            }
           />
         </Container>
       </section>
