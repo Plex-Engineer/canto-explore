@@ -9,6 +9,7 @@ import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
 import EcoSystem from "./components/ecoSystem";
 import { motion } from "framer-motion";
+import StatCard from "@/components/statCard";
 
 export default function Home() {
   return (
@@ -53,7 +54,6 @@ export default function Home() {
 
         <CardOutlined
           className={styles["primary-container"]}
-          direction="row-reverse"
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
               Execution Cyclone EVM. It combines speed with scalability to give
@@ -72,6 +72,19 @@ export default function Home() {
             </div>
           }
         />
+        <div style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+            gap: "24px",
+            marginTop: "24px"
+            }}>
+        
+        <StatCard primary="TRANSACTIONS PER SECOND" secondary="12,500" />
+        <StatCard primary="TRANSACTIONS" secondary="1.2b+" />
+        <StatCard primary="TIME TO FINALITY" secondary="380ms" />
+        <StatCard primary="Sub-Second Block Time" secondary="5,000 TPS" />
+        </div>
       </section>
       <Gap height={48} />
       <section className={styles.container}>
