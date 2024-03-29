@@ -50,7 +50,7 @@ export default function Home() {
         <Text family="primary" color="secondary" size="large">
           <span>Build</span> on the best tech
         </Text>
-        <Gap height={32} />
+        <Gap height={64} />
 
         <CardOutlined
         image="/cyclone.png"
@@ -87,7 +87,7 @@ export default function Home() {
         <StatCard primary="Sub-Second Block Time" secondary="5,000 TPS" />
         </div>
       </section>
-      <Gap height={48} />
+      <Gap height={180} />
       <section className={styles.container}>
         <Text family="primary" color="secondary" size="large">
           LEVERAGE <span>innovative</span> financial primitives
@@ -145,7 +145,7 @@ export default function Home() {
 
         </Container>
       </section>
-      <Gap height={48} />
+      <Gap height={200} />
       <section className={styles.container}>
         <Text family="primary" color="secondary" size="large">
           FREE <span>PUBLIC</span> INFRASTRUCTURE
@@ -180,7 +180,7 @@ export default function Home() {
          
         </Container>
       </section>
-      <Gap height={80} />
+      <Gap height={200} />
       <section className={styles.container}>
         <div
           style={{
@@ -208,7 +208,7 @@ export default function Home() {
         <Gap height={24} />
         <EcoSystem />
       </section>
-      <Gap height={48} />
+      <Gap height={300} />
     </main>
   );
 }
