@@ -47,7 +47,7 @@ export default function Home() {
       </section>
       <Gap height={40} />
       <section className={styles.container}>
-        <Text family="primary" color="secondary" size="large">
+        <Text family="primary" color="secondary" size="large" className={styles.header}>
           <span>Build</span> on the best tech
         </Text>
         <Gap height={64} />
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
       <Gap height={180} />
       <section className={styles.container}>
-        <Text family="primary" color="secondary" size="large">
+        <Text family="primary" color="secondary" size="large" className={styles.header}>
           LEVERAGE <span>innovative</span> financial primitives
         </Text>
         <Gap height={32} />
@@ -147,7 +147,7 @@ export default function Home() {
       </section>
       <Gap height={200} />
       <section className={styles.container}>
-        <Text family="primary" color="secondary" size="large">
+        <Text family="primary" color="secondary" size="large" className={styles.header}>
           FREE <span>PUBLIC</span> INFRASTRUCTURE
         </Text>
         <Gap height={24} />
@@ -190,7 +190,7 @@ export default function Home() {
             width: "100%",
           }}
         >
-          <Text family="primary" color="secondary" size="large">
+          <Text family="primary" color="secondary" size="large" className={styles.header}>
             DISCOVER <span>PROJECTS</span> ON THE CANTO CHAIN
           </Text>
           <Link
