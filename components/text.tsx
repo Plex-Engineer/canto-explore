@@ -1,5 +1,4 @@
-import { get } from "http";
-
+import {animate, motion} from "framer-motion";
 interface Props {
   children: React.ReactNode;
   size?: "small" | "medium" | "large";
@@ -10,6 +9,7 @@ interface Props {
   style?: React.CSSProperties;
   className?: string;
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  animate ? : boolean;
 }
 
 const Text = (props: Props) => {
@@ -66,7 +66,15 @@ const Text = (props: Props) => {
   };
 
   return (
-    <div
+    <motion.div
+    initial={props.animate ? { x: -10, opacity: 0 } : {}}
+    whileInView={props.animate ? {  x: 0, opacity: 1 } : {}}
+    transition={{ duration: 0.7, bounce: 0.1, ease: "easeOut"}}
+    viewport={{
+      once: true,
+      margin: "-80px",
+    }}
+
       style={{
         ...props.style,
         fontSize: getSize(props.size || "medium"),
@@ -82,7 +90,7 @@ const Text = (props: Props) => {
       onClick={props.onClick}
     >
       {props.children}
-    </div>
+    </motion.div>
   );
 };
 
