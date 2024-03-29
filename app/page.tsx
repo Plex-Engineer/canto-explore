@@ -93,13 +93,16 @@ export default function Home() {
         </Text>
         <Gap height={32} />
         <Container
-          direction="column"
+          direction="row"
           gap="24px"
           className={styles["secondary-container"]}
         >
+            {/* <div className={styles.glowEffect}></div> */}
+
           <CardOutlined
             title="NEOFINANCE"
             content="A new era of financial efficiencies, unlocked at scale, by deploying off chain assets on protocol rails."
+            direction="column"
             extra={
               <Link href="https://neo.canto.io">
                 <Text
@@ -117,7 +120,7 @@ export default function Home() {
           />
           <CardOutlined
             title="Contract secured revenue"
-            direction="row-reverse"
+            direction="column"
             content="A distinct mechanism that enables novel methods of funding. 20% of gas spent on an application is awarded to developers in a composable manner."
             extra={
               <Link href="https://csr.canto.io">
@@ -133,6 +136,7 @@ export default function Home() {
               </Link>
             }
           />
+
         </Container>
       </section>
       <Gap height={48} />
@@ -146,6 +150,12 @@ export default function Home() {
           gap="24px"
           className={styles["component-container"]}
         >
+            <CardOutlined
+            title="Note"
+            content="Canto’s native unit of account backed by RWAs."
+            direction="column"
+            imgHeight="400px"
+          />
           <CardOutlined
             title="Canto Dex"
             content="A zero-fee DEX, fueled by L1 incentives"
@@ -158,12 +168,7 @@ export default function Home() {
             direction="column"
             imgHeight="220px"
           />
-          <CardOutlined
-            title="Note"
-            content="Canto’s native unit of account backed by RWAs."
-            direction="column"
-            imgHeight="220px"
-          />
+         
         </Container>
       </section>
       <Gap height={80} />

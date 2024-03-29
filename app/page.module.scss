@@ -6,7 +6,7 @@
   width: 100%;
   padding: 16px;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 200px;
 }
 // .glow {
 //   height: 300px;
@@ -145,6 +145,20 @@
   max-width: 1400px;
   width: 100%;
 }
+
+.glowEffect {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+top: 50%;
+transform: translateY(-50%);
+    // background: #06fc99;
+    box-shadow: 0 0 30px 0 #06fc99;
+}
+
+.secondary-container {
+    position: relative;
+}
 @media screen and (max-width: 768px) {
   .main {
     padding: 0 16px;
@@ -189,6 +203,16 @@
   font-family: var(--vcr);
   letter-spacing: 1px;
 }
+
+.component-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > div:nth-child(1) {
+        // spans 2 columns
+        grid-row: span 2;
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .hero {
