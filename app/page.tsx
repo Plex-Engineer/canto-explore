@@ -53,7 +53,7 @@ export default function Home() {
         <Gap height={32} />
 
         <CardOutlined
-        image="/cyclone.jpg"
+        image="/cyclone.png"
           className={styles["primary-container"]}
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
