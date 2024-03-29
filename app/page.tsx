@@ -45,12 +45,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Gap height={40} />
+      <Gap height={64} />
       <section className={styles.container}>
         <Text family="primary" color="secondary" size="large" className={styles.header}>
           <span>Build</span> on the best tech
         </Text>
-        <Gap height={64} />
+        <Gap height={32} />
 
         <CardOutlined
         image="/cyclone.png"
