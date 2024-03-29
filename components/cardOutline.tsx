@@ -8,6 +8,7 @@ interface Props {
   title: string;
   content: string;
   direction?: "row" | "column" | "row-reverse";
+  image: string;
   extra?: React.ReactNode;
   imgHeight?: string;
   className?: string;
@@ -19,6 +20,7 @@ export const CardOutlined = ({
   extra,
   imgHeight,
   className,
+  image
 }: Props) => {
   return (
     <Card
@@ -36,13 +38,13 @@ export const CardOutlined = ({
         }}
       >
         <Image
-          src={"/cyclone.png"}
+          src={image}
           alt="Canto Bridge"
           width={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
           height={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
           style={{
             width: "100%",
-            opacity: 0.7,
+            objectFit: "cover",
           }}
         />
       </div>

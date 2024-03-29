@@ -53,6 +53,7 @@ export default function Home() {
         <Gap height={32} />
 
         <CardOutlined
+        image="/cyclone.jpg"
           className={styles["primary-container"]}
           title="CYCLONE Stack: A Parallel Execution EVM"
           content="Experience the speed and efficiency unlocked by Canto’s Parallel
@@ -100,6 +101,8 @@ export default function Home() {
             {/* <div className={styles.glowEffect}></div> */}
 
           <CardOutlined
+          image="/Neofinance.jpg"
+          imgHeight="450px"
             title="NEOFINANCE"
             content="A new era of financial efficiencies, unlocked at scale, by deploying off chain assets on protocol rails."
             direction="column"
@@ -119,6 +122,9 @@ export default function Home() {
             }
           />
           <CardOutlined
+          image="/CSR.jpg"
+          imgHeight="450px"
+
             title="Contract secured revenue"
             direction="column"
             content="A distinct mechanism that enables novel methods of funding. 20% of gas spent on an application is awarded to developers in a composable manner."
@@ -151,18 +157,21 @@ export default function Home() {
           className={styles["component-container"]}
         >
             <CardOutlined
+            image="/NOTE.png"
             title="Note"
             content="Canto’s native unit of account backed by RWAs."
             direction="column"
             imgHeight="400px"
           />
           <CardOutlined
+          image="/DEX.png"
             title="Canto Dex"
             content="A zero-fee DEX, fueled by L1 incentives"
             direction="column"
             imgHeight="220px"
           />
           <CardOutlined
+          image="/CLM.png"
             title="Canto Lending market"
             content="A lending market focused on NOTE & RWAs emphasizing security."
             direction="column"
