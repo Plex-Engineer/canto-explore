@@ -16,7 +16,7 @@ const videotype = localFont({
 });
 
 const vcr = localFont({
-  src: "../fonts/vcr.ttf",
+  src: "../fonts/proto-mono-regular.ttf",
   variable: "--vcr",
 });
 
