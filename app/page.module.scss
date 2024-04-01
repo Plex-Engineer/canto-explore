@@ -9,6 +9,10 @@
     align-items: center;
     padding: 0 clamp(16px, 10vw, 200px);
 }
+
+
+  
+  
 // .glow {
 //   height: 300px;
 //   width: 300px;
@@ -58,6 +62,7 @@
     gap: 40px;
     height: 500px;
     justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
 
@@ -66,37 +71,16 @@
     background-repeat: no-repeat;
 
     .titleFeature {
-        font-family: var(--vcr);
         font-size: 56px;
-        line-height: 140%; /* 78.4px */
-        text-transform: uppercase;
         position: relative;
         padding-left: 6px;
         background-repeat: no-repeat;
-        color: rgb(24, 24, 24);
-        --color: #02bb71;
-        text-shadow:
-            -1px -1px 0px var(--color),
-            1px 1px 0px var(--color),
-            1px -1px 0px var(--color),
-            -1px 1px 0px var(--color);
-        &:hover::after {
-            top: 0px;
-            left: 0px;
-        }
-        &::after {
-            content: attr(data-content);
-            position: absolute;
-            top: -5px;
-            left: -6px;
-            width: 100%;
-            padding-left: 6px;
-
-            height: 100%;
-            color: #06fc99;
-            text-shadow: 0 0 0px #06fc99;
-            transition: all 0.2s ease;
-        }
+        color: white;
+        text-align: center;
+        color: #EDEDED;
+font-family: "Helvetica Neue";
+font-weight: 400;
+line-height: 100%; /* 56px */
         // animation: reveal 4s forwards;
         @keyframes reveal {
             0% {
@@ -125,6 +109,7 @@
         display: flex;
         align-items: flex-start;
         gap: 24px;
+
         a {
             display: flex;
             width: 240px;
@@ -138,9 +123,9 @@
             color: black;
             border: none;
             transition: all 0.2s ease;
-
+            border-radius: 4px;
             &:hover {
-                background: #cecece;
+                filter: brightness(1.2) ;
                 scale: 1.02;
             }
             &[data-type="outlined"] {
@@ -149,7 +134,7 @@
                 border: 1px solid #06fc99;
 
                 &:hover {
-                    background: #1e1e1e;
+                    background: #031d12;
                 }
             }
         }

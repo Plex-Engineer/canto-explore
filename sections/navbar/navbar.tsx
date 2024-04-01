@@ -22,7 +22,7 @@ export const NavBar = () => {
       >
         <Image
           className={styles.logo}
-          src="/logo.svg"
+          src="/logo-3d.png"
           alt="logo"
           width={100}
           height={100}

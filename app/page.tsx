@@ -10,6 +10,7 @@ import Container from "@/components/container";
 import EcoSystem from "./components/ecoSystem";
 import { motion } from "framer-motion";
 import StatCard from "@/components/statCard";
+import TextReveal from "@/components/textReveal";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <section className={styles.hero}>
         {/* <div className={styles.glow}></div> */}
         <div className={styles.pretext}>
-          <Image src={"/logo.svg"} alt="canto" width={20} height={20} />
+          <Image src={"/logo-accent.svg"} alt="canto" width={20} height={20} />
           <Text family="primary" color="accent" size="large">
             CANTO
           </Text>
@@ -26,14 +27,27 @@ export default function Home() {
           className={styles.titleFeature}
           data-content="Create without constraints"
         >
-          Create without constraints
+          Decentralized innovation
+          <br/>
+            on lightspeed rails
         </motion.div>
 
-        <div className={styles.secondary}>
-          {">"} Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi
+        
+        <div>
+        <span style={{
+            color: "#06FC99",
+            fontSize: "1.2rem",
+            marginRight: "10px"
+            
+            
+        }}>{">"}</span>
+        <TextReveal text="Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi
           through a post-traditional financial movement, new systems will be
-          made accessible, transparent, decentralized, and free
+          made accessible, transparent, decentralized, and free">
+        
+        </TextReveal>
         </div>
+       
 
         <div className={styles.cta}>
           <Link href="/bridge">
