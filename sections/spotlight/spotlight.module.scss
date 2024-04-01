@@ -1,78 +1,78 @@
 .container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: var(--max-width, 1200px);
-  margin-inline: auto;
+	//   width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: var(--max-width, 100vw);
+	margin-inline: auto;
 }
 
 .swiper {
-  height: 450px;
+	height: 450px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100%;
-    z-index: 2;
-    background: linear-gradient(270deg, #0c0c0c00 10%, var(--bg-color) 100%);
-  }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100%;
+		z-index: 2;
+		background: linear-gradient(270deg, #0c0c0c00 10%, var(--bg-color) 100%);
+	}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100%;
-    z-index: 2;
-    background: linear-gradient(90deg, #0c0c0c00 10%, var(--bg-color) 100%);
-  }
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100px;
+		height: 100%;
+		z-index: 2;
+		background: linear-gradient(90deg, #0c0c0c00 10%, var(--bg-color) 100%);
+	}
 }
 .btn {
-  display: block;
-  background-color: white;
-  height: 100%;
+	display: block;
+	background-color: white;
+	height: 100%;
 }
 
 .ray {
-  position: absolute;
-  top: -180px;
-  left: -180px;
-  width: 1000px;
-  object-fit: contain;
-  z-index: 4;
-  user-select: none;
-  pointer-events: none;
-  //   height: 100%;
+	position: absolute;
+	top: -180px;
+	left: -180px;
+	width: 1000px;
+	object-fit: contain;
+	z-index: 4;
+	user-select: none;
+	pointer-events: none;
+	//   height: 100%;
 }
 
 .title {
-  margin: 0 80px;
-  margin-inline: auto;
-  max-width: var(--max-width, 1200px);
-  position: relative;
+	margin: 0 80px;
+	margin-inline: auto;
+	max-width: var(--max-width, 1200px);
+	position: relative;
 }
 
 @media screen and (max-width: 768px) {
-  .title {
-    margin: 0 40px;
-  }
+	.title {
+		margin: 0 40px;
+	}
 
-  .swiper {
-    padding: 0 32px;
-    height: fit-content;
-    &::before,
-    &::after {
-      width: 32px;
-    }
-  }
+	.swiper {
+		padding: 0 32px;
+		height: fit-content;
+		&::before,
+		&::after {
+			width: 32px;
+		}
+	}
 
-  .pagination {
-    transform: translateY(50px);
-    background-color: red;
-  }
+	.pagination {
+		transform: translateY(50px);
+		background-color: red;
+	}
 }

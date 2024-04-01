@@ -11,6 +11,8 @@ import EcoSystem from "./components/ecoSystem";
 import { motion } from "framer-motion";
 import StatCard from "@/components/statCard";
 import TextReveal from "@/components/textReveal";
+import Spotlight from "@/sections/spotlight/spotlight";
+import { More, Projects, Spotlights } from "@/config/data";
 
 export default function Home() {
 	return (
@@ -228,7 +230,7 @@ export default function Home() {
 					</Link>
 				</div>
 				<Gap height={24} />
-				<EcoSystem />
+				<Spotlight items={Spotlights} />
 			</section>
 			<Gap height={300} />
 		</main>
