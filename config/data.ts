@@ -95,17 +95,6 @@ const Projects: CardProps[] = [
     },
   },
   {
-    title: "DexGuru",
-    description: "EVM Canto chain block explorer.",
-    image: "/images/dexguru.png",
-    category: "Block Explorer",
-    links: {
-      site: "https://canto.dex.guru/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
     title: "Parsec",
     description: "Customizable onchain analytics terminal and block explorer.",
     image: "/images/parsec.jpg",
@@ -391,7 +380,30 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-
+  {
+    title: "Dex Screener",
+    description:
+      "Dex Screener provides realtime price charts and trading history.",
+    image: "/images/dexscreener.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://dexscreener.com/canto",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "GeckoTerminal",
+    description:
+      "GeckoTerminal is a comprehensive real-time DEX tracker, built by the team behind CoinGecko",
+    image: "/images/geckoterminal.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://www.geckoterminal.com/canto/pools",
+      twitter: "",
+      github: "",
+    },
+  },
   // Community
 
   {
