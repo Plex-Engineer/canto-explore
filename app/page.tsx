@@ -34,7 +34,12 @@ export default function Home() {
 					on lightspeed rails
 				</motion.div>
 
-				<div>
+				<div
+					style={{
+						maxWidth: "900px",
+						textAlign: "justify",
+					}}
+				>
 					<span
 						style={{
 							color: "#06FC99",
