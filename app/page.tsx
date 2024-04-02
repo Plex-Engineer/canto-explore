@@ -235,9 +235,9 @@ export default function Home() {
 					</Link>
 				</div>
 				<Gap height={24} />
-				<Spotlight items={Spotlights} />
+				<Spotlight header={false} items={Spotlights} />
 			</section>
-			<Gap height={300} />
+			<Gap height={150} />
 		</main>
 	);
 }

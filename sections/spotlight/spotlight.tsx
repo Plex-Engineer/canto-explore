@@ -20,65 +20,69 @@ import {
 import Gap from "@/components/gap";
 import useMobile from "@/hooks/useMobile";
 
-const Spotlight = (props: { items: CardProps[] }) => {
+const Spotlight = (props: { items: CardProps[]; header: boolean }) => {
 	const isMobile = useMobile();
 
 	return (
 		<section className={styles.spotlight}>
-			<Gap height={100} />
-			<h2 className={styles.title}>
-				spotlight
-				<svg
-					className={styles.ray}
-					xmlns="http://www.w3.org/2000/svg"
-					width="872"
-					height="649"
-					viewBox="0 0 872 649"
-					fill="none"
-				>
-					<g filter="url(#filter0_f_858_18830)">
-						<path
-							d="M100.056 100.629L920.5 425L920.5 548.629L112.556 276.129L100.056 100.629Z"
-							fill="url(#paint0_linear_858_18830)"
-							fill-opacity="0.15"
-						/>
-					</g>
-					<defs>
-						<filter
-							id="filter0_f_858_18830"
-							x="0.0557861"
-							y="0.628906"
-							width="1020.44"
-							height="648"
-							filterUnits="userSpaceOnUse"
-							color-interpolation-filters="sRGB"
+			{props.header && (
+				<>
+					<Gap height={100} />
+					<h2 className={styles.title}>
+						spotlight
+						<svg
+							className={styles.ray}
+							xmlns="http://www.w3.org/2000/svg"
+							width="872"
+							height="649"
+							viewBox="0 0 872 649"
+							fill="none"
 						>
-							<feFlood flood-opacity="0" result="BackgroundImageFix" />
-							<feBlend
-								mode="normal"
-								in="SourceGraphic"
-								in2="BackgroundImageFix"
-								result="shape"
-							/>
-							<feGaussianBlur
-								stdDeviation="50"
-								result="effect1_foregroundBlur_858_18830"
-							/>
-						</filter>
-						<linearGradient
-							id="paint0_linear_858_18830"
-							x1="-383.113"
-							y1="45.679"
-							x2="792.837"
-							y2="371.772"
-							gradientUnits="userSpaceOnUse"
-						>
-							<stop stop-color="#D9D9D9" />
-							<stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
-						</linearGradient>
-					</defs>
-				</svg>
-			</h2>
+							<g filter="url(#filter0_f_858_18830)">
+								<path
+									d="M100.056 100.629L920.5 425L920.5 548.629L112.556 276.129L100.056 100.629Z"
+									fill="url(#paint0_linear_858_18830)"
+									fill-opacity="0.15"
+								/>
+							</g>
+							<defs>
+								<filter
+									id="filter0_f_858_18830"
+									x="0.0557861"
+									y="0.628906"
+									width="1020.44"
+									height="648"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="BackgroundImageFix"
+										result="shape"
+									/>
+									<feGaussianBlur
+										stdDeviation="50"
+										result="effect1_foregroundBlur_858_18830"
+									/>
+								</filter>
+								<linearGradient
+									id="paint0_linear_858_18830"
+									x1="-383.113"
+									y1="45.679"
+									x2="792.837"
+									y2="371.772"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop stop-color="#D9D9D9" />
+									<stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</h2>
+				</>
+			)}
 
 			<Gap height={40} />
 

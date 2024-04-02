@@ -8,12 +8,12 @@ import MoreSection from "@/sections/more/moreSection";
 import { More, Projects, Spotlights } from "@/config/data";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <HeroSection />
-      <Spotlight items={Spotlights} />
-      <ProjectsSections items={Projects} />
-      <MoreSection items={More} />
-    </main>
-  );
+	return (
+		<main className={styles.main}>
+			<HeroSection />
+			<Spotlight header={true} items={Spotlights} />
+			<ProjectsSections items={Projects} />
+			<MoreSection items={More} />
+		</main>
+	);
 }
