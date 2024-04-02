@@ -3,8 +3,6 @@ import styles from "./style.module.scss";
 
 interface Props {
 	text: string;
-	cursor: string;
-	speed: number;
 }
 
 export default function TextReveal({ text }: Props) {
