@@ -37,7 +37,6 @@ export default function Home() {
 				<div
 					style={{
 						maxWidth: "900px",
-						textAlign: "justify",
 					}}
 				>
 					<span
