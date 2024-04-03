@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 
 interface Props {
@@ -11,7 +11,6 @@ export default function TextReveal({ text }: Props) {
 	const [aniText, setAniText] = useState("");
 	const [aniTextReverse, setAniTextReverse] = useState(text);
 
-	// randomize the speed of timeout to make it more natural
 	const speed = Math.floor(Math.random() * 100) + 50;
 	useEffect(() => {
 		if (start) {
@@ -38,7 +37,6 @@ export default function TextReveal({ text }: Props) {
 	}, []);
 	return (
 		<span className={styles.textReveal}>
-			{/* keep adding text after delay */}
 			{aniText}
 			<span
 				style={{
