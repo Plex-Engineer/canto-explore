@@ -5,71 +5,108 @@ import Text from "./text";
 import styles from "./style.module.scss";
 
 interface Props {
-  title: string;
-  content: string;
-  direction?: "row" | "column" | "row-reverse";
-  image: string;
-  extra?: React.ReactNode;
-  imgHeight?: string;
-  className?: string;
+	title: string;
+	content: string;
+	direction?: "row" | "column" | "row-reverse";
+	image: string;
+	extra?: React.ReactNode;
+	imgHeight?: string;
+	className?: string;
+	glow?: {
+		x: number;
+		y: number;
+	};
+	lineDirection?: "left" | "right";
 }
 export const CardOutlined = ({
-  title,
-  content,
-  direction,
-  extra,
-  imgHeight,
-  className,
-  image
+	title,
+	content,
+	direction,
+	extra,
+	imgHeight,
+	className,
+	image,
+	glow,
+	lineDirection,
 }: Props) => {
-  return (
-    <Card
-      className={`${styles.cardOutlined} ${className}`}
-      style={{
-        flexDirection: direction,
-        gap: "24px",
-        width: "100%",
-      }}
-    >
-      <div
-        style={{
-          height: imgHeight ? imgHeight : "350px",
-          flex: 1,
-        }}
-      >
-        <Image
-          src={image}
-          alt="Canto Bridge"
-          width={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
-          height={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
-          style={{
-            width: "100%",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-      <div
-        className="content"
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          gap: "16px",
-        }}
-      >
-        <Text family="primary" size="medium" className={styles.title}>
-          {title}
-        </Text>
-        <Text color="secondary" size="small" weight="regular">
-          {content}
-        </Text>
-        <div
-          style={{
-            flex: 1,
-          }}
-        ></div>
-        {extra}
-      </div>
-    </Card>
-  );
+	return (
+		<div
+			style={{
+				width: "100%",
+				position: "relative",
+			}}
+			className={styles.cardOutlined}
+		>
+			{lineDirection && (
+				<div
+					className={styles.line}
+					style={{
+						top: "50%",
+						left: lineDirection === "right" ? 0 : "auto",
+						right: lineDirection === "left" ? 0 : "auto",
+						width: "100vmax",
+						height: "1px",
+					}}
+				></div>
+			)}
+
+			{glow && (
+				<div
+					className={styles.glow}
+					style={{
+						top: `${glow.y}%`,
+						left: `${glow.x}%`,
+					}}
+				></div>
+			)}
+			<Card
+				className={`${styles.cardOutlined} ${className}`}
+				style={{
+					flexDirection: direction,
+					gap: "24px",
+					width: "100%",
+				}}
+			>
+				<div
+					style={{
+						height: imgHeight ? imgHeight : "350px",
+						flex: 1,
+					}}
+				>
+					<Image
+						src={image}
+						alt="Canto Bridge"
+						width={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
+						height={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
+						style={{
+							width: "100%",
+							objectFit: "cover",
+						}}
+					/>
+				</div>
+				<div
+					className="content"
+					style={{
+						flex: 1,
+						display: "flex",
+						flexDirection: "column",
+						gap: "16px",
+					}}
+				>
+					<Text family="primary" size="medium" className={styles.title}>
+						{title}
+					</Text>
+					<Text color="secondary" size="small" weight="regular">
+						{content}
+					</Text>
+					<div
+						style={{
+							flex: 1,
+						}}
+					></div>
+					{extra}
+				</div>
+			</Card>
+		</div>
+	);
 };

@@ -125,6 +125,11 @@ export default function Home() {
 					{/* <div className={styles.glowEffect}></div> */}
 
 					<CardOutlined
+						lineDirection="left"
+						glow={{
+							x: 3,
+							y: 50,
+						}}
 						image="/Neofinance.jpg"
 						imgHeight="450px"
 						title="NEOFINANCE"
@@ -146,6 +151,11 @@ export default function Home() {
 						}
 					/>
 					<CardOutlined
+						lineDirection="right"
+						glow={{
+							x: 80,
+							y: 50,
+						}}
 						image="/CSR.jpg"
 						imgHeight="450px"
 						title="Contract secured revenue"
@@ -185,6 +195,11 @@ export default function Home() {
 					className={styles["component-container"]}
 				>
 					<CardOutlined
+						lineDirection="left"
+						glow={{
+							x: 3,
+							y: 50,
+						}}
 						image="/NOTE.png"
 						title="Note"
 						content="Canto’s native unit of account backed by RWAs."
@@ -192,6 +207,11 @@ export default function Home() {
 						imgHeight="400px"
 					/>
 					<CardOutlined
+						lineDirection="right"
+						glow={{
+							x: 80,
+							y: 50,
+						}}
 						image="/DEX.png"
 						title="Canto Dex"
 						content="A zero-fee DEX, fueled by L1 incentives"
@@ -199,6 +219,11 @@ export default function Home() {
 						imgHeight="220px"
 					/>
 					<CardOutlined
+						lineDirection="right"
+						glow={{
+							x: 80,
+							y: 50,
+						}}
 						image="/CLM.png"
 						title="Canto Lending market"
 						content="A lending market focused on NOTE & RWAs emphasizing security."

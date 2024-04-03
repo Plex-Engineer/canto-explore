@@ -35,7 +35,7 @@
 	padding: 24px;
 	gap: 24px;
 	display: flex;
-	perspective: 100px;
+	height: 100%;
 	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
 		// transform: scale(1.02);
@@ -130,4 +130,30 @@
 			opacity: 1;
 		}
 	}
+}
+
+.cardOutlined {
+	background-color: var(--bg-color);
+
+	&:hover > .glow {
+		opacity: 0.5;
+	}
+}
+
+.line {
+	display: flex;
+	position: absolute;
+
+	background-color: #06fc99;
+}
+
+.glow {
+	position: absolute;
+	background-color: #06fc99;
+	opacity: 0.3;
+	height: 70%;
+	transform: translateY(-40%);
+	transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	width: 100px;
+	filter: blur(60px);
 }
