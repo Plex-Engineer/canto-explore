@@ -7,7 +7,6 @@ import Text from "@/components/text";
 import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
-import EcoSystem from "./components/ecoSystem";
 import { motion } from "framer-motion";
 import StatCard from "@/components/statCard";
 import TextReveal from "@/components/textReveal";
@@ -18,7 +17,6 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<section className={styles.hero}>
-				{/* <div className={styles.glow}></div> */}
 				<div className={styles.pretext}>
 					<Image src={"/logo-accent.svg"} alt="canto" width={20} height={20} />
 					<Text family="primary" color="accent" size="large">
