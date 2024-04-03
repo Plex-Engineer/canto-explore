@@ -11,22 +11,28 @@ export default function TextReveal({ text }: Props) {
 	const [aniText, setAniText] = useState("");
 	const [aniTextReverse, setAniTextReverse] = useState(text);
 
-	const speed = Math.floor(Math.random() * 100) + 50;
 	useEffect(() => {
 		if (start) {
-			let i = 0;
-			let j = text.length - 1;
-			let interval = setInterval(() => {
-				setAniText(text.slice(0, i + 1));
-				setAniTextReverse((prev) => prev.slice(1, aniTextReverse.length));
-				i++;
-				j--;
-				if (i === text.length) {
-					clearInterval(interval);
-				}
-			}, speed);
+			textReveal();
 		}
 	}, [start]);
+
+	async function textReveal() {
+		for (let i = 0; i < text.length; i++) {
+			let speed = 100;
+			setAniText(text.slice(0, i + 1));
+			setAniTextReverse((prev) => prev.slice(1, aniTextReverse.length));
+
+			if (text[i] === " ") {
+				speed = Math.floor(Math.random() * 50) + 2;
+
+				await new Promise((res) =>
+					setTimeout(res, Math.floor(Math.random() * 400) + 20)
+				);
+			}
+			await new Promise((res) => setTimeout(res, speed));
+		}
+	}
 
 	//a version of textReveal where after each word the speed of the text reveal changes
 
