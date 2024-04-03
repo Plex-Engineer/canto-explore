@@ -43,6 +43,7 @@ export default function TextReveal({ text }: Props) {
 			<span
 				style={{
 					position: "absolute",
+					color: "#06FC99",
 				}}
 				className={styles.cursor}
 			>
