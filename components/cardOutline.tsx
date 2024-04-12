@@ -3,7 +3,7 @@ import React from "react";
 import Card from "./card";
 import Text from "./text";
 import styles from "./style.module.scss";
-
+import { motion } from "framer-motion";
 interface Props {
 	title: string;
 	content: string;
@@ -38,7 +38,9 @@ export const CardOutlined = ({
 			className={styles.cardOutlined}
 		>
 			{lineDirection && (
-				<div
+				<motion.div
+					initial={{ width: 0 }}
+					animate={{ width: "100vmax" }}
 					className={styles.line}
 					style={{
 						top: "50%",
@@ -47,17 +49,23 @@ export const CardOutlined = ({
 						width: "100vmax",
 						height: "1px",
 					}}
-				></div>
+				></motion.div>
 			)}
 
 			{glow && (
-				<div
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 0.1 }}
+					transition={{
+						delay: 0.5,
+						direction: "forward",
+					}}
 					className={styles.glow}
 					style={{
 						top: `${glow.y}%`,
 						left: `${glow.x}%`,
 					}}
-				></div>
+				></motion.div>
 			)}
 			<Card
 				className={`${styles.cardOutlined} ${className}`}

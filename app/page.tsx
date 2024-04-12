@@ -125,7 +125,6 @@ export default function Home() {
 					{/* <div className={styles.glowEffect}></div> */}
 
 					<CardOutlined
-						lineDirection="left"
 						glow={{
 							x: 3,
 							y: 50,
@@ -151,7 +150,6 @@ export default function Home() {
 						}
 					/>
 					<CardOutlined
-						lineDirection="right"
 						glow={{
 							x: 80,
 							y: 50,
@@ -195,7 +193,6 @@ export default function Home() {
 					className={styles["component-container"]}
 				>
 					<CardOutlined
-						lineDirection="left"
 						glow={{
 							x: 3,
 							y: 50,
@@ -207,7 +204,6 @@ export default function Home() {
 						imgHeight="400px"
 					/>
 					<CardOutlined
-						lineDirection="right"
 						glow={{
 							x: 80,
 							y: 50,
@@ -219,7 +215,6 @@ export default function Home() {
 						imgHeight="220px"
 					/>
 					<CardOutlined
-						lineDirection="right"
 						glow={{
 							x: 80,
 							y: 50,
