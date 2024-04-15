@@ -463,6 +463,61 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "Plex Labs",
+    description: "Core development team focused on Canto core client & primitives.",
+    image: "/images/plex.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/Plex_Official",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "B-Harvest",
+    description: "Core development team focused on Canto core client & primitives.",
+    image: "/images/bharvest.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/B__Harvest",
+      twitter: "",
+      github: "",
+    },
+  },
+    {
+      title: "Neobase",
+      description: "Core development team focused on BlankRasa and other apps on Canto.",
+      image: "/images/neobase.png",
+      category: "Contributor",
+      links: {
+        site: "https://x.com/NeoBase_Studios",
+        twitter: "",
+        github: "",
+      },
+  },
+  {
+    title: "G-Unit",
+    description: "Incubator focused on accelerating growth in the Canto ecoysystem.",
+    image: "/images/gunit.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/TheCantoGUnit",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Canto Growth Collective",
+    description: "Grassroots Community Building, Marketing, & Growth initiatives.",
+    image: "/images/growth_collective.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/CantoGrowth",
+      twitter: "",
+      github: "",
+    },
+  },
   ];
 
 const More: CardProps[] = [
