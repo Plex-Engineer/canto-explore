@@ -2,67 +2,19 @@
 
 import Link from "next/link";
 import styles from "./page.module.scss";
-import Image from "next/image";
 import Text from "@/components/text";
 import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
-import { motion } from "framer-motion";
 import StatCard from "@/components/statCard";
-import TextReveal from "@/components/textReveal";
 import Spotlight from "@/sections/spotlight/spotlight";
-import { More, Projects, Spotlights } from "@/config/data";
+import { Spotlights } from "@/config/data";
+import HeroSection from "@/sections/hero";
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<section className={styles.hero}>
-				<div className={styles.pretext}>
-					<Image src={"/logo-accent.svg"} alt="canto" width={20} height={20} />
-					<Text family="primary" color="accent" size="large">
-						CANTO
-					</Text>
-				</div>
-				<motion.div
-					className={styles.titleFeature}
-					data-content="Create without constraints"
-				>
-					Decentralized innovation
-					<br />
-					on lightspeed rails
-				</motion.div>
-
-				<div
-					style={{
-						maxWidth: "900px",
-					}}
-				>
-					<span
-						style={{
-							color: "#06FC99",
-							fontSize: "1.2rem",
-							marginRight: "10px",
-						}}
-					>
-						{">"}
-					</span>
-					<TextReveal
-						text="Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi
-          through a post-traditional financial movement, new systems will be
-          made accessible, transparent, decentralized, and free"
-					></TextReveal>
-				</div>
-
-				<div className={styles.cta}>
-					<Link href="/bridge">
-						<Image src={"/arrow-link.svg"} alt="link" width={32} height={32} />
-						BRIDGE IN
-					</Link>
-					<Link href="/explore" data-type="outlined">
-						BUILD ON CANTO
-					</Link>
-				</div>
-			</section>
+			<HeroSection />
 			<Gap height={64} />
 			<section className={styles.container}>
 				<Text
