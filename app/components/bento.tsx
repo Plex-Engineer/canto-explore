@@ -1,0 +1,65 @@
+"use client";
+
+import styles from "../page.module.scss";
+import Text from "@/components/text";
+import Gap from "@/components/gap";
+import { CardOutlined } from "@/components/cardOutline";
+import Container from "@/components/container";
+
+const BentoSection = () => {
+	return (
+		<section className={styles.container}>
+			<Text
+				family="primary"
+				color="secondary"
+				size="large"
+				className={styles.header}
+				animate
+			>
+				FREE <span>PUBLIC</span> INFRASTRUCTURE
+			</Text>
+			<Gap height={24} />
+			<Container
+				direction="row"
+				gap="24px"
+				className={styles["component-container"]}
+			>
+				<CardOutlined
+					glow={{
+						x: 3,
+						y: 50,
+					}}
+					image="/NOTE.png"
+					title="Note"
+					content="Canto’s native unit of account backed by RWAs."
+					direction="column"
+					imgHeight="400px"
+				/>
+				<CardOutlined
+					glow={{
+						x: 80,
+						y: 50,
+					}}
+					image="/DEX.png"
+					title="Canto Dex"
+					content="A zero-fee DEX, fueled by L1 incentives"
+					direction="column"
+					imgHeight="220px"
+				/>
+				<CardOutlined
+					glow={{
+						x: 80,
+						y: 50,
+					}}
+					image="/CLM.png"
+					title="Canto Lending market"
+					content="A lending market focused on NOTE & RWAs emphasizing security."
+					direction="column"
+					imgHeight="220px"
+				/>
+			</Container>
+		</section>
+	);
+};
+
+export default BentoSection;
