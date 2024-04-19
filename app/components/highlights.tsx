@@ -22,6 +22,11 @@ const HighlightSection = () => {
 
 			<CardOutlined
 				image="/cyclone.png"
+				glow={{
+					x: 0,
+					y: 50,
+					size: 100,
+				}}
 				className={styles["primary-container"]}
 				title="CYCLONE Stack: A Parallel Execution EVM"
 				content="Experience the speed and efficiency unlocked by Canto’s Parallel

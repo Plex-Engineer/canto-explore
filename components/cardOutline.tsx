@@ -15,6 +15,7 @@ interface Props {
 	glow?: {
 		x: number;
 		y: number;
+		size?: number;
 	};
 	lineDirection?: "left" | "right";
 }
@@ -57,13 +58,14 @@ export const CardOutlined = ({
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 0.1 }}
 					transition={{
-						delay: 0.5,
+						delay: 1,
 						direction: "forward",
 					}}
 					className={styles.glow}
 					style={{
 						top: `${glow.y}%`,
 						left: `${glow.x}%`,
+						width: `${glow.size ? glow.size + "%" : 100 + "px"}`,
 					}}
 				></motion.div>
 			)}
