@@ -153,6 +153,17 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "Interport",
+    description: "Interport enables cross chain gas transfers to Canto by allowing you to swap assets on a source chain for CANTO.",
+    image: "/images/interport.png",
+    category: "Bridge",
+    links: {
+      site: "https://interport.fi/",
+      twitter: "",
+      github: "",
+    },
+  },
 
   // DeFi
 
@@ -203,7 +214,19 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-
+  {
+    title: "Hyperliquid",
+    description:
+      "Trade CANTO perps on Hyperliquids decentralized perpetual exchange.",
+    image: "/images/hyperliquid.png",
+    category: "DeFi",
+    links: {
+      site: "https://app.hyperliquid.xyz/trade/CANTO",
+      twitter: "",
+      github: "",
+    },
+  },
+ 
   // RWA
 
   {
@@ -439,8 +462,9 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-  // Custody
 
+  // Custody
+  
   {
     title: "Fireblocks",
     description: "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
@@ -463,7 +487,10 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-  {
+
+    // Contributors
+  
+    {
     title: "Plex Labs",
     description: "Core development team focused on Canto core client & primitives.",
     image: "/images/plex.png",
