@@ -39,6 +39,7 @@ const BentoSection = () => {
 								Partnered with leading issuers:
 							</Text>
 							<Container
+								className={styles["m-col"]}
 								direction={"row"}
 								gap={"auto"}
 								style={{

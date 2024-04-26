@@ -196,6 +196,11 @@
 }
 
 @media screen and (max-width: 768px) {
+	.m-col {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column !important;
+	}
 	.hero {
 		gap: 40px;
 		padding: 2rem 0;
