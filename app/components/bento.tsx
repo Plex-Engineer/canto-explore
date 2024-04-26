@@ -5,6 +5,7 @@ import Text from "@/components/text";
 import Gap from "@/components/gap";
 import { CardOutlined } from "@/components/cardOutline";
 import Container from "@/components/container";
+import Image from "next/image";
 
 const BentoSection = () => {
 	return (
@@ -31,7 +32,35 @@ const BentoSection = () => {
 					}}
 					image="/NOTE.png"
 					title="Note"
-					content="Canto’s native unit of account backed by RWAs."
+					content="Canto’s native unit of account backed by Real world assets (RWA’s)."
+					extra={
+						<div>
+							<Text color="secondary" size="small">
+								Partnered with leading issuers:
+							</Text>
+							<Container
+								direction={"row"}
+								gap={"auto"}
+								style={{
+									width: "100%",
+									justifyContent: "space-around",
+								}}
+							>
+								<Image
+									src="/hashnote.svg"
+									alt="hashnote"
+									width={200}
+									height={120}
+								/>
+								<Image
+									src="/fortunafi.svg"
+									alt="fortunafi"
+									width={200}
+									height={120}
+								/>
+							</Container>
+						</div>
+					}
 					direction="column"
 					imgHeight="400px"
 				/>

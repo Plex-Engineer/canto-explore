@@ -91,6 +91,7 @@ export const CardOutlined = ({
 						style={{
 							width: "100%",
 							objectFit: "cover",
+							outline: "#171717 1px solid",
 						}}
 					/>
 				</div>
