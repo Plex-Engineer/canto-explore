@@ -20,9 +20,9 @@ const HeroSection = () => {
 				className={styles.titleFeature}
 				data-content="Create without constraints"
 			>
-				Decentralized innovation
+				Decentralized Finance
 				<br />
-				on lightspeed rails
+				on Lightspeed Rails
 			</motion.div>
 
 			<div
@@ -39,11 +39,7 @@ const HeroSection = () => {
 				>
 					{">"}
 				</span>
-				<TextReveal
-					text="Layer 1 Blockchain BUILT TO DELIVER on the promise of DeFi
-          through a post-traditional financial movement, new systems will be
-          made accessible, transparent, decentralized, and free"
-				></TextReveal>
+				<TextReveal text="> Layer 1 blockchain Built to deliver on the promise of defi through innovative incentive mechanisms & cutting edge performance. Canto is accessible, Transparent, decentralized, and free."></TextReveal>
 			</div>
 
 			<div className={styles.cta}>

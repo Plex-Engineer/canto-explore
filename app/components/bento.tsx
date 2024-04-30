@@ -72,7 +72,7 @@ const BentoSection = () => {
 					}}
 					image="/DEX.png"
 					title="Canto Dex"
-					content="A zero-fee DEX, fueled by L1 incentives"
+					content="A zero-fee DEX with liquidity incentivized by the base chain."
 					direction="column"
 					imgHeight="220px"
 				/>
@@ -82,8 +82,8 @@ const BentoSection = () => {
 						y: 50,
 					}}
 					image="/CLM.png"
-					title="Canto Lending market"
-					content="A lending market focused on NOTE & RWAs emphasizing security."
+					title="Canto Lending market(CLM)"
+					content="A Compound v2 style lending market for borrowing & lending NOTE."
 					direction="column"
 					imgHeight="220px"
 				/>

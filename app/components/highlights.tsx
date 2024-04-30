@@ -29,9 +29,7 @@ const HighlightSection = () => {
 				}}
 				className={styles["primary-container"]}
 				title="CYCLONE Stack: A Parallel Execution EVM"
-				content="Experience the speed and efficiency unlocked by Canto’s Parallel
-  Execution Cyclone EVM. It combines speed with scalability to give
-  developers the best possible platform for building applications."
+				content="Experience the speed and efficiency unlocked by Canto’s Parallel Execution Cyclone EVM. It combines speed with scalability to give builders the best possible platform for building applications."
 				extra={
 					<div
 						style={{
@@ -47,10 +45,10 @@ const HighlightSection = () => {
 				}
 			/>
 			<div className={styles.stats}>
-				<StatCard primary="TRANSACTIONS PER SECOND" secondary="12,500" />
-				<StatCard primary="TRANSACTIONS" secondary="1.2b+" />
-				<StatCard primary="TIME TO FINALITY" secondary="380ms" />
-				<StatCard primary="Sub-Second Block Time" secondary="5,000 TPS" />
+				<StatCard primary="Transactions per Second" secondary="12,500" />
+				<StatCard primary="Time to Finality" secondary="380ms" />
+				<StatCard primary="Stability Metric" secondary="1.2b+" />
+				<StatCard primary="Cost to Swap" secondary="5,000 TPS" />
 			</div>
 		</section>
 	);

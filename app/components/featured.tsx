@@ -36,7 +36,7 @@ const FeaturedSection = () => {
 					image="/Neofinance.jpg"
 					imgHeight="450px"
 					title="NEOFINANCE"
-					content="A new era of financial efficiencies, unlocked at scale, by deploying off chain assets on protocol rails."
+					content="The Canto neofinance ecosystem consists of several primitives designed to enable transparent, competitive financial terms."
 					direction="column"
 					extra={
 						<Link href="https://neo.canto.io">
@@ -62,7 +62,7 @@ const FeaturedSection = () => {
 					imgHeight="450px"
 					title="Contract secured revenue"
 					direction="column"
-					content="A distinct mechanism that enables novel methods of funding. 20% of gas spent on an application is awarded to developers in a composable manner."
+					content="A distinct mechanism that enables novel methods of funding. Twenty percent of gas spent on an application is given to developers as a rebate in a composable manner."
 					extra={
 						<Link href="https://csr.canto.io">
 							<Text
