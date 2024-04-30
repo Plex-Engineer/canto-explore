@@ -1,23 +1,28 @@
 .container {
-  border-radius: 8px;
-  height: 100%;
-  background: #121212;
+	border-radius: 8px;
+	height: 100%;
+	background: #121212;
 }
 
 .inner_container {
-  max-width: var(--max-width, 1200px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0;
-  gap: 3rem;
-  margin: 0 auto;
+	max-width: var(--max-width, 1200px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	gap: 3rem;
+	margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  .inner_container {
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1.2rem;
-  }
+	.inner_container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+		gap: 1.2rem;
+	}
+
+	.divider {
+		display: none;
+	}
 }

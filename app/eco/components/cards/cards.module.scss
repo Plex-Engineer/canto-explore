@@ -1,200 +1,207 @@
 .highlightCard {
-  background-color: #1a1a1a;
-  border: 1px solid #717070;
-  display: flex;
-  flex-direction: column;
-  border-radius: 4px;
-  color: white;
-  overflow: hidden;
-  height: 400px;
-  position: relative;
+	background-color: #1a1a1a;
+	border: 1px solid #717070;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	color: white;
+	overflow: hidden;
+	height: 400px;
+	position: relative;
 
-  img {
-    display: flex;
-    width: 100%;
-    height: 36%;
-    object-fit: contain;
-    background-color: #333;
-  }
+	img {
+		display: flex;
+		width: 100%;
+		height: 36%;
+		object-fit: contain;
+		background-color: #333;
+	}
 
-  h3 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  h5 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    flex-grow: 2;
-  }
+	h3 {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	h5 {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		flex-grow: 2;
+	}
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  padding: 32px 24px;
-  gap: 8px;
-  height: 30%;
+	display: flex;
+	flex-direction: column;
+	padding: 32px 24px;
+	gap: 8px;
+	height: 30%;
 }
 .fill-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .links {
-  display: flex;
-  gap: 8px;
-  a {
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 4px;
-    background: #222;
-    text-decoration: none;
+	display: flex;
+	gap: 8px;
+	a {
+		display: flex;
+		padding: 8px;
+		align-items: center;
+		gap: 10px;
+		border-radius: 4px;
+		background: #222;
+		text-decoration: none;
 
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    width: fit-content;
-  }
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		width: fit-content;
+	}
 }
 
 .itemCard {
-  height: 100%;
-  border-radius: 8px;
-  border: 1px solid #252525;
-  background: #121212;
-  background-color: #0c0c0c;
-  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+	height: 100%;
+	border-radius: 8px;
+	border: 1px solid #252525;
+	background: #121212;
+	background-color: #0c0c0c;
+	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  img {
-    display: flex;
-    object-fit: cover;
-    background-color: #333;
-    margin: 32px 24px;
-    margin-bottom: 0;
-    border-radius: 4px;
-    width: 90px;
-    height: 90px;
-  }
+	img {
+		display: flex;
+		object-fit: cover;
+		background-color: #333;
+		margin: 32px 24px;
+		margin-bottom: 0;
+		border-radius: 4px;
+		width: 90px;
+		height: 90px;
+	}
 
-  //   &:hover {
-  //     border-color: #9a9a9a;
-  //     background-color: #1b1a1a;
-  //     cursor: pointer;
-  //     transform: scale(1.01);
-  //   }
+	//   &:hover {
+	//     border-color: #9a9a9a;
+	//     background-color: #1b1a1a;
+	//     cursor: pointer;
+	//     transform: scale(1.01);
+	//   }
 
-  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  &:hover {
-    // transform: scale(1.02);
-    box-shadow: 0 0 10px 0 #2e2e2e;
-    border-color: #5f5f5f;
-  }
+	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+	&:hover {
+		// transform: scale(1.02);
+		box-shadow: 0 0 10px 0 #2e2e2e;
+		border-color: #5f5f5f;
+	}
 }
 
 .emptyCard {
-  display: flex;
-  height: 158px;
-  align-items: center;
-  margin: 3rem 0;
-  padding: 0 32px;
-  gap: 1rem;
-  border-radius: 8px;
-  border: 1px solid #252525;
+	display: flex;
+	height: 158px;
+	align-items: center;
+	margin: 3rem 0;
+	padding: 0 32px;
+	gap: 1rem;
+	border-radius: 8px;
+	border: 1px solid #252525;
 
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 20px;
-  line-height: 147%;
-  letter-spacing: -0.8px;
-  opacity: 0.75;
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 20px;
+	line-height: 147%;
+	letter-spacing: -0.8px;
+	opacity: 0.75;
 
-  span {
-    opacity: 0.5;
-  }
+	span {
+		opacity: 0.5;
+	}
 }
 
 .footerCard {
-  display: flex;
-  width: 100%;
-  padding: 16px 22px;
-  justify-content: space-between;
-  border-radius: 8px;
-  border: 1px solid #252525;
-  transition: all 0.1s ease-in-out;
-  div {
-    display: flex;
-    font-family: var(--videotype);
-    font-size: 14px;
-    align-items: center;
-    gap: 16px;
-  }
+	display: flex;
+	// width: 100%;
+	width: min-content;
+	padding: 16px 22px;
+	justify-content: center;
+	border-radius: 8px;
+	border: 1px solid #252525;
+	transition: all 0.1s ease-in-out;
+	div {
+		display: flex;
+		font-family: var(--videotype);
+		font-size: 14px;
+		align-items: center;
+		gap: 16px;
+		// single line
+		white-space: nowrap;
+	}
 
-  &:hover {
-    border-color: #9a9a9a;
-    background-color: #1b1a1a;
-    cursor: pointer;
-  }
+	&:hover {
+		border-color: #9a9a9a;
+		background-color: #1b1a1a;
+		cursor: pointer;
+	}
 }
 
 .banner {
-  display: block;
-  border: 1px solid #717070;
-  border-radius: 4px;
-  height: 100%;
-  transition: all 0.1s ease-in-out;
+	display: block;
+	border: 1px solid #717070;
+	border-radius: 4px;
+	height: 100%;
+	transition: all 0.1s ease-in-out;
 
-  &:hover {
-    cursor: pointer;
-    border-radius: 4px;
-    border: 2px solid #bcbcbc;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 3px;
-  }
+	&:hover {
+		cursor: pointer;
+		border-radius: 4px;
+		border: 2px solid #bcbcbc;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 3px;
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .itemCard {
-    height: 100%;
+	.itemCard {
+		height: 100%;
 
-    img {
-      width: 48px;
-      height: 48px;
-      font-size: 14px;
-      margin: 12px;
-    }
+		img {
+			width: 48px;
+			height: 48px;
+			font-size: 14px;
+			margin: 12px;
+		}
 
-    &:hover {
-      border-color: #9a9a9a;
-      background-color: #1b1a1a;
-      cursor: pointer;
-      transform: scale(1.01);
-    }
-    a {
-      font-size: 10px;
-    }
-    h3 {
-      font-size: 12px;
-    }
+		&:hover {
+			border-color: #9a9a9a;
+			background-color: #1b1a1a;
+			cursor: pointer;
+			transform: scale(1.01);
+		}
+		a {
+			font-size: 10px;
+		}
+		h3 {
+			font-size: 12px;
+		}
 
-    h5 {
-      font-size: 10px;
-    }
+		h5 {
+			font-size: 10px;
+		}
 
-    .container {
-      height: min-content;
-      padding: 12px;
-      padding-top: 0px;
-    }
-  }
+		.container {
+			height: min-content;
+			padding: 12px;
+			padding-top: 0px;
+		}
+	}
+
+	.footerCard {
+		width: 100%;
+	}
 }
