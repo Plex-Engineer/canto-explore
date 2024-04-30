@@ -33,7 +33,7 @@ const FeaturedSection = () => {
 						x: 3,
 						y: 50,
 					}}
-					image="/Neofinance.jpg"
+					image="/anims/neo.gif"
 					imgHeight="450px"
 					title="NEOFINANCE"
 					content="The Canto neofinance ecosystem consists of several primitives designed to enable transparent, competitive financial terms."
@@ -58,7 +58,7 @@ const FeaturedSection = () => {
 						x: 80,
 						y: 50,
 					}}
-					image="/CSR.jpg"
+					image="/anims/CSR.gif"
 					imgHeight="450px"
 					title="Contract secured revenue"
 					direction="column"

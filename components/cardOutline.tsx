@@ -83,17 +83,37 @@ export const CardOutlined = ({
 						flex: 1,
 					}}
 				>
-					<Image
-						src={image}
-						alt="Canto Bridge"
-						width={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
-						height={Number((imgHeight ? imgHeight : "350px").replace("px", ""))}
-						style={{
-							width: "100%",
-							objectFit: "cover",
-							outline: "#171717 1px solid",
-						}}
-					/>
+					{image.includes(".mp4") ? (
+						<video
+							autoPlay
+							loop
+							muted
+							style={{
+								width: "100%",
+								height: "100%",
+								objectFit: "cover",
+								outline: "#171717 1px solid",
+							}}
+						>
+							<source src={image} type="video/mp4" />
+						</video>
+					) : (
+						<Image
+							src={image}
+							alt="Canto Bridge"
+							width={Number(
+								(imgHeight ? imgHeight : "350px").replace("px", "")
+							)}
+							height={Number(
+								(imgHeight ? imgHeight : "350px").replace("px", "")
+							)}
+							style={{
+								width: "100%",
+								objectFit: "cover",
+								outline: "#171717 1px solid",
+							}}
+						/>
+					)}
 				</div>
 				<div
 					className="content"

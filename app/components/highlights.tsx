@@ -21,7 +21,7 @@ const HighlightSection = () => {
 			<Gap height={32} />
 
 			<CardOutlined
-				image="/cyclone.png"
+				image="/anims/cyclone.mp4"
 				glow={{
 					x: 0,
 					y: 50,
