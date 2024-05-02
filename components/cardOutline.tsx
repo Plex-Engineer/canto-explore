@@ -9,6 +9,7 @@ interface Props {
 	content: string;
 	direction?: "row" | "column" | "row-reverse";
 	image: string;
+	loop?: boolean;
 	extra?: React.ReactNode;
 	imgHeight?: string;
 	className?: string;
@@ -29,6 +30,7 @@ export const CardOutlined = ({
 	image,
 	glow,
 	lineDirection,
+	loop,
 }: Props) => {
 	return (
 		<div
@@ -86,7 +88,7 @@ export const CardOutlined = ({
 					{image.includes(".mp4") ? (
 						<video
 							autoPlay
-							loop
+							loop={loop}
 							muted
 							playsInline
 							style={{

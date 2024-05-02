@@ -33,8 +33,9 @@ const FeaturedSection = () => {
 						x: 3,
 						y: 50,
 					}}
-					image="/anims/neo.gif"
+					image="/anims/neo.mp4"
 					imgHeight="450px"
+					loop={false}
 					title="NEOFINANCE"
 					content="The Canto neofinance ecosystem consists of several primitives designed to enable transparent, competitive financial terms."
 					direction="column"
@@ -58,7 +59,8 @@ const FeaturedSection = () => {
 						x: 80,
 						y: 50,
 					}}
-					image="/anims/CSR.gif"
+					image="/anims/CSR.mp4"
+					loop={true}
 					imgHeight="450px"
 					title="Contract secured revenue"
 					direction="column"
