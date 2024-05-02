@@ -110,7 +110,7 @@
 	}
 }
 @media (max-width: 768px) {
-	.actions {
+	.cta {
 		// flex-direction: column;
 		width: 100%;
 		gap: 16px;
@@ -132,12 +132,47 @@
 		height: 100%;
 		h1 {
 			text-align: center;
-			font-size: 28px;
+			font-size: 40px;
 		}
 
 		h4 {
 			text-align: center;
 			font-size: 14px;
+		}
+	}
+}
+
+.cta {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+
+	a {
+		display: flex;
+		width: 240px;
+		height: 56px;
+		padding: 16px 10px;
+		justify-content: center;
+		align-items: center;
+		gap: 4px;
+		background: #06fc99;
+		font-family: var(--rmmono);
+		color: black;
+		border: none;
+		transition: all 0.2s ease;
+		border-radius: 4px;
+		&:hover {
+			filter: brightness(1.2);
+			scale: 1.02;
+		}
+		&[data-type="outlined"] {
+			background: transparent;
+			color: #06fc99;
+			border: 1px solid #06fc99;
+
+			&:hover {
+				background: #031d12;
+			}
 		}
 	}
 }

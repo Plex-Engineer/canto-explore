@@ -39,7 +39,7 @@ const HeroSection = () => {
 				>
 					{">"}
 				</span>
-				<TextReveal text="> Layer 1 blockchain Built to deliver on the promise of defi through innovative incentive mechanisms & cutting edge performance. Canto is accessible, Transparent, decentralized, and free."></TextReveal>
+				<TextReveal text="Layer 1 blockchain Built to deliver on the promise of defi through innovative incentive mechanisms & cutting edge performance. Canto is accessible, Transparent, decentralized, and free."></TextReveal>
 			</div>
 
 			<div className={styles.cta}>

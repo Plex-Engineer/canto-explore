@@ -5,6 +5,7 @@ import Image from "next/image";
 import Gap from "@/components/gap";
 import Link from "next/link";
 import { usePostHog } from "posthog-js/react";
+import TextReveal from "@/components/textReveal";
 
 const HeroSection = () => {
 	const posthog = usePostHog();
@@ -13,12 +14,26 @@ const HeroSection = () => {
 			<section className={styles.row}>
 				<h1 className={styles.title}>Canto Ecosystem</h1>
 				<Gap height={16} />
-				<h4>
-					Explore events, applications and integrations in the Canto ecosystem.
-				</h4>
+				<div
+					style={{
+						maxWidth: "900px",
+					}}
+				>
+					<span
+						style={{
+							color: "#06FC99",
+							fontSize: "1.2rem",
+							marginRight: "10px",
+						}}
+					>
+						{">"}
+					</span>
+					<TextReveal text="Explore events, applications and integrations in the Canto ecosystem."></TextReveal>
+				</div>
+
 				<Gap height={36} />
 
-				<div className={styles.actions}>
+				<div className={styles.cta}>
 					<Link
 						href="https://canto.io/bridge"
 						target="_blank"
