@@ -11,7 +11,7 @@ const HeroSection = () => {
 	return (
 		<div className={styles.container}>
 			<section className={styles.row}>
-				<h1>Canto Ecosystem</h1>
+				<h1 className={styles.title}>Canto Ecosystem</h1>
 				<Gap height={16} />
 				<h4>
 					Explore events, applications and integrations in the Canto ecosystem.

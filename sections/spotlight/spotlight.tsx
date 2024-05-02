@@ -29,7 +29,7 @@ const Spotlight = (props: { items: CardProps[]; header: boolean }) => {
 				<>
 					<Gap height={100} />
 					<h2 className={styles.title}>
-						spotlight
+						spotlight on <span>innovation</span>
 						<svg
 							className={styles.ray}
 							xmlns="http://www.w3.org/2000/svg"
