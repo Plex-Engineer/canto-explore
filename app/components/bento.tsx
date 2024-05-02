@@ -74,7 +74,7 @@ const BentoSection = () => {
 					title="Canto Dex"
 					content="A zero-fee DEX with liquidity incentivized by the base chain."
 					direction="column"
-					imgHeight="220px"
+					imgHeight="180px"
 				/>
 				<CardOutlined
 					glow={{
@@ -85,7 +85,7 @@ const BentoSection = () => {
 					title="Canto Lending market(CLM)"
 					content="A Compound v2 style lending market for borrowing & lending NOTE."
 					direction="column"
-					imgHeight="220px"
+					imgHeight="160px"
 				/>
 			</Container>
 		</section>
