@@ -9,7 +9,7 @@ import { Spotlights } from "@/config/data";
 
 const MoreSection = () => {
 	return (
-		<section className={styles.container}>
+		<section className={`${styles.moreProjects} ${styles.container}`}>
 			<div className={styles.moreProjectsTitle}>
 				<Text
 					family="primary"
