@@ -47,9 +47,9 @@ const HighlightSection = () => {
 			/>
 			<div className={styles.stats}>
 				<StatCard primary="Transactions per Second" secondary="5,000" />
-				<StatCard primary="Time to Finality" secondary="250ms" />
-				<StatCard primary="Network Stability" secondary="~50,000 TPS" />
-				<StatCard primary="Cost to Swap" secondary="~0.03 Canto" />
+				<StatCard primary="Time to Finality" secondary="300ms" />
+				{/* <StatCard primary="Network Stability" secondary="~50,000 TPS" /> */}
+				<StatCard primary="Cost to Swap" secondary="< $0.01" />
 			</div>
 		</section>
 	);

@@ -40,7 +40,7 @@ const FeaturedSection = () => {
 					content="The Canto neofinance ecosystem consists of several primitives designed to enable transparent, competitive financial terms."
 					direction="column"
 					extra={
-						<Link href="https://neo.canto.io">
+						<Link href="https://docs.canto.io/neofinance/overview">
 							<Text
 								family="primary"
 								size="small"
@@ -66,7 +66,7 @@ const FeaturedSection = () => {
 					direction="column"
 					content="A distinct mechanism that enables novel methods of funding. Twenty percent of gas spent on an application is given to developers as a rebate in a composable manner."
 					extra={
-						<Link href="https://csr.canto.io">
+						<Link href="https://docs.canto.io/evm-development/contract-secured-revenue">
 							<Text
 								size="small"
 								color="primary"

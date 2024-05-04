@@ -67,6 +67,11 @@
 	}
 }
 
+.pretext {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
 .title {
 	font-size: 56px;
 	position: relative;

@@ -6,12 +6,19 @@ import Gap from "@/components/gap";
 import Link from "next/link";
 import { usePostHog } from "posthog-js/react";
 import TextReveal from "@/components/textReveal";
+import Text from "@/components/text";
 
 const HeroSection = () => {
 	const posthog = usePostHog();
 	return (
 		<div className={styles.container}>
 			<section className={styles.row}>
+				<div className={styles.pretext}>
+					<Image src={"/logo-accent.svg"} alt="canto" width={20} height={20} />
+					<Text family="primary" color="accent" size="large">
+						CANTO
+					</Text>
+				</div>
 				<h1 className={styles.title}>Canto Ecosystem</h1>
 				<Gap height={16} />
 				<div
