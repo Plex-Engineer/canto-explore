@@ -19,6 +19,8 @@ const HeroSection = () => {
 						CANTO
 					</Text>
 				</div>
+				<Gap height={16} />
+
 				<h1 className={styles.title}>Canto Ecosystem</h1>
 				<Gap height={16} />
 				<div

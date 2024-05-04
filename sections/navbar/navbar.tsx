@@ -39,12 +39,10 @@ export const NavBar = () => {
 				>
 					Ecosystem
 				</Link>
-				<Link
-					href={"/dev"}
-					className={pathName === "/dev" ? styles.active : ""}
-				>
+				<a className={pathName === "/dev" ? styles.active : styles.comingSoon}>
 					Developers
-				</Link>
+					<span>coming soon</span>
+				</a>
 			</ul>
 
 			<ul className={styles.buttons}>

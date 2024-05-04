@@ -7,6 +7,27 @@
 	height: 72px;
 }
 
+.comingSoon {
+	position: relative;
+	&:hover {
+		span {
+			opacity: 1;
+		}
+		cursor: default;
+	}
+	span {
+		position: absolute;
+		bottom: -18px;
+		right: -40px;
+		font-size: 12px;
+		background-color: #1e1e1e;
+		border-radius: 4px;
+		padding: 4px 16px;
+		border: 1px solid #2e2e2e;
+		opacity: 0;
+	}
+}
+
 .logo {
 	height: 30px;
 	width: 30px;
