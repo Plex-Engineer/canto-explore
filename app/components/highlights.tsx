@@ -29,6 +29,7 @@ const HighlightSection = () => {
 				}}
 				loop={true}
 				className={styles["primary-container"]}
+				imgHeight="450px"
 				title="CYCLONE Stack: A Parallel Execution EVM"
 				content="Experience the speed and efficiency unlocked by Canto’s Parallel Execution Cyclone EVM. It combines speed with scalability to give builders the best possible platform for building applications."
 				extra={
