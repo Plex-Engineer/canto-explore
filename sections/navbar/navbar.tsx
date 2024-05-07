@@ -25,7 +25,6 @@ export const NavBar = () => {
 			unlockScroll();
 		}
 	}, [isMenuOpen, lockScroll, unlockScroll]);
-
 	return (
 		<div className={styles.container}>
 			<button
