@@ -81,7 +81,8 @@ export const CardOutlined = ({
 			>
 				<div
 					style={{
-						height: imgHeight ? imgHeight : "350px",
+						minHeight: imgHeight ? imgHeight : "",
+						aspectRatio: imgHeight ? "" : "1",
 						flex: 1,
 					}}
 				>

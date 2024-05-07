@@ -34,7 +34,6 @@ const FeaturedSection = () => {
 						y: 50,
 					}}
 					image="/anims/neo.mp4"
-					imgHeight="450px"
 					loop={false}
 					title="NEOFINANCE"
 					content="The Canto neofinance ecosystem consists of several primitives designed to enable transparent, competitive financial terms."
@@ -61,7 +60,6 @@ const FeaturedSection = () => {
 					}}
 					image="/anims/CSR.mp4"
 					loop={true}
-					imgHeight="450px"
 					title="Contract secured revenue"
 					direction="column"
 					content="A distinct mechanism that enables novel methods of funding. Twenty percent of gas spent on an application is given to developers as a rebate in a composable manner."

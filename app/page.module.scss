@@ -167,7 +167,7 @@
 .component-container {
 	display: grid !important;
 	grid-template-columns: repeat(2, 1fr);
-
+	height: 100vh;
 	& > div:nth-child(1) {
 		// spans 2 columns
 		grid-row: span 2;
@@ -200,6 +200,9 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column !important;
+		img {
+			height: 100px !important;
+		}
 	}
 	.hero {
 		gap: 40px;
