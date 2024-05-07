@@ -25,7 +25,11 @@ const MoreSection = (articles: { items: CardProps[] }) => {
 		<div className={styles.container}>
 			<div>
 				<div className={styles.row}>
-					<h2>
+					<h2
+						style={{
+							color: "#6D6D6D",
+						}}
+					>
 						More on <span>canto</span>
 					</h2>
 					{articles.items.length > 3 && (
