@@ -19,7 +19,7 @@ const HeroSection = () => {
 						CANTO
 					</Text>
 				</div>
-				<Gap height={16} />
+				<Gap height={36} />
 
 				<h1 className={styles.title}>Canto Ecosystem</h1>
 				<Gap height={16} />
@@ -74,6 +74,8 @@ const HeroSection = () => {
           className={styles.image}
         /> */}
 			</section>
+			{/* <div className={styles.foreground}></div> */}
+
 			{/* <Spline scene="https://prod.spline.design/ZNUiYolkKfuyKgGh/scene.splinecode" /> */}
 		</div>
 	);
