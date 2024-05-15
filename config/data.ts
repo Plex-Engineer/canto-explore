@@ -427,6 +427,18 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "Subsquid",
+    description:
+      "Subsquid provides a data access layer for blazing-fast indexed data on Canto.",
+    image: "/images/subsquid.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://subsquid.io/",
+      twitter: "",
+      github: "",
+    },
+  },
   // Community
 
   {
