@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 768px) {
     .main {
+        margin-top: 4rem;
         grid-template-rows: clamp(500px, 100dvh - 84px, 1200px) 750px 1fr 300px min-content;
     }
 }

@@ -1,14 +1,14 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	height: clamp(calc(550px), 100dvh - 300px, 800px);
+	height: clamp(550px, 100dvh - 300px, 800px);
 	max-width: var(--max-width);
 	width: 100%;
 	margin-inline: auto;
 
 	background-image: url("/hero.jpg"), url("/effect.svg");
 
-	background-position: 50% 200px, 50% 0px;
+	background-position: 50% 24vh, 50% 0px;
 	background-size: contain, 70%;
 	background-repeat: no-repeat;
 	.row {
