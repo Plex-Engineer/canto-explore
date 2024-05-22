@@ -89,6 +89,7 @@ export const NavBar = () => {
 			<ul className={styles.buttons}>
 				<Link
 					href={"http://app.canto.io/bridge"}
+					target="_blank"
 					onClick={() =>
 						posthog.capture("Navlink", {
 							Website: "Launch Homepage",
