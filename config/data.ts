@@ -1,4 +1,4 @@
-import { CardProps } from "@/components/cards/highlightCard";
+import { CardProps } from "@/app/eco/components/cards/highlightCard";";
 
 const Spotlights: CardProps[] = [
   {
