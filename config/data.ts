@@ -1,4 +1,4 @@
-import { CardProps } from "@/app/eco/components/cards/highlightCard";
+import { CardProps } from "@/components/cards/highlightCard";
 
 const Spotlights: CardProps[] = [
   {
@@ -95,17 +95,6 @@ const Projects: CardProps[] = [
     },
   },
   {
-    title: "DexGuru",
-    description: "EVM Canto chain block explorer.",
-    image: "/images/dexguru.png",
-    category: "Block Explorer",
-    links: {
-      site: "https://canto.dex.guru/",
-      twitter: "",
-      github: "",
-    },
-  },
-  {
     title: "Parsec",
     description: "Customizable onchain analytics terminal and block explorer.",
     image: "/images/parsec.jpg",
@@ -164,6 +153,17 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
+  {
+    title: "Interport",
+    description: "Interport enables cross chain gas transfers to Canto by allowing you to swap assets on a source chain for CANTO.",
+    image: "/images/interport.png",
+    category: "Bridge",
+    links: {
+      site: "https://interport.fi/",
+      twitter: "",
+      github: "",
+    },
+  },
 
   // DeFi
 
@@ -214,7 +214,19 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-
+  {
+    title: "Hyperliquid",
+    description:
+      "Trade CANTO perps on Hyperliquids decentralized perpetual exchange.",
+    image: "/images/hyperliquid.png",
+    category: "DeFi",
+    links: {
+      site: "https://app.hyperliquid.xyz/trade/CANTO",
+      twitter: "",
+      github: "",
+    },
+  },
+ 
   // RWA
 
   {
@@ -367,7 +379,66 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-
+  {
+    title: "CantoSafe",
+    description:
+      "Multi-sig Wallet Infrastructure on Canto.",
+    image: "/images/canto-safe.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://safe.neobase.one/welcome",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "CantoSplits",
+    description:
+      "A set of contracts for efficient onchain payments. Create splits, waterfall distributions, or even CSR NFT distributions all in a trust-less, decentralized manner.",
+    image: "/images/splits.svg",
+    category: "Infra & Tools",
+    links: {
+      site: "https://splits.neobase.one/",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Dex Screener",
+    description:
+      "Dex Screener provides realtime price charts and trading history.",
+    image: "/images/dexscreener.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://dexscreener.com/canto",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "GeckoTerminal",
+    description:
+      "GeckoTerminal is a comprehensive real-time DEX tracker, built by the team behind CoinGecko",
+    image: "/images/geckoterminal.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://www.geckoterminal.com/canto/pools",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Subsquid",
+    description:
+      "Subsquid provides a data access layer for blazing-fast indexed data on Canto.",
+    image: "/images/subsquid.png",
+    category: "Infra & Tools",
+    links: {
+      site: "https://subsquid.io/",
+      twitter: "",
+      github: "",
+    },
+  },
   // Community
 
   {
@@ -403,12 +474,12 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-  // Custody
 
+  // Custody
+  
   {
     title: "Fireblocks",
-    description:
-      "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
+    description: "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
     image: "/images/fireblocks.jpeg",
     category: "Custody",
     links: {
@@ -419,8 +490,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "Fordefi",
-    description:
-      "An institutional MPC wallet and security platform built for DeFi.",
+    description: "An institutional MPC wallet and security platform built for DeFi.",
     image: "/images/fordefi.jpeg",
     category: "Custody",
     links: {
@@ -429,7 +499,65 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-];
+
+    // Contributors
+  
+    {
+    title: "Plex Labs",
+    description: "Core development team focused on Canto core client & primitives.",
+    image: "/images/plex.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/Plex_Official",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "B-Harvest",
+    description: "Core development team focused on Canto core client & primitives.",
+    image: "/images/bharvest.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/B__Harvest",
+      twitter: "",
+      github: "",
+    },
+  },
+    {
+      title: "Neobase",
+      description: "Core development team focused on BlankRasa and other apps on Canto.",
+      image: "/images/neobase.png",
+      category: "Contributor",
+      links: {
+        site: "https://x.com/NeoBase_Studios",
+        twitter: "",
+        github: "",
+      },
+  },
+  {
+    title: "G-Unit",
+    description: "Incubator focused on accelerating growth in the Canto ecoysystem.",
+    image: "/images/gunit.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/TheCantoGUnit",
+      twitter: "",
+      github: "",
+    },
+  },
+  {
+    title: "Canto Growth Collective",
+    description: "Grassroots Community Building, Marketing, & Growth initiatives.",
+    image: "/images/growth_collective.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/CantoGrowth",
+      twitter: "",
+      github: "",
+    },
+  },
+  ];
 
 const More: CardProps[] = [
   {
