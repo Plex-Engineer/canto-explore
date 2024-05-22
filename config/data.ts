@@ -1,4 +1,4 @@
-import { CardProps } from "@/app/eco/components/cards/highlightCard";";
+import { CardProps } from "@/app/eco/components/cards/highlightCard";
 
 const Spotlights: CardProps[] = [
   {
@@ -155,7 +155,8 @@ const Projects: CardProps[] = [
   },
   {
     title: "Interport",
-    description: "Interport enables cross chain gas transfers to Canto by allowing you to swap assets on a source chain for CANTO.",
+    description:
+      "Interport enables cross chain gas transfers to Canto by allowing you to swap assets on a source chain for CANTO.",
     image: "/images/interport.png",
     category: "Bridge",
     links: {
@@ -226,7 +227,7 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
- 
+
   // RWA
 
   {
@@ -381,8 +382,7 @@ const Projects: CardProps[] = [
   },
   {
     title: "CantoSafe",
-    description:
-      "Multi-sig Wallet Infrastructure on Canto.",
+    description: "Multi-sig Wallet Infrastructure on Canto.",
     image: "/images/canto-safe.png",
     category: "Infra & Tools",
     links: {
@@ -476,10 +476,11 @@ const Projects: CardProps[] = [
   },
 
   // Custody
-  
+
   {
     title: "Fireblocks",
-    description: "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
+    description:
+      "An enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.",
     image: "/images/fireblocks.jpeg",
     category: "Custody",
     links: {
@@ -490,7 +491,8 @@ const Projects: CardProps[] = [
   },
   {
     title: "Fordefi",
-    description: "An institutional MPC wallet and security platform built for DeFi.",
+    description:
+      "An institutional MPC wallet and security platform built for DeFi.",
     image: "/images/fordefi.jpeg",
     category: "Custody",
     links: {
@@ -500,11 +502,12 @@ const Projects: CardProps[] = [
     },
   },
 
-    // Contributors
-  
-    {
+  // Contributors
+
+  {
     title: "Plex Labs",
-    description: "Core development team focused on Canto core client & primitives.",
+    description:
+      "Core development team focused on Canto core client & primitives.",
     image: "/images/plex.png",
     category: "Contributor",
     links: {
@@ -515,7 +518,8 @@ const Projects: CardProps[] = [
   },
   {
     title: "B-Harvest",
-    description: "Core development team focused on Canto core client & primitives.",
+    description:
+      "Core development team focused on Canto core client & primitives.",
     image: "/images/bharvest.png",
     category: "Contributor",
     links: {
@@ -524,20 +528,22 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-    {
-      title: "Neobase",
-      description: "Core development team focused on BlankRasa and other apps on Canto.",
-      image: "/images/neobase.png",
-      category: "Contributor",
-      links: {
-        site: "https://x.com/NeoBase_Studios",
-        twitter: "",
-        github: "",
-      },
+  {
+    title: "Neobase",
+    description:
+      "Core development team focused on BlankRasa and other apps on Canto.",
+    image: "/images/neobase.png",
+    category: "Contributor",
+    links: {
+      site: "https://x.com/NeoBase_Studios",
+      twitter: "",
+      github: "",
+    },
   },
   {
     title: "G-Unit",
-    description: "Incubator focused on accelerating growth in the Canto ecoysystem.",
+    description:
+      "Incubator focused on accelerating growth in the Canto ecoysystem.",
     image: "/images/gunit.png",
     category: "Contributor",
     links: {
@@ -548,7 +554,8 @@ const Projects: CardProps[] = [
   },
   {
     title: "Canto Growth Collective",
-    description: "Grassroots Community Building, Marketing, & Growth initiatives.",
+    description:
+      "Grassroots Community Building, Marketing, & Growth initiatives.",
     image: "/images/growth_collective.png",
     category: "Contributor",
     links: {
@@ -557,7 +564,7 @@ const Projects: CardProps[] = [
       github: "",
     },
   },
-  ];
+];
 
 const More: CardProps[] = [
   {
