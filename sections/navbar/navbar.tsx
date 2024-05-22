@@ -5,8 +5,7 @@ import styles from "./navbar.module.scss";
 import Link from "next/link";
 import { usePostHog } from "posthog-js/react";
 import { usePathname } from "next/navigation";
-import { use, useEffect, useState } from "react";
-import { useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 import { useScrollLock } from "@/hooks/useScrollLock";
 
 export const NavBar = () => {
