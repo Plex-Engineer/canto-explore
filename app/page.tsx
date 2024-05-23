@@ -1,23 +1,26 @@
-import { NavBar } from "@/sections/navbar/navbar";
-import styles from "./page.module.css";
-import HeroSection from "@/sections/hero";
-import Spotlight from "@/sections/spotlight/spotlight";
-import ProjectsSections from "@/sections/projects/projects";
-import Footer from "@/sections/footer/footer";
+"use client";
+
+import styles from "./page.module.scss";
 import Gap from "@/components/gap";
-import { CardProps } from "@/components/cards/highlightCard";
-import MoreSection from "@/sections/more/moreSection";
-import { More, Projects, Spotlights } from "@/config/data";
+import HeroSection from "./components/hero";
+import HighlightSection from "./components/highlights";
+import FeaturedSection from "./components/featured";
+import BentoSection from "./components/bento";
+import MoreSection from "./components/more";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <NavBar />
-      <HeroSection />
-      <Spotlight items={Spotlights} />
-      <ProjectsSections items={Projects} />
-      <MoreSection items={More} />
-      <Footer />
-    </main>
-  );
+	return (
+		<main className={styles.main}>
+			<HeroSection />
+			<Gap height={64} />
+			<HighlightSection />
+			<Gap height={180} />
+			<FeaturedSection />
+			<Gap height={200} />
+			<BentoSection />
+			<Gap height={200} />
+			<MoreSection />
+			<Gap height={150} />
+		</main>
+	);
 }

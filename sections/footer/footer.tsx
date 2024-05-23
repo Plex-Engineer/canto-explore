@@ -1,35 +1,52 @@
 "use client";
 
-import FooterCard from "@/components/cards/footerCard";
+import FooterCard from "@/app/eco/components/cards/footerCard";
 import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        borderTop: "1px solid #2D2D2D",
+      }}
+    >
       <div className={styles["inner_container"]}>
         <FooterCard
-          text="Visit Blog"
-          title="Blog"
-          image="/blog.svg"
-          link="https://canto.mirror.xyz/"
+          text="Follow on X"
+          title="Twitter"
+          image="/twitter.svg"
+          link="https://twitter.com/CantoPublic"
         />
         <FooterCard
-          text="Read Documentation"
-          title="Documentation"
-          image="/doc.svg"
-          link="https://docs.canto.io/"
-        />
-        <FooterCard
-          text="Join our Discord"
+          text="Discord"
           title="Discord"
           image="/discord.svg"
           link="https://discord.com/invite/63GmEXZsVf"
         />
         <FooterCard
-          text="Follow Canto Public"
-          title="Twitter"
-          image="/twitter.svg"
-          link="https://twitter.com/CantoPublic"
+          text="Telegram"
+          title="Telegram"
+          image="/telegram.svg"
+          link="https://t.me/cantopublictg"
+        />
+        <div
+          className={styles.divider}
+          style={{
+            width: "100%",
+          }}
+        ></div>
+        <FooterCard
+          text="Docs"
+          title="Documentation"
+          image="/doc.svg"
+          link="https://docs.canto.io/"
+        />
+        <FooterCard
+          text="Blog"
+          title="Blog"
+          image="/blog.svg"
+          link="https://canto.mirror.xyz/"
         />
       </div>
     </div>
